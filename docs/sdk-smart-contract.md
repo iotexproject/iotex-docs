@@ -19,7 +19,7 @@ This allows you to interact with smart contracts as if they were JavaScript obje
 import solc from 'solc';
 
 const solidityFileString = `
-pragma solidity ^0.4.0;
+pragma solidity ^0.4.16;
 
 contract SimpleStorage {
    uint storedData;
