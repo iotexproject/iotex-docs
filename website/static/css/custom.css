@@ -180,3 +180,9 @@ pre code {
 .SampleButtonStyle:hover{
   background: #00a492;
 }
+
+.toc .toggleNav ul li.navListItemActive a{
+  border-bottom: 2px solid #00a492;
+  padding-bottom: 3px;
+  display: inline-block;
+}
