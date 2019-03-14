@@ -60,6 +60,7 @@ article,p,code {
 
 body {
     font-family: $myFont;
+  background: #fafafa;
 }
 
 footer,header a {
@@ -185,4 +186,7 @@ pre code {
   border-bottom: 2px solid #00a492;
   padding-bottom: 3px;
   display: inline-block;
+}
+.separateOnPageNav.sideNavVisible .navPusher .mainContainer{
+  background: #fff;
 }
