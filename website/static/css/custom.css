@@ -187,6 +187,55 @@ pre code {
   padding-bottom: 3px;
   display: inline-block;
 }
-.separateOnPageNav.sideNavVisible .navPusher .mainContainer{
-  background: #fff;
+.button,.edit-page-link{
+  border: none;
+  color: #fff;
+  padding: 10px;
+  min-width: 70px;
+  text-align: center;
+  font-size: 12px;
+  background: #00baa0;
+}
+.button:hover,.edit-page-link:hover{
+  background: #00a08a;
+}
+a{
+  color:#1792e4;
+}
+article h2::before{
+  height: 1px;
+}
+.docLastUpdate{
+  color: #999;
+  font-size: 12px;
+}
+article{
+  line-height: 28px;
+}
+article ul{
+  color: #666;
+  padding-left: 3em;
+  font-size: 15px;
+}
+article ul li{
+  margin-bottom: .5rem;
+}
+article ul ul{
+  padding-left: 1rem;
+}
+
+
+@media only screen and (min-width: 1024px){
+  .separateOnPageNav.sideNavVisible .navPusher .mainContainer{
+    background: #fff;
+  }
+  .docMainWrapper > * {
+    padding: 24px;
+    margin: 24px 0 0 0;
+  }
+  .onPageNav{
+    background: #fff;
+    top: 24px;
+    min-height: calc(100vh - 84px);
+  }
 }
