@@ -30,7 +30,7 @@ module.exports = {
 					'/': [
 						{
 							collapsable: false,
-							children: [ '', 'docs/libraries-and-tools', 'docs/reference', 'docs/misc' ]
+							children: [ '', 'docs/libraries-and-tools', 'docs/misc' ]
 						}
 					]
 				}
