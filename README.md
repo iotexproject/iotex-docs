@@ -440,11 +440,11 @@ Output in decimal: 328166124527934490560933036
 
 #### Query Account Balance On Erc20 Contract
 `Usage:
-  ioctl xrc20 balanceof ALIAS|ACCOUNT_ADDRESS -c ALIAS|CONTRACT_ADDRESS`
+  ioctl xrc20 balanceOf ALIAS|ACCOUNT_ADDRESS -c ALIAS|CONTRACT_ADDRESS`
 ```
 ➜   ioctl xrc20 balanceof io1q4enhh0tp5pqpa6s4urhwrx32529pmyyzdgu3q -c io1y9ndaezjrdlkw93hquqru7txh9jcsmtmrvt4yw
-Raw output: 0000000000000000000000000000000000000000010f73e141e95768f6bfacac
-Output in decimal: 328166124527934490560933036
+Raw output: 000000000000000000000000000000000000000000000000b469471f80170d33
+Output in decimal: 13000000000000199987
 ```
 
 #### Transfer Token On Erc20 Contract
