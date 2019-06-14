@@ -442,7 +442,7 @@ Output in decimal: 328166124527934490560933036
 `Usage:
   ioctl xrc20 balanceOf ALIAS|ACCOUNT_ADDRESS -c ALIAS|CONTRACT_ADDRESS`
 ```
-➜   ioctl xrc20 balanceof io1q4enhh0tp5pqpa6s4urhwrx32529pmyyzdgu3q -c io1y9ndaezjrdlkw93hquqru7txh9jcsmtmrvt4yw
+➜   ioctl xrc20 balanceOf io1q4enhh0tp5pqpa6s4urhwrx32529pmyyzdgu3q -c io1y9ndaezjrdlkw93hquqru7txh9jcsmtmrvt4yw
 Raw output: 000000000000000000000000000000000000000000000000b469471f80170d33
 Output in decimal: 13000000000000199987
 ```
