@@ -431,12 +431,11 @@ Wait for several seconds and query this action by hash:
 
 #### Query Total Token Supply On Erc20 Contract
 `Usage:
-  ioctl xrc20 totalsupply -c ALIAS|CONTRACT_ADDRESS`
+  ioctl xrc20 totalSupply -c ALIAS|CONTRACT_ADDRESS`
 ```
-➜   ioctl xrc20 totalsupply -c io1y9ndaezjrdlkw93hquqru7txh9jcsmtmrvt4yw
-Your read result is:
-000000000000000000000000000000000000000000ce6faeb8379f4021bfad2f
-Ouptut in decimal format: 249566124527934490560933167
+➜   ioctl xrc20 totalSupply -c io1y9ndaezjrdlkw93hquqru7txh9jcsmtmrvt4yw
+Raw output: 0000000000000000000000000000000000000000010f73e141e95768f6bfacac
+Output in decimal: 328166124527934490560933036
 ```
 
 #### Query Account Balance On Erc20 Contract
@@ -444,14 +443,13 @@ Ouptut in decimal format: 249566124527934490560933167
   ioctl xrc20 balanceof ALIAS|ACCOUNT_ADDRESS -c ALIAS|CONTRACT_ADDRESS`
 ```
 ➜   ioctl xrc20 balanceof io1q4enhh0tp5pqpa6s4urhwrx32529pmyyzdgu3q -c io1y9ndaezjrdlkw93hquqru7txh9jcsmtmrvt4yw
-Your read result is:
-000000000000000000000000000000000000000000000000b469471f8013fffc
-Ouptut in decimal format: 12999999999999999996
+Raw output: 0000000000000000000000000000000000000000010f73e141e95768f6bfacac
+Output in decimal: 328166124527934490560933036
 ```
 
 #### Transfer Token On Erc20 Contract
 `Usage:
-  ioctl xrc20 transfer ALIAS|TARGET_ADDRESS AMOUNT -c ALIAS|CONTRACT_ADDRESS -l GAS_LIMIT -s SIGNER [-p GAS_PRICE]`
+  ioctl xrc20 transfer ALIAS|TARGET_ADDRESS AMOUNT -c ALIAS|CONTRACT_ADDRESS [-l GAS_LIMIT] -s SIGNER [-p GAS_PRICE]`
 ```
 ➜   ioctl xrc20 transfer io1juvx5g063eu4ts832nukp4vgcwk2gnc5cu9ayd 4 -c io1y9ndaezjrdlkw93hquqru7txh9jcsmtmrvt4yw -s ALIAS -l 50000
 Enter password #ALIAS:
@@ -477,9 +475,9 @@ cadb6a3944cd1941b51e2e4b350295cdd3f669f3be791a8988b7ce5c24e70a22
 
 #### Transfer Token From Another Address On Erc20 Contract
 `Usage:
-  ioctl xrc20 transferfrom ALIAS|OWNER_ADDRESS ALIAS|TARGET_ADDRESS AMOUNT -c ALIAS|CONTRACT_ADDRESS -l GAS_LIMIT -s SIGNER [-p GAS_PRICE]`
+  ioctl xrc20 transferFrom ALIAS|OWNER_ADDRESS ALIAS|TARGET_ADDRESS AMOUNT -c ALIAS|CONTRACT_ADDRESS [-l GAS_LIMIT] -s SIGNER [-p GAS_PRICE]`
 ```
-➜   ioctl xrc20 transferfrom io1q4enhh0tp5pqpa6s4urhwrx32529pmyyzdgu3q io1juvx5g063eu4ts832nukp4vgcwk2gnc5cu9ayd 4 -c io1y9ndaezjrdlkw93hquqru7txh9jcsmtmrvt4yw -s ALIAS -l 50000
+➜   ioctl xrc20 transferFrom io1q4enhh0tp5pqpa6s4urhwrx32529pmyyzdgu3q io1juvx5g063eu4ts832nukp4vgcwk2gnc5cu9ayd 4 -c io1y9ndaezjrdlkw93hquqru7txh9jcsmtmrvt4yw -s ALIAS -l 50000
 Enter password #ALIAS:
 
 
@@ -503,7 +501,7 @@ f3c414021df2058134f34e8c7f77d43fd67305db265f7943b4ebe13ca340aaff
 
 #### Allow Spender Withdraw From Account With Limitation
 `Usage:
-  ioctl approve ALIAS|SPENDER_ADDRESS AMOUNT -c ALIAS|CONTRACT_ADDRESS -s SIGNER -l GAS_LIMIT `
+  ioctl approve ALIAS|SPENDER_ADDRESS XRC20_AMOUNT -c ALIAS|CONTRACT_ADDRESS -s SIGNER [-l GAS_LIMIT] `
 ```
 ➜   ioctl xrc20 approve io1juvx5g063eu4ts832nukp4vgcwk2gnc5cu9ayd 4 -c io1y9ndaezjrdlkw93hquqru7txh9jcsmtmrvt4yw -s ALIAS -l 50000
 Enter password #ALIAS:
@@ -532,8 +530,8 @@ a3cc433341f7d417420478d9702b9dedd376c9b6a4a9e8d590fc10bb14133e24
   ioctl allowance ALIAS|OWNER_ADDRESS ALIAS|SPENDER_ADDRESS -c ALIAS|CONTRACT_ADDRESS`
 ```
 ➜   ioctl xrc20 allowance io1q4enhh0tp5pqpa6s4urhwrx32529pmyyzdgu3q io1juvx5g063eu4ts832nukp4vgcwk2gnc5cu9ayd -c io1y9ndaezjrdlkw93hquqru7txh9jcsmtmrvt4yw
-Your read result is:
-0000000000000000000000000000000000000000000000000000000000000004
+Raw output: 0000000000000000000000000000000000000000000000000000000000000004
+Output in decimal: 4
 ```
 
 #### Query Blockchain Information
