@@ -388,16 +388,33 @@ import {Contract} from "iotex-antenna/lib/contract/contract";
     }
   );
 
-  const setResult = await contract.methods.set(101, {
+  const actionHash = await contract.methods.set(101, {
     account: sender,
     gasLimit: "1000000",
     gasPrice: "1000000000000"
   });
 
-  const getResult = await contract.methods.get({
-    account: sender,
-    gasLimit: "1000000",
-    gasPrice: "1000000000000"
+  const getResult = await antenna.iotx.readContractByMethod({
+    from: sender.address,
+    contractAddress: "io186s45j3rgvhxh25ec6xk9wap0drtthk3jq4du7",
+    abi: [{
+      "constant": false,
+      "inputs": [{"name": "x", "type": "uint256"}],
+      "name": "set",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }, {
+      "constant": true,
+      "inputs": [],
+      "name": "get",
+      "outputs": [{"name": "", "type": "uint256"}],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }],
+    method: "get"
   });
 })()
 ```
