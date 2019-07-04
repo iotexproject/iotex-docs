@@ -113,7 +113,7 @@ import {toRau} from "iotex-antenna/lib/account/utils";
     to: newWallet.address,
     value: toRau("1", "iotx"),
     gasLimit: "100000",
-    gasPrice: "1"
+    gasPrice: toRau("1", "Qev")
   });
 })()
 ```
@@ -251,7 +251,7 @@ import Antenna from "iotex-antenna";
     amount: "0",
 		abi: abi,
     data: Buffer.from(bytecode, "hex"),
-    gasPrice: "1",
+    gasPrice: toRau("1", "Qev"),
     gasLimit: "100000"
   });
 })()
