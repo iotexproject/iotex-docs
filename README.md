@@ -96,8 +96,13 @@ curl https://raw.githubusercontent.com/iotexproject/iotex-core/master/install-cl
 curl https://raw.githubusercontent.com/iotexproject/iotex-core/master/install-cli.sh | sh -s "unstable"
 ```
 
-### Usage and Examples
-#### Set Config
+## Usage and Examples
+
+## Config
+
+### Set Config
+Sets config `VARIABLE` to `VALUE`
+
 `Usage:
   ioctl config set VARIABLE VALUE`
 ```
@@ -106,6 +111,14 @@ endpoint is set to api.iotex.one:443
 ```
 
 #### Get Config
+`Usage:
+  ioctl config get VARIABLE`
+```
+➜  ioctl config get wallet
+/Users/IoTeX/.config/ioctl/default
+```
+
+#### Reset Config
 `Usage:
   ioctl config get VARIABLE`
 ```
