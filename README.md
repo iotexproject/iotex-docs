@@ -100,12 +100,11 @@ curl https://raw.githubusercontent.com/iotexproject/iotex-core/master/install-cl
 Documentation of all ioctl commands with examples
 
 ### Config
-Commands for manipulating ioctl config file
+Commands for manipulating ioctl config file. 
 
 `VARIABLES: [endpoint, wallet, explorer, defaultacc]`
 
-Default explorer: iotexscan
-
+Default explorer: iotexscan   
 Available explorers: iotexscan, iotxplorer, custom
 
 #### Set Config
