@@ -97,15 +97,13 @@ curl https://raw.githubusercontent.com/iotexproject/iotex-core/master/install-cl
 ```
 
 ## Usage and Examples
-Documentation of all ioctl commands with examples
+Documentation of all ioctl commands with examples.
 
 ### Config
-Commands for manipulating ioctl config file. 
+Commands for manipulating ioctl config file.       
+Available explorers: iotexscan, iotxplorer, custom
 
 `VARIABLES: [endpoint, wallet, explorer, defaultacc]`
-
-Default explorer: iotexscan   
-Available explorers: iotexscan, iotxplorer, custom
 
 #### Set Config
 `
@@ -132,17 +130,8 @@ endpoint is set to api.iotex.one:443
 Config reset to default values
 ```
 
-#### Version
-`Usage:
-  ioctl version`
-```
-→  ioctl version
-Client:
-packageVersion:"v0.5.0" packageCommitID:"a4308fc82bea22cfaa45addef679a09f41f3a998" gitStatus:"clean" goVersion:"go version go1.11.5 darwin/amd64" buildTime:"2019-04-20-PDT/18:04:37"
-
-Server: api.iotex.one:443
-packageVersion:"v0.5.0" packageCommitID:"a4308fc82bea22cfaa45addef679a09f41f3a998" gitStatus:"clean" goVersion:"go version go1.11.5 linux/amd64" buildTime:"2019-04-21-UTC/01:04:11"
-```
+### Account
+Commands for managing blockchain accounts.
 
 #### Create Account(s)
 `Usage:
@@ -284,6 +273,8 @@ io14gnqxf9dpkn05g337rl7eyt2nxasphf5m6n0rd - 0xAA260324ad0DA6FA2231f0FfEC916A99bb
 #IOsenser: Enter new password again
 Account #IOsenser has been updated.
 ```
+### Alias
+Commands to 
 
 #### Set Alias
 `Usage:
@@ -448,6 +439,9 @@ Wait for several seconds and query this action by hash:
 59a73e24a41385005519d1d1e7f164b36b98717f2c5649785b43c2588245502d
 ```
 
+### Xrc20
+Commands to deal with XRC20
+
 #### Query Total Token Supply On Erc20 Contract
 `Usage:
   ioctl xrc20 totalSupply -c ALIAS|CONTRACT_ADDRESS`
@@ -553,6 +547,9 @@ Raw output: 0000000000000000000000000000000000000000000000000000000000000004
 Output in decimal: 4
 ```
 
+### Blockchain
+Commands to query blockchain
+
 #### Query Blockchain Information
 `Usage:
   ioctl bc info`
@@ -602,6 +599,9 @@ Delta State Digest: 999003ad9f4ea85f45a8a3ebafcb8ad03c43852fbe8cce14aaf86bed9aed
 Hash: c9cac24ed4a782583526132cc266f3def121e34ad4c4244f8b045fdd2d82d4cc
 ```
 
+### Node
+Commands to query nodes
+
 #### Query Delegates
 `Usage:
   ioctl node delegate [-e epoch-num|-n]`
@@ -640,6 +640,21 @@ io1nf0rvzgq3tqym6n3trttsrt7d4gqqsmqfzy0da      7           active   15       294
 ```
 ➜  ioctl node reward whale
 io1t54nfdnpldaxkpm35f2gzh3rx6cakypmp5xfz5: 45819 IOTX
+```
+
+### Update tools
+Commands to maintain ioctl.
+
+#### Version
+`Usage:
+  ioctl version`
+```
+→  ioctl version
+Client:
+packageVersion:"v0.5.0" packageCommitID:"a4308fc82bea22cfaa45addef679a09f41f3a998" gitStatus:"clean" goVersion:"go version go1.11.5 darwin/amd64" buildTime:"2019-04-20-PDT/18:04:37"
+
+Server: api.iotex.one:443
+packageVersion:"v0.5.0" packageCommitID:"a4308fc82bea22cfaa45addef679a09f41f3a998" gitStatus:"clean" goVersion:"go version go1.11.5 linux/amd64" buildTime:"2019-04-21-UTC/01:04:11"
 ```
 
 #### Update ioctl
