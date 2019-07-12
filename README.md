@@ -99,27 +99,27 @@ curl https://raw.githubusercontent.com/iotexproject/iotex-core/master/install-cl
 ## Usage and Examples
 Documentation of all ioctl commands with examples
 
-## Config
+### Config
 Commands for manipulating ioctl config file
 
 `VARIABLES: [endpoint, wallet, explorer, defaultacc]`
 
-### Set Config
+Default explorer: iotexscan
+
+Available explorers: iotexscan, iotxplorer, custom
+
+#### Set Config
 `
 Usage:
   ioctl config set VARIABLE VALUE`
-  
-Sets config `VARIABLE` to `VALUE`
 ```
 ➜  ioctl config set endpoint api.iotex.one:443
 endpoint is set to api.iotex.one:443
 ```
 
-### Get Config
+#### Get Config
 `Usage:
-  ioctl config get VARIABLE`
- 
-Gets config `VALUE` at `VARIABLE`
+  ioctl config get VARIABLE | all`
 ```
 ➜  ioctl config get wallet
 /Users/IoTeX/.config/ioctl/default
@@ -127,12 +127,10 @@ Gets config `VALUE` at `VARIABLE`
 
 #### Reset Config
 `Usage:
-  ioctl config get VARIABLE`
-  
-Reset all config variables to default values
+  ioctl config reset`
 ```
-➜  ioctl config get wallet
-/Users/IoTeX/.config/ioctl/default
+➜  ioctl config reset
+Config reset to default values
 ```
 
 #### Version
