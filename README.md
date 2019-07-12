@@ -98,13 +98,14 @@ curl https://raw.githubusercontent.com/iotexproject/iotex-core/master/install-cl
 
 ## Usage and Examples
 
-## Config
+### Config
 
-### Set Config
+## Set Config
+```
+Usage:
+  ioctl config set VARIABLE VALUE
+```
 Sets config `VARIABLE` to `VALUE`
-
-`Usage:
-  ioctl config set VARIABLE VALUE`
 ```
 ➜  ioctl config set endpoint api.iotex.one:443
 endpoint is set to api.iotex.one:443
