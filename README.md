@@ -274,7 +274,7 @@ io14gnqxf9dpkn05g337rl7eyt2nxasphf5m6n0rd - 0xAA260324ad0DA6FA2231f0FfEC916A99bb
 Account #IOsenser has been updated.
 ```
 ### Alias
-Commands to 
+Commands to set aliases for address.
 
 #### Set Alias
 `Usage:
@@ -302,6 +302,8 @@ io1l3wc0smczyay8xq747e2hw63mzg3ctp6uf8wsg - test
 io14gnqxf9dpkn05g337rl7eyt2nxasphf5m6n0rd - whale
 ```
 
+### Action
+Commands for invoking actions on blockchain.
 
 #### Transfer Tokens
 `Usage:
@@ -439,8 +441,8 @@ Wait for several seconds and query this action by hash:
 59a73e24a41385005519d1d1e7f164b36b98717f2c5649785b43c2588245502d
 ```
 
-### Xrc20
-Commands to deal with XRC20
+### XRC20
+Commands to deal with XRC20.
 
 #### Query Total Token Supply On Erc20 Contract
 `Usage:
@@ -548,7 +550,7 @@ Output in decimal: 4
 ```
 
 ### Blockchain
-Commands to query blockchain
+Commands to query blockchain.
 
 #### Query Blockchain Information
 `Usage:
@@ -600,7 +602,7 @@ Hash: c9cac24ed4a782583526132cc266f3def121e34ad4c4244f8b045fdd2d82d4cc
 ```
 
 ### Node
-Commands to query nodes
+Commands to query blockchain nodes.
 
 #### Query Delegates
 `Usage:
