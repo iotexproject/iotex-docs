@@ -335,7 +335,7 @@ yes
 
 Action has been sent to blockchain.
 Wait for several seconds and query this action by hash:
-aa56b8958d5030676876363ec054df4ac7044ea2fc09f51a1c238d22c9411c33
+iotexscan.io/action/aa56b8958d5030676876363ec054df4ac7044ea2fc09f51a1c238d22c9411c33
 ```
 
 #### Query Action
