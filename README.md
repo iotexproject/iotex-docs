@@ -99,10 +99,9 @@ curl https://raw.githubusercontent.com/iotexproject/iotex-core/master/install-cl
 ## Usage and Examples
 Documentation of all ioctl commands with examples.
 
-## Config
-Commands for manipulating ioctl config file.       
-Available explorers: iotexscan, iotxplorer, custom\
-`VARIABLES: [endpoint, wallet, explorer, defaultacc]`
+## Config      
+`VARIABLES: [endpoint, wallet, explorer, defaultacc]`\
+`EXPLORERS: [iotexscan (default), iotxplorer, custom]`
 
 ### Set Config
 `
@@ -130,7 +129,6 @@ Config reset to default values
 ```
 
 ### Account
-Commands for managing blockchain accounts.
 
 #### Create Account(s)
 `Usage:
