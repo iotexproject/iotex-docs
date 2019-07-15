@@ -103,7 +103,7 @@ Documentation of all ioctl commands with examples.
 `VARIABLES: [endpoint, wallet, explorer, defaultacc]`\
 `EXPLORERS: [iotexscan (default), iotxplorer, custom]`
 
-### Set Config
+#### Set Config
 `
 Usage:
   ioctl config set VARIABLE VALUE`
@@ -112,7 +112,7 @@ Usage:
 endpoint is set to api.iotex.one:443
 ```
 
-### Get Config
+#### Get Config
 `Usage:
   ioctl config get VARIABLE | all`
 ```
@@ -120,7 +120,7 @@ endpoint is set to api.iotex.one:443
 /Users/IoTeX/.config/ioctl/default
 ```
 
-### Reset Config
+#### Reset Config
 `Usage:
   ioctl config reset`
 ```
@@ -128,7 +128,7 @@ endpoint is set to api.iotex.one:443
 Config reset to default values
 ```
 
-### Account
+## Account
 
 #### Create Account(s)
 `Usage:
@@ -270,8 +270,7 @@ io14gnqxf9dpkn05g337rl7eyt2nxasphf5m6n0rd - 0xAA260324ad0DA6FA2231f0FfEC916A99bb
 #IOsenser: Enter new password again
 Account #IOsenser has been updated.
 ```
-### Alias
-Commands to set aliases for address.
+## Alias
 
 #### Set Alias
 `Usage:
@@ -299,8 +298,7 @@ io1l3wc0smczyay8xq747e2hw63mzg3ctp6uf8wsg - test
 io14gnqxf9dpkn05g337rl7eyt2nxasphf5m6n0rd - whale
 ```
 
-### Action
-Commands for invoking actions on blockchain.
+## Action
 
 #### Transfer Tokens
 `Usage:
@@ -438,8 +436,7 @@ Wait for several seconds and query this action by hash:
 59a73e24a41385005519d1d1e7f164b36b98717f2c5649785b43c2588245502d
 ```
 
-### XRC20
-Commands to deal with XRC20.
+## XRC20
 
 #### Query Total Token Supply On Erc20 Contract
 `Usage:
@@ -546,8 +543,7 @@ Raw output: 0000000000000000000000000000000000000000000000000000000000000004
 Output in decimal: 4
 ```
 
-### Blockchain
-Commands to query blockchain.
+## Blockchain
 
 #### Query Blockchain Information
 `Usage:
@@ -598,8 +594,7 @@ Delta State Digest: 999003ad9f4ea85f45a8a3ebafcb8ad03c43852fbe8cce14aaf86bed9aed
 Hash: c9cac24ed4a782583526132cc266f3def121e34ad4c4244f8b045fdd2d82d4cc
 ```
 
-### Node
-Commands to query blockchain nodes.
+## Node
 
 #### Query Delegates
 `Usage:
@@ -641,8 +636,7 @@ io1nf0rvzgq3tqym6n3trttsrt7d4gqqsmqfzy0da      7           active   15       294
 io1t54nfdnpldaxkpm35f2gzh3rx6cakypmp5xfz5: 45819 IOTX
 ```
 
-### Update tools
-Commands to maintain ioctl.
+## Update tools
 
 #### Version
 `Usage:
