@@ -728,7 +728,7 @@ The XRC20 package provide facility api for XEC20 contract to Iotex blockchain.
 ```js
 import Antenna from "iotex-antenna";
 import BigNumber from "bignumber.js";
-import { XRC20 } from "iotex-antenna/lib/token";
+import { XRC20 } from "iotex-antenna/lib/token/xrc20";
 
 (async () => {
   const antenna = new Antenna("http://api.testnet.iotex.one:80");
@@ -763,7 +763,7 @@ import { XRC20 } from "iotex-antenna/lib/token";
     "io16acqxqlmaep6z96khs3ey2607sygnx3surn3ga",
     new BigNumber("1000000000000000000"),
     {
-      from: antenna.iotx.accounts[0],
+      account: antenna.iotx.accounts[0],
       gasPrice: "1000000000000",
       gasLimit: "50000"
     }
