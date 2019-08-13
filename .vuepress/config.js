@@ -1,5 +1,13 @@
 module.exports = {
-  plugins: ["tabs"],
+  plugins: [
+    [
+      "@vuepress/google-analytics",
+      {
+        ga: "UA-111756489-6" // UA-00000000-0
+      }
+    ],
+    "tabs"
+  ],
   locales: {
     "/": {
       lang: "en-US",
