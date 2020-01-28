@@ -23,6 +23,7 @@
     "url": "https://github.com/iotexproject/iotex-docs/issues"
   },
   "dependencies": {
+    "element-ui": "^2.13.0",
     "vue-tabs-component": "^1.5.0",
     "vuepress": "^1.2.0",
     "vuepress-plugin-tabs": "^0.2.2",
