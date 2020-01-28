@@ -4,7 +4,7 @@ heroImage: null
 heroText: null
 tagline: null
 mainTitle: "Documentation"
-subTitle: "Whether you’re a startup or a global enterprise, learn how to integrate with Stripe to accept payments and manage your business online."
+subTitle: "Whether you’re a startup or a global enterprise, learn how to integrate with IoTeX to empower IoT with privacy and trust."
 topCard:
   title: "Integrate faster with Stripe Checkout"
   content: "Redirect your customers to a Stripe-hosted payments page—prebuilt, safe, and responsive across web and mobile."
@@ -49,7 +49,7 @@ part2Body:
     link: ""
 part3Title: "Explore the developer tools"
 part3Body:
-  - title: "Stripe CLI"
+  - title: "ioctl CLI"
     isHead: true
     content: "Quickly bootstrap sample projects, send test mode API requests, debug webhooks and more, right from your terminal."
     link: ""
@@ -64,16 +64,12 @@ part3Body:
     content: "From PHP to React, we've got you covered."
     link: ""
     icon: "/img/icon-checkout.svg"
-  - title: "Stripe community"
+  - title: "IoTeX community"
     isHead: false
-    content: "Chat live with other developers in #stripe on freenode."
-    link: ""
+    content: "Chat live with other developers in our forum."
+    link: "https://community.iotex.io/"
     icon: "/img/icon-checkout.svg"
 ---
-
-::: warning
-该页尚未提供这个语言版本。我们正在加紧将我们的文档翻译成更多语言，很快将为您提供译文。
-:::
 
 <Home-Content />
 
