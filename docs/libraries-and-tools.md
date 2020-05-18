@@ -13,7 +13,7 @@ title: Libraries and Tools
 | account       | Yes                                                      | Yes                                                                | Yes                                                            | Yes                                                                  |
 | action        | Yes                                                      | Yes                                                                | Yes                                                            | Yes                                                                  |
 | contract      | Yes                                                      | Yes                                                                | Yes                                                            | Yes                                                                  |
-| token support | Yes                                                      | Yes                                                                | No                                                             | Yes                                                                  |
+| token support | Yes                                                      | Yes                                                                | Yes                                                            | Yes                                                                  |
 
 ### Installation
 
@@ -28,7 +28,7 @@ npm install iotex-antenna
 or add the following line to your html.
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/iotex-antenna@0.24.0/lib/iotex-antenna.browser.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/iotex-antenna@0.29.1/lib/iotex-antenna.browser.min.js"></script>
 ```
 
 #### Golang Project
@@ -44,7 +44,7 @@ go get -u github.com/iotexproject/iotex-antenna-go
 Using JS/Golang SDK
 
 1. [generate an account / recover an account from the private key](/docs/libraries-and-tools.html#account)
-1. [creating ]
+1. [generate a decentralized identity (DID)](/docs/libraries-and-tools.html#decentralized)
 1. [transfer tokens](/docs/libraries-and-tools.html#transfer)
 1. [run smart contracts](/docs/libraries-and-tools.html#smart-contract)
 1. [make RPC calls](/docs/libraries-and-tools.html#rpc-methods)
@@ -59,7 +59,7 @@ Reference Doc
 
 [iotex-antenna](https://iotexproject.github.io/iotex-antenna/)
 
-Having questions? Ask in [our gitter chat room](https://gitter.im/iotex-dev-community/Lobby).
+Having questions? Ask in [our Discord channel](https://discord.com/channels/534888542648664074/549879942775701505).
 
 ## Account
 
@@ -263,7 +263,7 @@ func main() {
 
 ::::
 
-To see the result of the transfer action, you can either go to `https://iotexscan.io/action/:actionHash` or query like
+To see the result of the transfer action, you can either go to `https://iotexscan.io/action/actionHash` or query like
 
 :::: tabs
 
@@ -870,7 +870,7 @@ import { XRC20 } from "iotex-antenna/lib/token/xrc20";
 
 ## Working with Desktop Wallet
 
-In the client-side, use iotex-antenna@^0.22.0. Here is an example of setting up WsSignerPlugin to connect to the wallet. It is nothing more than applying the plugin when initializing Antenna instance, and NOT adding your private key to the SDK as specified in the earlier documentation.
+In the client-side, use iotex-antenna@0.29.1. Here is an example of setting up WsSignerPlugin to connect to the wallet. It is nothing more than applying the plugin when initializing Antenna instance, and NOT adding your private key to the SDK as specified in the earlier documentation.
 
 Before receiving the transfer or the contract call above, please open and unlock your wallet. Once the wallet is ready, you can run the script below in both the browser and the node environment, and then you can see the message to sign. Please click "Yes, sign transaction" to continue.
 
