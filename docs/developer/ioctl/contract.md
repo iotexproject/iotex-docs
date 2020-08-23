@@ -174,11 +174,12 @@ return 0000000000000000000000000000000000000000000000000000000000000000
 Output:
 return 000000000000000000000000c7f43fab2ca353d29ce0da04851ab74f45b09593
 ```
-## Share local files to your IoTex IDE for developing, deploying and debugging of native IoTeX smart contract
+## Share local files with IoTeX IDE
 
 `Usage: ioctl contract share LOCAL_FOLDER_PATH [--iotex-ide YOUR_IOTEX_IDE_URL_INSTANCE]`
 
-LOCAL_FOLDER_PATH can be absolute or relatively. --iote-ide flag defaults to https://ide.iotex.io.
+LOCAL_FOLDER_PATH can be absolute or relatively. --iotex-ide flag defaults to https://ide.iotex.io.
+
 
 ```
 →  ioctl contract share ioctl 
