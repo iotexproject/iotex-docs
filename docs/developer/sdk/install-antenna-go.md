@@ -11,5 +11,5 @@ go get -u github.com/iotexproject/iotex-antenna-go
 ```
 
 :::tip
-See [Code Examples](account-create.md#golang) section for most common SDK use case in Go.
+See [Code Examples](/developer/examples/chain-info) section for most common SDK use case in Go.
 :::

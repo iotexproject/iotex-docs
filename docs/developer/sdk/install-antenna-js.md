@@ -18,7 +18,7 @@ or add the following line to your html.
 
 :::tip
 
-- See [Code Examples](account-create.md#js) section for most common SDK use case in Javascript.
+- See [Code Examples](/developer/examples/chain-info) section for most common SDK use case in Javascript.
 
 - Find the reference documentation on [iotex-antenna GitHub repository.](https://iotexproject.github.io/iotex-antenna/)
   :::

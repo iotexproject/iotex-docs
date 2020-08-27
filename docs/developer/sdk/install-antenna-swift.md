@@ -12,6 +12,6 @@ pod 'iotex-antenna-swift', '~> 0.1'
 
 :::tip
 
-- See [Code Examples](account-create.md#swift) section for most common SDK use case in Javascript.
+- See [Code Examples](/developer/examples/chain-info) section for most common SDK use case in Javascript.
 
 :::
