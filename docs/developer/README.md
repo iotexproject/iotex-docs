@@ -9,10 +9,12 @@ part1Title: "Build your IoTeX Integration"
 part1Body:
   - title: "Smart Contracts"
     content: "Exchange any asset or implement any logic in a transparent, decentralized fashion with IoTeX smart contracts."
-    link: "/developer/sdk/smart-contracts"
+    link: "/developer/smart-contracts/introduction"
     sublinks:
       - url: "https://ide.iotex.io"
         text: "IoTeX Studio"
+      - text: "Issue Tokens"
+        url: "smart-contracts/issue-tokens"
       - text: "Faucets"
         url: "more/faucets"
     icon: "/img/icon_project_dapp.svg"

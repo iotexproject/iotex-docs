@@ -115,6 +115,17 @@ module.exports = {
                   ]
                 },
                 {
+                  title: "Smart Contracts",
+                  path: "/developer/smart-contracts/introduction",
+                  sidebarDepth: 0,
+                  collapsable: true,
+                  children: [
+                    "/developer/smart-contracts/introduction",
+                    "/developer/smart-contracts/issue-tokens",
+                    "/developer/smart-contracts/token-metadata"
+                  ]
+                },
+                {
                   title: "Antenna SDKs",
                   path: "/developer/sdk/overview",
                   sidebarDepth: 0,
