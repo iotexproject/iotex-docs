@@ -130,18 +130,13 @@ module.exports = {
                 },
                 {
                   title: "Code Examples",
-                  path: "/developer/sdk/account-create",
+                  path: "/developer/examples/chain-info",
                   sidebarDepth: 0,
                   collapsable: true,
                   children: [
-                    "developer/sdk/account-create",
-                    "developer/sdk/transfer",
-                    "developer/sdk/smart-contracts",
-                    "developer/sdk/xrc20",
-                    "developer/sdk/did",
-                    "developer/sdk/rpc",
-                    "developer/sdk/iopay-integrate",
-                    "developer/sdk/iopay-login"
+                    "/developer/examples/chain-info",
+                    "/developer/examples/open-oracle",
+                    "/developer/examples/xrc20-deploy"
                   ]
                 },
                 {
