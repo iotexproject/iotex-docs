@@ -79,12 +79,43 @@ unstakeStartTime: none
 }
 ```
 
-## Query Staking BucketList By Address
+## Query Staking BucketList By Candidate
 
-`Usage: ioctl bc bucketlist [ALIAS|ADDRESS]`
+`Usage: ioctl bc bucketlist cand [CANDIDATE_NAME] [OFFSET] [LIMIT]`
 
 ```
-➜  ioctl bc bucketlist tmp2
+➜  ioctl bc bucketlist cand longz 0 10
+Blockchain Node: api.testnet.iotex.one:443
+{
+index: 34
+owner: io120au9ra0nffdle04jx2g5gccn6gq8qd4fy03l4
+candidate: io1t56twy23yjuqscljpjc869hyqw3gpswwj0g228
+stakedAmount: 100 IOTX
+stakedDuration: 7 days
+autoStake: false
+createTime: 2020-05-11T06:41:20Z
+stakeStartTime: 2020-05-11T06:41:20Z
+unstakeStartTime: none
+}
+{
+index: 43
+owner: io120au9ra0nffdle04jx2g5gccn6gq8qd4fy03l4
+candidate: io1l40dc4q95fsjdprhcga5qrpdsj46q3wpzr27n9
+stakedAmount: 170 IOTX
+stakedDuration: 14 days
+autoStake: false
+createTime: 2020-05-14T02:42:15Z
+stakeStartTime: 2020-05-14T02:42:15Z
+unstakeStartTime: none
+}
+```
+
+## Query Staking BucketList By Voter
+
+`Usage: ioctl bc bucketlist voter [VOTER_ADDRESS] [OFFSET] [LIMIT]`
+
+```
+➜  ioctl bc bucketlist voter tmp2 0 10
 Blockchain Node: api.testnet.iotex.one:443
 {
 index: 34
