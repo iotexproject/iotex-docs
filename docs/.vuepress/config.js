@@ -136,7 +136,13 @@ module.exports = {
                     "developer/sdk/install-antenna-go",
                     "developer/sdk/install-antenna-swift",
                     "developer/sdk/install-antenna-java",
-                    "developer/sdk/install-antenna-c"
+                    "developer/sdk/install-antenna-c",
+                    "/developer/sdk/account-create",
+                    "/developer/sdk/transfer",
+                    "/developer/sdk/xrc20",
+                    "/developer/sdk/smart-contracts",
+                    "/developer/sdk/did",
+                    "/developer/sdk/rpc"
                   ]
                 },
                 {
