@@ -17,7 +17,7 @@ part1Body:
         url: "smart-contracts/issue-tokens"
       - text: "Faucets"
         url: "more/faucets"
-    icon: "/img/icon_project_dapp.svg"
+    icon: "/img/icon_contract.svg"
   - title: "Decentralized Identity"
     content: "Give your users the ability to create and control their identity. IoTeX DID applies to individuals, enterprises and devices!"
     link: "/developer/did/overview"
