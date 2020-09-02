@@ -35,7 +35,15 @@ part1Body:
         text: "Rosetta API"
       - url: "/developer/integrations/guide"
         text: "General guide"
-    icon: "/img/icon_exchanges.svg"
+    icon: "/img/icon_exchange  - title: "IoTube Ethereum Bridge"
+    content: "Extend the reach of your ERC20 Token to the IoTeX Blockchain to run transactions-intensive tasks"
+    link: "https://github.com/iotexproject/ioTube"
+    sublinks:
+      - url: "https://github.com/iotexproject/iotube/issues/new?body=%3C%21--%0APlease+only+use+this+template+for+submitting+new+ERC20+tokens+you+would+like+to+be+added+to+https%3A%2F%2Ftube.iotex.io%0A--%3E%0A%0A+**What%27s+the+ERC20+token+address%3F**%0A%0A**Additional+comments**%3A&title=New+ERC20+Token+Submission"
+        text: "Submit your Token"
+      - url: "https://tube.iotex.io"
+        text: "IoTube App"
+    icon: "/img/icon_iotube.svg"
 
 part2TopCard:
   title: "ioctl Command Line Client"
