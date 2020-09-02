@@ -35,7 +35,7 @@ part1Body:
         text: "Rosetta API"
       - url: "/developer/integrations/guide"
         text: "General guide"
-    icon: "/img/icon_exchange"
+    icon: "/img/icon_exchanges.svg"
   - title: "IoTube Ethereum Bridge"
     content: "Extend the reach of your ERC20 Token to the IoTeX Blockchain to run transactions-intensive tasks"
     link: "https://github.com/iotexproject/ioTube"
