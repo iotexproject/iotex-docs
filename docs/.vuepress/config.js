@@ -157,15 +157,11 @@ module.exports = {
                   ]
                 },
                 {
-                  title: "Pylon dApp Starter",
-                  path: "/developer/pylon/introduction",
+                  title: "IoTeX dApp Starter",
+                  path: "/developer/dapp-starter/introduction",
                   sidebarDepth: 0,
                   collapsable: true,
-                  children: [
-                    "/developer/pylon/introduction",
-                    "/developer/pylon/guides",
-                    "/developer/pylon/code-review-checklist"
-                  ]
+                  children: ["developer/dapp-starter/introduction"]
                 },
                 {
                   title: "Middleware",
