@@ -16,9 +16,13 @@ or add the following line to your html.
 <script src="https://cdn.jsdelivr.net/npm/iotex-antenna@0.29.1/lib/iotex-antenna.browser.min.js"></script>
 ```
 
-:::tip
+:::tip TIPS
 
-- See [Code Examples](/developer/examples/chain-info) section for most common SDK use case in Javascript.
+- [AntennaUtils](https://github.com/iotexproject/iotex-dapp-sample/blob/master/src/common/utils/antanna.ts) is a library with ready-made utility functions
 
-- Find the reference documentation on [iotex-antenna GitHub repository.](https://iotexproject.github.io/iotex-antenna/)
+* [Code Examples](/developer/examples/chain-info) is the docs section for most common SDK use cases in Javascript.
+
+* [Integrate IoPay Wallet](/developer/sdk/iopay-integrate.html) is the docs section explaining how to integrate your client with [IoPay Wallet](https://iopay.iotex.io)
+
+* [Antenna-JS Reference](https://iotexproject.github.io/iotex-antenna/) is the reference documentation for Antenna-JS
   :::

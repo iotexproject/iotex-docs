@@ -1,14 +1,20 @@
 ---
-title: Integrate with IoPay Wallet
+title: Integrate IoPay Wallet
 ---
 
 ## Integrate with ioPay Desktop
 
 In the client-side, use `iotex-antenna@latest`package. Below is an example of setting up WsSignerPlugin to connect to the wallet: it is nothing more than passing the plugin as a dependency when calling the Antenna object constructor.
 
-::: danger
-**Do Not** add any private key in the code.
-:::
+:::tip IoPay Wallet Plugins
+You can also import the following plugins to interact with IoPay Wallet:
+
+- For IoPay Desktop:
+  [https://github.com/iotexproject/iotex-dapp-sample/blob/master/src/common/utils/ws-plugin.ts](https://github.com/iotexproject/iotex-dapp-sample/blob/master/src/common/utils/ws-plugin.ts)
+
+- For IoPay Mobile:
+  [https://github.com/iotexproject/iotex-dapp-sample/blob/master/src/common/utils/js-plugin.ts](https://github.com/iotexproject/iotex-dapp-sample/blob/master/src/common/utils/js-plugin.ts)
+  :::
 
 ### Client-side
 

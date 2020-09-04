@@ -141,6 +141,7 @@ module.exports = {
                     "/developer/sdk/transfer",
                     "/developer/sdk/xrc20",
                     "/developer/sdk/smart-contracts",
+                    "/developer/sdk/iopay-integrate",
                     "/developer/sdk/did",
                     "/developer/sdk/rpc"
                   ]
