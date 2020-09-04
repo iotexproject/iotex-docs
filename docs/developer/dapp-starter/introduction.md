@@ -4,9 +4,9 @@ title: Overview
 
 # IoTeX dApp Starter
 
-Building any new project from scratch can be intimidating: if you are undecided about where to start and what libraries you need to kickstart your IoTeX dApp, you can use the IoTeX dApp starter as a starting point. Here are the features you’ll find in the starter out-of-box:
+Building any new project from scratch can be intimidating: if you are undecided about where to start and what libraries you need for your IoTeX dApp, you can use the IoTeX Sample dApp as a starting point. Here are the features you’ll find in the starter out-of-box:
 
-- Nest + React + Redux as a full stack
+- Nest + React + Redux stack
 - Integration with latest IoTeX antenna SDK
 - Integration with IoPay Wallet
 - Get wallet balance example
@@ -29,4 +29,18 @@ see the demo app at [localhost:3000](http://localhost:3000) and start adding you
 
 :::tip Antenna-JS Docs
 Check out [Antenna-JS documentaion section](http://localhost:8080/developer/sdk/install-antenna-js.html) to start developing your IoTeX dApp!
+:::
+
+:::tip More reference docs
+⟩ nestjs: [https://docs.nestjs.com/](https://docs.nestjs.com/)
+
+⟩ mobx: [https://mobx.js.org/README.html](https://mobx.js.org/README.html)
+
+⟩ tailwindcss: [https://tailwindcss.com/docs/installation/](https://tailwindcss.com/docs/installation/)
+
+⟩ razzle: [https://github.com/jaredpalmer/razzle](https://github.com/jaredpalmer/razzle)
+
+⟩ ReduxDevTools: [https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
+
+⟩ wildcard-api: [https://github.com/reframejs/wildcard-api](https://github.com/reframejs/wildcard-api)
 :::
