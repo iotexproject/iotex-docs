@@ -190,7 +190,7 @@ module.exports = {
                   collapsable: false
                 },
                 {
-                  title: "Pebble Tracker",
+                  title: "IoTeX Edge Oracle",
                   path: "/developer/hardware/pebble",
                   sidebarDepth: 0,
                   collapsable: true,
