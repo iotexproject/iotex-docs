@@ -28,7 +28,7 @@ npm run dev
 see the demo app at [localhost:3000](http://localhost:3000) and start adding your features!
 
 :::tip Antenna-JS Docs
-Check out [Antenna-JS documentaion section](http://localhost:8080/developer/sdk/install-antenna-js.html) to start developing your IoTeX dApp!
+Check out [Antenna-JS documentaion section](/developer/sdk/install-antenna-js.html) to start developing your IoTeX dApp!
 :::
 
 :::tip More reference docs
