@@ -10,6 +10,10 @@ module.exports = {
     }
   },
   plugins: [
+    "@vuepress/vuepress-plugin-katex",
+    {
+      delimiters: "dollars"
+    },
     "@vuepress/back-to-top",
     [
       "@vuepress/google-analytics",
@@ -80,6 +84,7 @@ module.exports = {
                   path: "/introduction/account-concept",
                   children: [
                     "introduction/account-concept",
+                    "introduction/IOTX-token-concept",
                     "introduction/private-key-concept",
                     "introduction/node-concept",
                     "introduction/action-concept",
