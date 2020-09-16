@@ -1,8 +1,8 @@
 ---
-title: Overview
+title: IoTeX dApp Sample
 ---
 
-# IoTeX dApp Starter
+# IoTeX dApp Sample
 
 Building any new project from scratch can be intimidating: if you are undecided about where to start and what libraries you need for your IoTeX dApp, you can use the IoTeX Sample dApp as a starting point. Here are the features you’ll find in the starter out-of-box:
 

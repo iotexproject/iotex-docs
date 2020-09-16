@@ -167,7 +167,10 @@ module.exports = {
                   path: "/developer/dapp-starter/introduction",
                   sidebarDepth: 0,
                   collapsable: true,
-                  children: ["developer/dapp-starter/introduction"]
+                  children: [
+                    "developer/dapp-starter/introduction",
+                    "developer/dapp-starter/pylon"
+                  ]
                 },
                 {
                   title: "Middleware",
