@@ -1,10 +1,10 @@
 ---
-title: Pebble Tracker
+title: Overview
 ---
 
 # Pebble Tracker Edge Oracle
 
-## Overview
+# Overview
 
 IoTeX's Pebble Tracker meets the demand of applications that require strong data security, integrity protection, and multiparty trust across the entire supply chain. Existing asset tracking solutions lack critical security features, rendering them easily hackable and exposed to data corruption.
 
@@ -21,5 +21,5 @@ There are two versions of Pebble Tracker. The first targets blockchain and IoT d
 ::: tip
 For more info about Pebble Tracker check out this [article from Nordic Semiconductor](https://www.nordicsemi.com/News/2020/02/IoTeXs-Cellular-IoT-based-tracker-delivers-environmental-and-condition-data-for-assets-in-transit).
 
-**Stay tuned for the upcoming release of Pebble Tracker in Q3 2020!**
+**Stay tuned for the upcoming release of Pebble Tracker in Q4 2020!**
 :::
