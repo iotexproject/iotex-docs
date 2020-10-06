@@ -72,7 +72,7 @@ Wait for several seconds and query this action by hash:iotexscan.io/action/xxx..
 `Usage: ioctl contract deploy bytecode BYTECODE [ABI_PATH INIT_INPUT]`
 
 ```
-➜  ioctl contract deploy bytecode 0x1bfc56c6... -s yqr
+➜  ioctl contract deploy bytecode 60806040523480156100105760008... -s yqr
 Output:
 ...
 version: 1  nonce: 144  gasLimit: 745466  gasPrice: 0.000001 IOTX
@@ -144,14 +144,13 @@ execution: <
 `Usage: ioctl contract invoke bytecode (CONTRACT_ADDRESS|ALIAS) PACKED_ARGUMENTS [AMOUNT_IOTX]`
 
 ```
-→  ioctl contract deploy bytecode 0x1bfc56c6... -s yqr
+→  ioctl contract invoke bytecode io1hp6y... b5060409 0 -s yqr -l 1000000
 Output:
-version: 1  nonce: 147  gasLimit: 45600  gasPrice: 0.000001 IOTX
-senderAddress: io1cl6rl2ev5dfa988qmgzg2x4hfazmp9vn2g66ng (yqr)
+version: 1  nonce: 1  gasLimit: 1000000  gasPrice: 0.000001 IOTX
+senderAddress: io1a8r9fvu6e3vthfaqvnxlhc6eavsm6t8a2cwtud (devaccount)
 execution: <
-  contract: io1h8zxmdacge966wp6t90a02ncghaa6eptnftfqr (m)
-  amount: 2 IOTX
-  data: 02c4bc47000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000
+  contract: io1hp6y4eqr90j7tmul4w2wa8pm7wx462hq0mg4tw
+  data: b5060409
 ...
 ```
 
@@ -174,15 +173,15 @@ return 0000000000000000000000000000000000000000000000000000000000000000
 Output:
 return 000000000000000000000000c7f43fab2ca353d29ce0da04851ab74f45b09593
 ```
+
 ## Share local files with IoTeX IDE
 
 `Usage: ioctl contract share LOCAL_FOLDER_PATH [--iotex-ide YOUR_IOTEX_IDE_URL_INSTANCE]`
 
 LOCAL_FOLDER_PATH can be absolute or relatively. --iotex-ide flag defaults to https://ide.iotex.io.
 
-
 ```
-→  ioctl contract share ioctl 
+→  ioctl contract share ioctl
 Output:
 2020/08/22 16:45:00 Listening on 127.0.0.1:65520, Please open your IDE ( https://ide.iotex.io ) to connect to local files
 2020/08/22 16:45:05 share :ioctl/client.go
