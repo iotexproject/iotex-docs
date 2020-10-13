@@ -1,5 +1,5 @@
 ---
-title: Deploy Smart Contracts
+title: Interact with Smart Contracts
 ---
 
 # Deploy Smart Contracts
