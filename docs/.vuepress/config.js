@@ -163,7 +163,7 @@ module.exports = {
                   ]
                 },
                 {
-                  title: "IoTeX dApp Saple",
+                  title: "IoTeX dApp Sapmle",
                   path: "/developer/dapp-starter/introduction",
                   sidebarDepth: 0,
                   collapsable: true,
