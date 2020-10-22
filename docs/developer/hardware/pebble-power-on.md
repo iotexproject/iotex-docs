@@ -23,7 +23,8 @@ Relevant slots, connectors and switches on Pebble tracker include the following:
 
 - SIM card slot: this is a micro-SIM slot where you can insert any IoT SIM card. Pebble tracker supports both LTE and NB-IoT standards, but it's shipped with NB-IoT firmware. If you need LTE support then you will be required to flash the refpective LTE firmware (see [TODO]).
 - Data port
-  ![](/img/developer/pebble-layout.jpg)
+
+![](/img/developer/pebble-layout.jpg)
 
 ## Connecting the GPS Antenna
 

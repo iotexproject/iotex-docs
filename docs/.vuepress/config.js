@@ -10,6 +10,18 @@ module.exports = {
     }
   },
   plugins: [
+    [
+      "vuepress-plugin-medium-zoom",
+      {
+        selector: ".theme-default-content img",
+        delay: 1000,
+        options: {
+          margin: 24,
+          background: "#000000",
+          scrollOffset: 0
+        }
+      }
+    ],
     "@vuepress/vuepress-plugin-katex",
     {
       delimiters: "dollars"
