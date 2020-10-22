@@ -84,7 +84,7 @@ Download the ARM embedded compiler toolchain and set environment variables
 cd ~
 wget https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu-rm/9-2020q2/gcc-arm-none-eabi-9-2020-q2-update-x86_64-linux.tar.bz2
 tar -jxvf gcc-arm-none-eabi-9-2020-q2-update-x86_64-linux.tar.bz2
-mv gcc-arm-none-eabi-9-2020-q2-update-x86_64 gnuarmemb
+mv gcc-arm-none-eabi-9-2020-q2-update gnuarmemb
 echo 'export ZEPHYR_TOOLCHAIN_VARIANT=gnuarmemb' >> ~/.zephyrrc
 echo 'export GNUARMEMB_TOOLCHAIN_PATH="~/gnuarmemb"' >> ~/.zephyrrc
 ```
