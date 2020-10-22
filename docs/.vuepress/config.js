@@ -10,6 +10,10 @@ module.exports = {
     }
   },
   plugins: [
+    "@vuepress/vuepress-plugin-katex",
+    {
+      delimiters: "dollars"
+    },
     [
       "vuepress-plugin-medium-zoom",
       {
@@ -22,10 +26,6 @@ module.exports = {
         }
       }
     ],
-    "@vuepress/vuepress-plugin-katex",
-    {
-      delimiters: "dollars"
-    },
     "@vuepress/back-to-top",
     [
       "@vuepress/google-analytics",
@@ -219,10 +219,11 @@ module.exports = {
                     "developer/hardware/pebble",
                     "developer/hardware/pebble-data-specs",
                     "developer/hardware/pebble-power-on",
+                    "developer/hardware/pebble-build",
                     "developer/hardware/pebble-flash",
-                    "developer/hardware/pebble-certificates",
                     "developer/hardware/pebble-backend",
-                    "developer/hardware/pebble-blockchain"
+                    "developer/hardware/pebble-blockchain",
+                    "developer/hardware/pebble-certificates"
 
                     // "developer/hardware/pebble-dashboard" //needs update
                   ]

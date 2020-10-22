@@ -1,8 +1,8 @@
 ---
-title: Connect with AWS IoT Core
+title: Integrate with AWS IoT Core
 ---
 
-# Connect Pebble with AWS IoT Core
+# Integrate Pebble with AWS IoT Core
 
 This document describes the process for connecting Pebble with the AWS IoT Core and validating that the connection has been established successfully.
 

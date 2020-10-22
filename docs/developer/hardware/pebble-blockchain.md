@@ -1,8 +1,8 @@
 ---
-title: Integration with IoTeX blockchain
+title: Integrate with IoTeX blockchain
 ---
 
-# Integration with IoTeX blockchain
+# Integrate with IoTeX blockchain
 
 We use the Rule Engine of Thingsboard to send messages to the blockchain:
 
