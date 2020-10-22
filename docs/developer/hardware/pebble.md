@@ -2,7 +2,7 @@
 title: Overview
 ---
 
-# Pebble Tracker Edge Oracle
+# Pebble Tracker
 
 # Overview
 

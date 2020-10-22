@@ -199,13 +199,14 @@ module.exports = {
                   collapsable: false
                 },
                 {
-                  title: "IoTeX Edge Oracle",
+                  title: "Pebble Tracker",
                   path: "/developer/hardware/pebble",
                   sidebarDepth: 0,
                   collapsable: true,
                   children: [
                     "developer/hardware/pebble",
-                    "developer/hardware/pebble-data-specs"
+                    "developer/hardware/pebble-data-specs",
+                    "developer/hardware/pebble-power-on"
 
                     // "developer/hardware/pebble-dashboard" //needs update
                   ]
