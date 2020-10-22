@@ -1,5 +1,5 @@
 ---
-title: Assemble and Turn on
+title: Assemble and Power on
 ---
 
 # Assemble and Turn on your Pebble Tracker
