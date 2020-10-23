@@ -3,7 +3,7 @@ module.exports = {
     "@gateway": "introduction/node-concept"
   },
   markdown: {
-    lineNumbers: false,
+    lineNumbers: true,
     extendMarkdown: md => {
       // use more markdown-it plugins!
       md.use(require("markdown-it-katex"));
