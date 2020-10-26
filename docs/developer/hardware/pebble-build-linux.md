@@ -1,14 +1,12 @@
 ---
-title: Develop and Build the Firmware
+title: Develop and Build the Pebble Firmware (Linux)
 ---
 
-# Develop and Build the Pebble Firmware
+# Develop and Build the Pebble Firmware (Linux)
 
 [[toc]]
 
-## Linux
-
-### Install Dependencies
+## Install Dependencies
 
 If required, update your system:
 
@@ -67,9 +65,7 @@ Make sure Python version number is higher than 3.6
 python3 --version
 ```
 
-### Install Compiler Toolchain
-
-One can follow the steps below to install the compiler toolchain.
+## Install Compiler Toolchain
 
 Download the ARM embedded compiler toolchain and set environment variables
 
@@ -126,7 +122,7 @@ source ~/.bashrc
 west --version
 ```
 
-### Compile Project with Command Line
+## Compile Project with Command Line
 
 Before trying to build the project you must set required environment variables for Zephyr, to do so you can run:
 
@@ -153,7 +149,7 @@ west build -b thingy91_nrf9160ns
 
 After the project is compiled successfully, you can flash the new Pebble firmware that is available at `~/pebble-firmware/2020poc/nrf/applications/asset_tracker/build/zephyr/merged.hex`.
 
-### [Optional] Configure the project before the build
+## [Optional] Configure the project before the build
 
 Optionally, the project can be configured before the build with the following command:
 
