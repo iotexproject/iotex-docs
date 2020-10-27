@@ -6,137 +6,125 @@ title: Develop and Build the Pebble Firmware (Windows)
 
 [[toc]]
 
-## Install Dependencies
+## Download and Install nRF Connect for Desktop
 
-Dependencies on Windows can be installed using Chocolatey a packacge manager.
+The best way to install the toolchain for building Pebble Tracker firmware on Windows is to use the nRF Connect tool from Nordic Semiconductor:
 
-In the Windows Start menu type "power" then right-click "Power Shell" app and "Run as Administrator, to open a command prompt with administrative privileges.
+- [download nRF Connect 3.6.0](https://www.nordicsemi.com/-/media/Software-and-other-downloads/Desktop-software/nRF-Connect-for-Desktop/3-6-0/nrfconnectsetup360ia32.exe)
 
-Run the following command in the shell:
+- Install and run nRF Connect on your Windows machine
 
-```sh
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+## Install required tools
+
+Before installing the SDK, you need to install some required tools in your system. You can do that by following the "Getting Started Assistant" of the nRF Connect tool:
+
+Launch **nRF Connect** tool you just installed and open **Getting Started Assistant**:
+
+![](/img/developer/pebble-sdk/firmware_fig2.png)
+
+Install the required tools following the step by step instructions from the **Install the Toolchain** section - ignore the other sections:
+
+![](/img/developer/pebble-sdk/firmware_fig3.png)
+
+Close the Getting Started Assistant window when finished.
+
+## Install the SDK
+
+After the requirements have been installed we can proceed with the installation of the SDK:
+
+From the **nRF Connect** tool again open **Toolchain Manager**:
+
+![](/img/developer/pebble-sdk/firmware_fig4.png)
+
+Choose to install **nRF Connect SDK v1.3.0**, confirm the installation default path, and wait for the installation to complete (this will require some time):
+
+![](/img/developer/pebble-sdk/firmware_fig5.png)
+
+When the SDK installation is complete, you should find it installed in `%userprofile%/ncs`, where `%userprofile%` stands for your user home directory in Windows.
+
+## Get the Pebble Firmware source code
+
+Open a command prompt (search for `cmd.exe`in your Windows Start menu), and in the terminal type the following command to clone the Pebble Firmware repository:
+
 ```
-
-wait a few seconds for the command to complete, if no errors appear then Chocolatey is ready to be used!
-
-Open an Administrator Command Prompt window: press the Windows key, type “cmd.exe”, right-click the result, and choose “Run as Administrator”.
-
-Disable global confirmation to avoid having to confirm installation of individual programs:
-
-```sh
-choco feature enable -n allowGlobalConfirmation
-```
-
-Use choco to install dependencies:
-
-```sh
-choco install cmake --installargs 'ADD_CMAKE_TO_PATH=System'
-choco install ninja gperf python git wget unzip visualstudio2019buildtools
-```
-
-Install west:
-
-```
-pip3 install west # Requires administrative privileges
-```
-
-Open a new cmd.exe window as a regular user to continue.
-
-## Install Compiler Toolchain
-
-Download the ARM embedded compiler toolchain and set environment variables
-
-```sh
-cd %HOMEPATH%
-# Download the package
-wget https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu-rm/9-2020q2/gcc-arm-none-eabi-9-2020-q2-update-win32.zip
-# Extract
-unzip gcc-arm-none-eabi-9-2020-q2-update-win32.zip -d c:\gnuarmemb
-
-# Create %HOMEPATH%\zephyrrc.cmd for easy env variables management
-echo set ZEPHYR_TOOLCHAIN_VARIANT=gnuarmemb >> %HOMEPATH%\zephyrrc.cmd
-echo set GNUARMEMB_TOOLCHAIN_PATH=c:\gnuarmemb >> %HOMEPATH%\zephyrrc.cmd
-```
-
-Clone the Pebble-Firmware IoTeX repository:
-
-```sh
+cd %userprofile%
 git clone https://github.com/iotexproject/pebble-firmware.git
 ```
 
-Clone the Zephyr SDK repository:
+delete the asset_tracker demo application folder that comes pre-installed with the SDK:
 
-```sh
-# Move to the firmware directory
-cd pebble-firmware/2020poc
-# Clone into the Zephyr directory
-git clone -b v2.3.0-rc1-ncs1 https://github.com/nrfconnect/sdk-zephyr zephyr
+```
+rmdir /s /q %userprofile%/ncs/v1.3.0/nrf/applications/asset_tracker
 ```
 
-Create a manifest-rev branch for West
+and replace it with the Pebble Tracker firmware application folder:
 
-```sh
-cd zephyr
-git branch manifest-rev
+```
+xcopy %userprofile%/pebble-firmware/2020poc/nrf/applications/asset_tracker %userprofile%/ncs/v1.3.0/nrf/applications /E /H
 ```
 
-Install python dependencies (run terminal as Administrator)
+## Build the firmware with Embedded Studio IDE
+
+- Download and install the [Embedded Studio IDE (v4.5.2)](https://www.segger.com/downloads/embedded-studio/Setup_EmbeddedStudio_ARM_v452_win_x64.exe)
+
+### Configure Embedded Studio Toolchain paths
+
+The compiler toolchain paths in Embedded Studio should be already set, just make sure they are configured as follows:
+
+- Launch the Embedded Studio IDE and choose "Options" under the "Tools" menu
+- Choose "nRF Connect" on the left side of the "Option" window
+- Locate "Directories" section and configure "GNU ARM Embedded Toolchain Directory" and "Zephyr Base" to the corresponding directories, respectively
+
+![](/img/developer/pebble-sdk/firmware_fig6.png)
+
+### Build the Pebble Tracker Application
+
+The Pebble App project is configured as follows:
+
+- Launch the Embedded Studio IDE and choose "Open nRF Connect SDK Project..." under the "File" menu
+- Configure the paths of "CMakeLists.txt" and "Board Directory" and set "Board Name" to "thingy91_nrf9160ns"
+  ![](/img/developer/pebble-sdk/firmware_fig7.png)
+
+## Build the Pebble Tracker Application using Command Line
+
+If you run into any troubles building the firmware application using Embedded Studio, you can try building the firmware using the command line first.
+
+To do so, locate and open the git-bash.exe terminal in your SDK folder:
+
+`ncs/v1.3.0/toolchain/git-bash.exe``
+
+in the terminal, move to the pebble tracker application folder and compile the application:
 
 ```sh
-cd %HOMEPATH%/pebble-firmware/2020poc
-
-pip3 install -r zephyr/scripts/requirements.txt
-pip3 install -r nrf/scripts/requirements.txt
-pip3 install -r bootloader/mcuboot/scripts/requirements.txt # Build Tools for Visual Studio are required for some requirements
-
-# Test the west command
-west --version
-```
-
-You can continue from a normal terminal window.
-
-## Compile Project with Command Line
-
-Before trying to build the project you must set required environment variables for Zephyr, to do so you can run:
-
-```sh
-# Load environment variables for the Zephyr SDK
-%userprofile%/pebble-firmware/2020poc/zephyr/zephyr-env.cmd
-```
-
-Among other things, this will also source your `%userprofie%/zephyrrc` where the arm toolchain environment variables are set: you can use this file to add any customization to the environment.
-
-:::warning
-Please notice that the environment variables will be lost if you close your terminal window: run `%userprofile%/pebble-firmware/2020poc/zephyr/zephyr-env.cmd` again to get them back
-:::
-
-The project can then be compiled with the following commands:
-
-```sh
-cd %userprofile%/pebble-firmware/2020poc/nrf/applications/asset_tracker
+cd %userprofile%/ncs/v1.3.0/nrf/applications/asset_tracker
 # Make sure to remove any previously created build directory
 rmdir /s /q build
 # Start the build process
-
+west build -b thingy91_nrf9160ns
 ```
 
 After the project is compiled successfully, you can flash the new Pebble firmware that is available at `~/pebble-firmware/2020poc/nrf/applications/asset_tracker/build/zephyr/merged.hex`.
 
-## [Optional] Configure the project before the build
+## Configure the firmware before the build
 
-Optionally, the project can be configured before the build with the following command:
+Optionally, firmware parameters (e.g. MQTT parameters) can be customized before building the software.
+
+### Configure the firmware in Embedded Studio
+
+From the Embedded Studio, before starting the build process, choose **Configure nRF Connect SDK Project...** int the **Project** menu, and choose **menuconfig** in the pop-up window. You can use the search box to quickly locate te parameters you want to customize, e.g. and search "mqtt" to customize MQTT specific parameters:
+
+![](/img/developer/pebble-sdk/firmware_fig8.png)
+
+### Configure the firmware from command line
+
+From command line, you can just run the following commands in the Firmware application folder
 
 ```sh
-# Load Zephyr env variables, if you haven't done so yet in the current session
-source ~/pebble-firmware/2020poc/zephyr/zephyr-env.sh
-
-# Move into the Pebble application directory
-cd ~/pebble-firmware/2020poc/nrf/applications/asset_tracker
-# Make sure to remove any pre-existing build directory
-rm -rf build/
-# Run configuration
+cd %userprofile%/ncs/v1.3.0/nrf/applications/asset_tracker
+# Make sure to remove any previously created build directory
+rmdir /s /q build
+# Start the command line configuration tool
 west build -t menuconfig -b thingy91_nrf9160ns
 ```
 
-this will start the configuration program that will allow you to interactively set all the build configuration values for the application.
+this will start the configuration program from command line, allowing you to interactively set all the build configuration values for the firmware.
