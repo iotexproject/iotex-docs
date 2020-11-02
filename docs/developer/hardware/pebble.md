@@ -34,3 +34,5 @@ Pebble Tracker includes a Multimode LTE-M/NB-IoT modem for celular communication
 ## 2D Drawing
 
 ![](/img/developer/pebble-drawing.jpg)
+
+Download [DXF](/pebble-top-view.dxf) | [PDF](/pebble-drawing.pdf)
