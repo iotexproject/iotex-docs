@@ -99,4 +99,4 @@ rmdir /s /q build
 west build -b thingy91_nrf9160ns
 ```
 
-After the project is compiled successfully, you can flash the new Pebble firmware that is available at `~/pebble-firmware/2020poc/nrf/applications/asset_tracker/build/zephyr/merged.hex`.
+After the project is compiled successfully, you can flash the new Pebble firmware that is available at `~/pebble-firmware/2020poc/nrf/applications/asset_tracker/build_thingy91_nrf9160ns/zephyr/app_signed.hex`.
