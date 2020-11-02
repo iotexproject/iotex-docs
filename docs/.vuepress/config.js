@@ -221,6 +221,7 @@ module.exports = {
                     "developer/hardware/pebble-power-on",
                     "/developer/hardware/pebble-build-linux",
                     "/developer/hardware/pebble-build-windows",
+                    "/developer/hardware/pebble-configure",
                     "developer/hardware/pebble-flash",
                     "developer/hardware/pebble-backend",
                     "developer/hardware/pebble-blockchain",
