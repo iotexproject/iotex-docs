@@ -65,6 +65,42 @@ Make sure Python version number is higher than 3.6
 python3 --version
 ```
 
+## Install the Nordic SDK
+
+the Nordic SDK is managed by the `west`tool, so we first need to install **west**: open a terminal and type
+
+```sh
+# Install west
+pip3 install --user -U west
+# Make sure the `west`executable is in front of your PATH:
+echo 'export PATH=~/.local/bin:"$PATH"' >> ~/.bashrc
+source ~/.bashrc
+# Check that west is correctly installed
+west --version
+```
+
+In your home directory, crate a folder named `ncs`: we will install the SDK there:
+
+```sh
+mkdir ~/ncs
+cd ~/ncs
+# Initialize the folder
+west init -m https://github.com/nrfconnect/sdk-nrf --mr v1.3.0
+# Download all required repositories
+west update
+# Export a Zephyr CMake package. This allows CMake to automatically load the boilerplate code required for building nRF Connect SDK applications:
+west zephyr-export
+```
+
+Install required python dependencies
+
+```sh
+pip3 install -r zephyr/scripts/requirements.txt
+pip3 install -r nrf/scripts/requirements.txt
+pip3 install -r bootloader/mcuboot/scripts/requirements.txt
+
+```
+
 ## Install Compiler Toolchain
 
 Download the ARM embedded compiler toolchain and set environment variables
@@ -89,80 +125,32 @@ Clone the Pebble-Firmware IoTeX repository:
 git clone https://github.com/iotexproject/pebble-firmware.git
 ```
 
-Clone the Zephyr SDK repository:
-
-```sh
-# Move to the firmware directory
-cd pebble-firmware/2020poc
-# Clone into the Zephyr directory
-git clone -b v2.3.0-rc1-ncs1 https://github.com/nrfconnect/sdk-zephyr zephyr
-```
-
-Create a manifest-rev branch for West
-
-```sh
-cd zephyr
-git branch manifest-rev
-```
-
-Install python dependencies
-
-```sh
-cd ~/pebble-firmware/2020poc
-
-pip3 install -r zephyr/scripts/requirements.txt
-pip3 install -r nrf/scripts/requirements.txt
-pip3 install -r bootloader/mcuboot/scripts/requirements.txt
-
-# Make sure the `west`executable is in front of your PATH:
-echo 'export PATH=~/.local/bin:"$PATH"' >> ~/.bashrc
-source ~/.bashrc
-
-# Test the west command
-west --version
-```
-
 ## Compile Project with Command Line
 
 Before trying to build the project you must set required environment variables for Zephyr, to do so you can run:
 
 ```sh
 # Load environment variables for the Zephyr SDK
-source ~/pebble-firmware/2020poc/zephyr/zephyr-env.sh
+source ~/ncs/zephyr/zephyr-env.sh
 ```
 
 Among other things, this will also source your `~/.zephyrrc` where the arm toolchain environment variables are set: you can use this file to add any customization to the environment.
 
 :::warning
-Please notice that the environment variables will be lost if you close your terminal window: run `source ~/pebble-firmware/2020poc/zephyr/zephyr-env.sh` again to get them back
+Please notice that the environment variables will be lost if you close your terminal window: run `source ~/ncs/zephyr/zephyr-env.sh` again to get them back
 :::
 
 The project can then be compiled with the following commands:
 
 ```sh
-cd ~/pebble-firmware/2020poc/nrf/applications/asset_tracker
+cd ~
 # Make sure to remove any previously created build directory
 rm -rf build/
 # Start the build process
-west build -b thingy91_nrf9160ns
+west build -b thingy91_nrf9160ns ~/pebble-firmware/nrf/applications/asset_tracker/
 ```
 
-After the project is compiled successfully, you can flash the new Pebble firmware that is available at `~/pebble-firmware/2020poc/nrf/applications/asset_tracker/build/zephyr/merged.hex`.
+After the project is compiled successfully, you can flash the new Pebble firmware that is available at `~/build/zephyr/app_signed.hex`.
 
-## [Optional] Configure the project before the build
-
-Optionally, the project can be configured before the build with the following command:
-
-```sh
-# Load Zephyr env variables, if you haven't done so yet in the current session
-source ~/pebble-firmware/2020poc/zephyr/zephyr-env.sh
-
-# Move into the Pebble application directory
-cd ~/pebble-firmware/2020poc/nrf/applications/asset_tracker
-# Make sure to remove any pre-existing build directory
-rm -rf build/
-# Run configuration
-west build -t menuconfig -b thingy91_nrf9160ns
-```
-
-this will start the configuration program that will allow you to interactively set all the build configuration values for the application.
+See [this doc about how to configure the frimware](pebble-configure) before the build.
+See [this doc about how to flash the frimware](pebble-flash) before the build.
