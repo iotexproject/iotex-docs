@@ -52,9 +52,9 @@ git clone https://github.com/iotexproject/pebble-firmware.git
 
 You will need to install a custom Programmer app for nrf Connect.
 
-- Locate the following archive in the pebble firmware folder: `pebble-firmware/iotex-pc-nrfconnect-programmer/Linux/pc-nrfconnect-programmer-1.4.2.tgz`
+- Locate the following archive in the pebble firmware folder: `pebble-firmware/pc-nrfconnect-programmer-1.4.2.tgz`
 
-- Extract the content in the nRF Connect apps folder for your system:
+- Extract the content in the `nRF Connect` apps folder for your system:
 
 :::: tabs
 ::: tab Windows
@@ -62,7 +62,6 @@ in Windows, extract the archive into the following directory:
 
 `%userprofile%/.nrfconnect-apps/node_modules/`
 
-and rename the extracted directory to `pc-nrfconnect-programmer`
 :::
 
 ::: tab Linux
@@ -70,12 +69,10 @@ in Linux, extract the archive into the following directory:
 
 `~/.nrfconnect-apps/node_modules/`
 
-and rename the extracted directory to `pc-nrfconnect-programmer`.
-
 In a terminal window, install the Pebble Tracker driver:
 
 ```sh
-cd ~/pebble-firmware/iotex-pc-nrfconnect-programmer/Linux/
+cd ~/pebble-firmware
 
 dpkg -i pebble-udev_1.0.1-all.deb
 
@@ -83,7 +80,7 @@ dpkg -i pebble-udev_1.0.1-all.deb
 
 ::::
 
-Launch the **nRF Connect** tool, scroll down to the programmer app and open it:
+Launch the **nRF Connect** tool, scroll down to the `Programmer-IoTeX` app and open it:
 
 ![](/img/developer/pebble-sdk/programmer_fig2.png)
 
