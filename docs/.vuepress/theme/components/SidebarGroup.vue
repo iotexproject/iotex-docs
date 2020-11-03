@@ -101,8 +101,11 @@ export default {
         font-size: 0.95em;
         border-left 0.25rem solid $accentColor
   &.depth-2
+    & > .sidebar-group-items
+      padding-left 1rem
     & > .sidebar-heading
       border-left 0.25rem solid $accentColor
+      padding-left: 0.5rem
 
 .sidebar-heading
   color $textColor
