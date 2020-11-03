@@ -13,7 +13,7 @@ You will be required to flash a new firmware to the Pebble Tracker if you want t
 - Modify the firmware to customize the default behavior
 
 :::warning
-You will want to update the Pebble Tracker firmware at least once before putting it into production, to set your own cryptographic certificates.
+If your application requires signed data messages, you will want to update the Pebble Tracker firmware at least once to set your own cryptographic certificates before putting it into production.
 :::
 
 ## Prerequisites
@@ -23,9 +23,10 @@ We assume you already cloned the Pebble Tracker Firmware repository, and install
 :::: tabs
 
 ::: tab Windows
-[download nRF Connect 3.6.0 for Windows](https://www.nordicsemi.com/-/media/Software-and-other-downloads/Desktop-software/nRF-Connect-for-Desktop/3-6-0/nrfconnectsetup360ia32.exe)
 
-Open a command prompt and clone pebble Firmware repository:
+1. [Download and install nRF Connect 3.6.0 for Windows](https://www.nordicsemi.com/-/media/Software-and-other-downloads/Desktop-software/nRF-Connect-for-Desktop/3-6-0/nrfconnectsetup360ia32.exe)
+
+2. Open a command prompt and clone pebble Firmware repository:
 
 ```
 cd %userprofile%
@@ -35,9 +36,10 @@ git clone https://github.com/iotexproject/pebble-firmware.git
 :::
 
 ::: tab Linux
-[download nRF Connect 3.6.0 for Linux](https://www.nordicsemi.com/-/media/Software-and-other-downloads/Desktop-software/nRF-Connect-for-Desktop/3-6-0/nrfconnect360x8664.AppImage)
 
-Open a command prompt and clone the Pebble Firmware repository:
+1. [Download nRF Connect 3.6.0 for Linux](https://www.nordicsemi.com/-/media/Software-and-other-downloads/Desktop-software/nRF-Connect-for-Desktop/3-6-0/nrfconnect360x8664.AppImage)
+
+2. Open a command prompt and clone the Pebble Firmware repository:
 
 ```
 cd ~
@@ -50,31 +52,27 @@ git clone https://github.com/iotexproject/pebble-firmware.git
 
 ## Install and launch the Programmer App
 
-You will need to install a custom Programmer app for nrf Connect.
+You will need to install a custom Programmer app for nrf Connect, that is included in the pebble-firmware repository.
 
 - Locate the following archive in the pebble firmware folder: `pebble-firmware/pc-nrfconnect-programmer-1.4.2.tgz`
 
-- Extract the content in the `nRF Connect` apps folder for your system:
+- Extract the content in the following `nRF Connect` apps folder:
 
 :::: tabs
 ::: tab Windows
-in Windows, extract the archive into the following directory:
-
 `%userprofile%/.nrfconnect-apps/node_modules/`
-
 :::
 
 ::: tab Linux
-in Linux, extract the archive into the following directory:
-
 `~/.nrfconnect-apps/node_modules/`
 
-In a terminal window, install the Pebble Tracker driver:
+For Linux only, in a terminal window, install the Pebble Tracker driver:
 
 ```sh
 cd ~/pebble-firmware
 
 dpkg -i pebble-udev_1.0.1-all.deb
+```
 
 :::
 
@@ -86,7 +84,9 @@ Launch the **nRF Connect** tool, scroll down to the `Programmer-IoTeX` app and o
 
 In the programmer app window:
 
-- Select the firmware hex file you want to flash **(1)** and put the Pebble Tracker in **recovery mode** (see next paragraph)
+- Select the firmware hex file you want to flash **(1)**
+
+- Put the Pebble Tracker in **MCUboot mode** (see next paragraph)
 
 - Connect the Pebble Tracker to your computer with the USB cable and select it from the devices combo box in the programmer window **(2)**
 
@@ -94,18 +94,16 @@ In the programmer app window:
 
 ![](/img/developer/pebble-sdk/programmer_fig3.png)
 
+## Put the Pebble Tracker in **MCUboot mode**
 
-## How to put the Pebble Tracker in **recovery mode**
-You need to put the Pebble Tracker in the recovery mode to be able to flash the new firmware:
+You can flash a new firmware to a Pebble Tracker through the USB port by putting the in _MCUboot mode_: in this mode Pebble Tracker will start the **MCUboot** secure bootloader instead of the main application, that will allow to receive and flash the new firmware through the USB cable.
 
-1. If connected, disconnect the USB cable
-2. Disconnect the Battery
-3. Press and keep pressed the **Reset Button** on Pebble Tracker
-4. Re-connect the battery (the Blue led will turn on)
-5. Kepp the reset button pressed until the blue led turns off (~ 5s)
-6. Connect the Pebble tracker to your computer for flashing using the USB port
+To enable MCUboot mode:
 
-::: tip
-Make sure you have already started the programmer app and selected the firmware file so that you will be ready to just select the device and click the **write** button in the programmer app before the Pebble Tracker turns back in normal mode.
-:::
-```
+- disconnect the USB cable from Pebble Tracker
+- Press and keep pressed the Power Switch on Pebble Tracker
+- Press the Reset button on the Pebble Tracker
+- The RGB led will turn off
+- Release the Power and Reset buttons
+
+the device will stay in MCUboot mode for about 10 seconds, if in this period the firmware flashing process does not start it will reboot automatically in normal operation mode.
