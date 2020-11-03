@@ -6,90 +6,81 @@ title: Build on Windows
 
 [[toc]]
 
-## Download and Install nRF Connect for Desktop
+The Pebble Tracker firmware can be easily configured and built on Windows using the Pebble SDk: a customized version of the Nordic's nRF Connect SDK (v1.3.0):
 
-The best way to install the toolchain for building Pebble Tracker firmware on Windows is to use the nRF Connect tool from Nordic Semiconductor:
+## Download and Install nRF Connect for Windows
 
-- [download nRF Connect 3.6.0](https://www.nordicsemi.com/-/media/Software-and-other-downloads/Desktop-software/nRF-Connect-for-Desktop/3-6-0/nrfconnectsetup360ia32.exe)
+First access the Nordic [nRF Connect download page for Desktop](https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Connect-for-desktop/Download#infotabs) and download the latest version of **nRF Connect for Windows**:
 
-- Install and run nRF Connect on your Windows machine
+![](/img/developer/pebble-sdk/one_click_fig1.png)
 
-## Install required tools
+Double-click the downloaded executable file (e.g., nrfconnect-setup-3.6.0-ia32.exe) and complete the installation.
 
-Before installing the SDK, you need to install some required tools in your system. You can do that by following the "Getting Started Assistant" of the nRF Connect tool:
+## Install the Nordic Toolchain Manager app
 
-Launch **nRF Connect** tool you just installed and open **Getting Started Assistant**:
+Launch nRF Connect, scroll down to **Toolchain Manager** and click the **Install** button to install the app:
 
-![](/img/developer/pebble-sdk/firmware_fig2.png)
+![](/img/developer/pebble-sdk/one_click_fig2.png)
 
-Install the required tools following the step by step instructions from the **Install the Toolchain** section (ignore the other sections):
+## Download and install the Pebble Tracker SDK package
 
-![](/img/developer/pebble-sdk/firmware_fig3.png)
+Download The Pebble SDK installation at:
 
-Close the Getting Started Assistant window when finished.
+[https://pebbles-software-release.s3-us-west-1.amazonaws.com/ncs-toolchain-pebble_v1.3.0-20200618-509f057.zip](https://pebbles-software-release.s3-us-west-1.amazonaws.com/ncs-toolchain-pebble_v1.3.0-20200618-509f057.zip)
 
-## Install the SDK
+and save the file to a known location in your filesystem.
 
-After the requirements have been installed we can proceed with the installation of the SDK:
+::: warning
+Make sure that you have a Github account and that any SSH keys or authorization token for your account (if required) has been setup properly, before you click 'OK' in this step (you should make sure you can `git clone` a GitHub repository from command line)
+:::
 
-From the **nRF Connect** tool again open **Toolchain Manager**:
+In the **nRF Connect** app, scroll down to the **Toolchain Manager** and click the **Open** button to open the app. In the toolchain manager window, click the _<u>Install package from other source</u>_ link at the bottom:
 
-![](/img/developer/pebble-sdk/firmware_fig4.png)
+![](/img/developer/pebble-sdk/one_click_fig3.png)
 
-Choose to install **nRF Connect SDK v1.3.0**, confirm the installation default path, and wait for the installation to complete (this will require some time):
+select the file Pebble Tracker SDK package that you just downloaded (`ncs-toolchain-pebble_v1.3.0-20200618-509f057.zip`) and click `OK`
 
-![](/img/developer/pebble-sdk/firmware_fig5.png)
+## Open and configure the Embedded Studio IDE
 
-When the SDK installation is complete, you will find it installed in the `c:\users\<your_username>\ncs\` folder.
+Once the SDK installation is completed, `nRF Connect SDK pebble_v1.3.0` will show up in the Toolchan Manager list: Click the **Open IDE** button:
 
-## Get the Pebble Firmware source code
-
-Open a command prompt (search for `cmd.exe`in your Windows Start menu), and in the terminal type the following command to clone the Pebble Firmware repository:
-
-```
-cd %userprofile%
-git clone https://github.com/iotexproject/pebble-firmware.git
-```
-
-## Build the firmware within Embedded Studio IDE
-
-- Download and install the [Embedded Studio IDE (v4.5.2)](https://www.segger.com/downloads/embedded-studio/Setup_EmbeddedStudio_ARM_v452_win_x64.exe)
-
-### Configure Embedded Studio Toolchain paths
+![](/img/developer/pebble-sdk/one_click_fig4.png)
 
 The compiler toolchain paths in Embedded Studio should be already set, just make sure they are configured correctly:
 
-- Launch the Embedded Studio IDE and choose "Options" under the "Tools" menu
-- Choose "nRF Connect" on the left side of the "Option" window
-- Locate "Directories" section and configure "GNU ARM Embedded Toolchain Directory" and "Zephyr Base" to the corresponding directories, respectively (see the image):
+- Choose **Options** under the **Tools** menu
+- Choose **nRF Connect** on the left side of the "Option" window
+- Locate **Directories** section and configure "GNU ARM Embedded Toolchain Directory" and "Zephyr Base" to the corresponding directories, respectively (see the image):
 
-![](/img/developer/pebble-sdk/firmware_fig6.png)
+![](/img/developer/pebble-sdk/one_click_fig6.png)
 
-### Open Pebble Tracker Application
+## Build Pebble Tracker Application Firmware
 
-The Pebble App project is configured as follows:
+### Build in Embedded Studio IDE
 
-- Launch the Embedded Studio IDE and choose "Open nRF Connect SDK Project..." under the "File" menu
-- Configure the paths of "CMakeLists.txt" and "Board Directory" and set "Board Name" to "thingy91_nrf9160ns"
-  ![](/img/developer/pebble-sdk/firmware_fig7.png)
+In the Embedded Studio IDE and choose **Open nRF Connect SDK Project...** under the **File** menu and configure the paths of **CMakeLists.txt** and **Board Directory**, also set **Board Name** to `thingy91_nrf9160ns`, as shown in the image below (please adapt to your Windows user path):
 
-### Build the firmware
+![](/img/developer/pebble-sdk/one_click_fig5.png)
 
-Choose **Build Solution** from the **Build** menu to build the firmware: check out the output panel for the end of the compilation.
+If required, after the project has been generated, you can configure the firmware parameters befor the build following the [firmware configuration instructions](pebble-configure).
+
+Choose **Build Solution** from the **Build** menu to build the firmware: check out the output panel for the compilation output and wait until the end of the compilation process.
 
 At the end of the build process you will find the new Pebble Tracker firmare file at:
 
-`C:\users\<your_username>\pebble-firmware\nrf\applications\asset_tracker\build_thingy91_nrf9160ns\zephyr\app_signed.hex`
+```
+C:\users\<your_username>\ncs\v1.3.0\nrf\applications\asset_tracker\build_thingy91_nrf9160ns\zephyr\app_signed.hex
+```
 
-## Build the Pebble Tracker Application using Command Line
+### Build from Command Line
 
-If you run into any troubles building the firmware application using Embedded Studio, you can try building the firmware using the command line first.
+If you run into any troubles building the firmware application using Embedded Studio IDE, you can try building the firmware using the command line first.
 
-To do so, locate and open the git-bash.exe terminal in your SDK folder:
+To do so, locate and open the `git-bash.exe` terminal in your SDK folder:
 
-`ncs/v1.3.0/toolchain/git-bash.exe``
+`C:\john\ncs\v1.3.0\toolchain\git-bash.exe``
 
-in the terminal, move to the pebble tracker application folder and compile the application:
+in the git-bash terminal, move to the pebble tracker application folder and compile the application:
 
 ```sh
 cd %userprofile%/ncs/v1.3.0/nrf/applications/asset_tracker
@@ -99,7 +90,7 @@ rmdir /s /q build
 west build -b thingy91_nrf9160ns
 ```
 
-After the project is compiled successfully, you can flash the new Pebble firmware that is available at `C:\users\<your_username>\pebble-firmware\nrf\applications\asset_tracker/build_thingy91_nrf9160ns\zephyr\app_signed.hex`.
+Using this build command, the project will be generated in the `build` folder, and the firmware file will be built to the `build\zephyr\app_signed.hex` path.
 
 See [how to configure the frimware](pebble-configure) before the build.
 See [how to flash the frimware](pebble-flash).
