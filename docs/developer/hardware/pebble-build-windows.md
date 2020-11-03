@@ -1,5 +1,5 @@
 ---
-title: Develop and Build the Pebble Firmware (Windows)
+title: Build on Windows
 ---
 
 # Develop and Build the Pebble Firmware (Windows)

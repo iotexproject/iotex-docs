@@ -219,8 +219,16 @@ module.exports = {
                     "developer/hardware/pebble",
                     "developer/hardware/pebble-data-specs",
                     "developer/hardware/pebble-power-on",
-                    "/developer/hardware/pebble-build-linux",
-                    "/developer/hardware/pebble-build-windows",
+                    {
+                      title: "Develop and Build the Firmware",
+                      path: "/developer/hardware/pebble-build-linux",
+                      sidebarDepth: 0,
+                      collapsable: true,
+                      children: [
+                        "/developer/hardware/pebble-build-linux",
+                        "/developer/hardware/pebble-build-windows"
+                      ]
+                    },
                     "/developer/hardware/pebble-configure",
                     "developer/hardware/pebble-flash",
                     "developer/hardware/pebble-backend",

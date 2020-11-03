@@ -1,5 +1,5 @@
 ---
-title: Develop and Build the Pebble Firmware (Linux)
+title: Build on Linux
 ---
 
 # Develop and Build the Pebble Firmware (Linux)
