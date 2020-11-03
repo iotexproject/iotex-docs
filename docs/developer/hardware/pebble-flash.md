@@ -94,6 +94,8 @@ In the programmer app window:
 
 ![](/img/developer/pebble-sdk/programmer_fig3.png)
 
+The flashing process will last about 60 seconds, the led on Pebble Tracker will fast-blink red all the time. When the process is complete the Pebble Tracker will reboot automatically and the new firmware will be loaded.
+
 ## Put the Pebble Tracker in **MCUboot mode**
 
 You can flash a new firmware to a Pebble Tracker through the USB port by putting the in _MCUboot mode_: in this mode Pebble Tracker will start the **MCUboot** secure bootloader instead of the main application, that will allow to receive and flash the new firmware through the USB cable.

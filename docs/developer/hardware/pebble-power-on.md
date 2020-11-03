@@ -52,3 +52,21 @@ Once the battery is connected you can press the reset button: you will see the R
 ## Charging the battery
 
 You can connect Pebble to a USB charger or to your PC using the micro-usb connector to recharge your battery. Once the battery is fully charged you will see the RGB led to light up in green.
+
+## Status Led
+
+Pebble Tracker includes an RGB led to show the status of the Pebble Tracker, the table below shows all the possible led states and the respective meaning:
+
+| <small>LED Color (Blink Rate)</small>          | <small>GPS Signal</small> | <small>Charging</small> | <small>NB-IoT/LTE Connection</small> | <small>Flashing the Firmware</small> |
+| :--------------------------------------------- | :-----------------------: | :---------------------: | :----------------------------------: | :----------------------------------: |
+| <small>Blue (fast)</small>                     |                           |                         |                                      |                                      |
+| <small>Blue (slow) </small>                    |                           |                         |                  ✓                   |                                      |
+| <small>Red (steady) +<br>Purple (fast)</small> |                           |            ✓            |                                      |                                      |
+| <small>Red (steady) +<br>Purple (slow)</small> |                           |            ✓            |                  ✓                   |                                      |
+| <small>Cyan (fast)</small>                     |             ✓             |                         |                                      |                                      |
+| <small>Cyan (slow) </small>                    |             ✓             |                         |                  ✓                   |                                      |
+| <small>Red (steady) +<br>White (fast)</small>  |             ✓             |            ✓            |                                      |                                      |
+| <small>Red (steady) +<br>White (slow)</small>  |             ✓             |            ✓            |                  ✓                   |                                      |
+| <small>Red (fast)</small>                      |                           |                         |                                      |                  ✓                   |
+
+Note that LED flahses ON-OFF every 500ms when in _fast_ mode, and every 5s when in _slow_ mode.
