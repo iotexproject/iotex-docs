@@ -101,5 +101,5 @@ west build -b thingy91_nrf9160ns
 
 After the project is compiled successfully, you can flash the new Pebble firmware that is available at `C:\users\<your_username>\pebble-firmware\nrf\applications\asset_tracker/build_thingy91_nrf9160ns\zephyr\app_signed.hex`.
 
-See [this doc about how to configure the frimware](pebble-configure) before the build.
-See [this doc about how to flash the frimware](pebble-flash) before the build.
+See [how to configure the frimware](pebble-configure) before the build.
+See [how to flash the frimware](pebble-flash).
