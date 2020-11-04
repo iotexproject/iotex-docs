@@ -1,5 +1,5 @@
 ---
-title: Flash a new Firmware
+title: Flash the Firmware
 ---
 
 # Flashing the Pebble Firmware
@@ -11,10 +11,6 @@ You will be required to flash a new firmware to the Pebble Tracker if you want t
 - Update the modem firmware to switch between NB-IoT and LTE cellular standard (Pebble comes preconfigured for NB-IoT)
 
 - Modify the firmware to customize the default behavior
-
-:::warning
-If your application requires signed data messages, you will want to update the Pebble Tracker firmware at least once to set your own cryptographic certificates before putting it into production.
-:::
 
 ## Prerequisites
 

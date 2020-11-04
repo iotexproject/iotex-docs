@@ -226,14 +226,33 @@ module.exports = {
                       collapsable: true,
                       children: [
                         "/developer/hardware/pebble-build-linux",
-                        "/developer/hardware/pebble-build-windows"
+                        "/developer/hardware/pebble-build-windows",
+                        "/developer/hardware/pebble-firmware-configure",
+                        "/developer/hardware/pebble-flash"
                       ]
                     },
-                    "/developer/hardware/pebble-configure",
-                    "developer/hardware/pebble-flash",
-                    "developer/hardware/pebble-backend",
-                    "developer/hardware/pebble-blockchain",
-                    "developer/hardware/pebble-certificates"
+                    {
+                      title: "Integrate with IoTeX Backend",
+                      path: "/developer/hardware/pebble-backend-integration",
+                      sidebarDepth: 0,
+                      collapsable: true,
+                      children: [
+                        "/developer/hardware/pebble-backend-configuration",
+                        "/developer/hardware/pebble-backend-integration"
+                      ]
+                    },
+                    {
+                      title: "Integrate with AWS IoT",
+                      path: "/developer/hardware/pebble-aws-integration",
+                      sidebarDepth: 0,
+                      collapsable: true,
+                      children: [
+                        "/developer/hardware/pebble-aws-configuration",
+                        "/developer/hardware/pebble-aws-integration"
+                      ]
+                    },
+
+                    "developer/hardware/pebble-blockchain-integration"
 
                     // "developer/hardware/pebble-dashboard" //needs update
                   ]
