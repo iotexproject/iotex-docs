@@ -1,13 +1,23 @@
 ---
-title: Build on Linux
+title: Build on Linux/MacOS
 ---
 
-# Develop and Build the Pebble Firmware (Linux)
+# Develop and Build the Pebble Firmware (Linux/MacOS)
 
 [[toc]]
 
 ## Install Dependencies
 
+Follow the instruction below to install the required tools. Make sure you have current versions for the following tools:
+
+```sh
+cmake --version # must be >= 3.13.1
+dtc --version # must be >= 1.4.6
+python --version # bust be >= 3.6
+```
+
+:::: tabs
+::: tab Linux
 If required, update your system:
 
 ```sh
@@ -21,49 +31,60 @@ Install the required tools
 sudo apt-get install --no-install-recommends git cmake ninja-build gperf ccache dfu-util device-tree-compiler wget python3-dev python3-pip python3-setuptools python3-tk python3-wheel xz-utils file make gcc gcc-multilib g++-multilib libsdl2-dev
 ```
 
-Check your cmake version number and make sure it's higher than 3.13.1
+:::
+
+::: tab MacOS
+If it is not installed in your system, install [Homebrew](https://brew.sh) by following instructions on the Homebrew:
 
 ```sh
-cmake --version
+ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-:::details Optional: upgrade cmake
-if cmake version is lower 3.13.1 the install the latest one:
+Install required tools:
+
+```sh
+brew install cmake ninja gperf ccache dfu-util dtc python3
+```
+
+:::
+::::
+
+## Install ARM Compiler Toolchain
+
+Download the ARM embedded compiler toolchain
+
+:::: tabs
+::: tab Linux
 
 ```sh
 cd ~
-
-wget https://github.com/Kitware/CMake/releases/download/v3.15.3/cmake-3.15.3-Linux-x86_64.sh
-chmod +x cmake-3.15.3-Linux-x86_64.sh
-sudo ./cmake-3.15.3-Linux-x86_64.sh --skip-license --prefix=/usr/local
-
-hash -r
-
+# Download the package
+wget https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu-rm/9-2020q2/gcc-arm-none-eabi-9-2020-q2-update-x86_64-linux.tar.bz2
+# Extract
+tar -jxvf gcc-arm-none-eabi-9-2020-q2-update-x86_64-linux.tar.bz2
+# Rename the directory to ~\gnuarmemb
+mv gcc-arm-none-eabi-9-2020-q2-update gnuarmemb
 ```
 
 :::
+::: tab MacOS
 
-Check Device Tree Compiler (DTC) version number and make sure it's higher than 1.4.6
-
-```sh
-dtc --version
-```
-
-:::details Optional: upgrade dtc
-if dtc version is lower than 1.4.6 the intall the latest one
-
-```sh
-wget https://launchpadlibrarian.net/384086505/device-tree-compiler_1.4.7-1_amd64.deb
-sudo dpkg -i device-tree-compiler_1.4.7-1_amd64.deb
-```
-
+````sh
+# Download the package
+wget https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu-rm/9-2020q2/gcc-arm-none-eabi-9-2020-q2-update-mac.tar.bz2
+# Extract
+tar -jxvf gcc-arm-none-eabi-9-2020-q2-update-mac.tar.bz2
+# Rename the directory to ~\gnuarmemb
+mv gcc-arm-none-eabi-9-2020-q2-update gnuarmemb
 :::
+::::
 
-Make sure Python version number is higher than 3.6
-
+set required environment variables
 ```sh
-python3 --version
-```
+# Create ~/.zephyrrc for easy env variables management
+echo 'export ZEPHYR_TOOLCHAIN_VARIANT=gnuarmemb' >> ~/.zephyrrc
+echo 'export GNUARMEMB_TOOLCHAIN_PATH="~/gnuarmemb"' >> ~/.zephyrrc
+````
 
 ## Install the Nordic SDK
 
@@ -101,28 +122,21 @@ pip3 install -r bootloader/mcuboot/scripts/requirements.txt
 
 ```
 
-## Install Compiler Toolchain
+## Clone the Pebble-Firmware IoTeX repository:
 
-Download the ARM embedded compiler toolchain and set environment variables
-
-```sh
-cd ~
-# Download the package
-wget https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu-rm/9-2020q2/gcc-arm-none-eabi-9-2020-q2-update-x86_64-linux.tar.bz2
-# Extract
-tar -jxvf gcc-arm-none-eabi-9-2020-q2-update-x86_64-linux.tar.bz2
-# Rename the directory to ~\gnuarmemb
-mv gcc-arm-none-eabi-9-2020-q2-update gnuarmemb
-
-# Create ~/.zephyrrc for easy env variables management
-echo 'export ZEPHYR_TOOLCHAIN_VARIANT=gnuarmemb' >> ~/.zephyrrc
-echo 'export GNUARMEMB_TOOLCHAIN_PATH="~/gnuarmemb"' >> ~/.zephyrrc
-```
-
-Clone the Pebble-Firmware IoTeX repository:
+The pebble-firmware IoTeX repository contains the firmware application source and the board definition file:
 
 ```sh
 git clone https://github.com/iotexproject/pebble-firmware.git
+```
+
+Before we can build the firmware we need to replace the default board definition from the SDK with the one for Pebble Tracker:
+
+```sh
+# Delete the default board definition
+rm -rf ~/ncs/nrf/boards/arm/thingy91_nrf9160
+# Replace with the one from pebble-firmware
+cp -rv ~/pebble-firmware/nrf/boards/arm/thingy91_nrf9160 ncs/nrf/boards/arm/
 ```
 
 ## Compile Project with Command Line
