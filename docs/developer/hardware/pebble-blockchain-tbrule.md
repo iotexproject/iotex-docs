@@ -33,19 +33,3 @@ When a message enters the "script FilterGateway" node, the "deviceType" will be 
 When a message enters the "rest api call Push Blockchain" node, it's can only be a devices' post telemetries message. This node will then use the url set in its configuration to send the message data in a POST message to the api server.
 
 ![](/img/developer/pebble-backend/thingsboard-apiCurl.jpg)
-
-## The IoTeX Api server
-
-The Api server is a REST API proxy for sending gRPC calls to a IoTeX Gateway node.
-
-The request:
-
-```
-HTTP 1.1 POST /api/v1/topic/{topic}/data
-{
-  // ...
-  // body is json containing device telemetry data
-}
-```
-
-will be sent to a deployed contract address, and then executed by the contract to execute further operations on chain. The reference code for this step is in [iotexproject/pebble-data-container](https://github.com/iotexproject/pebble-data-container/blob/master/blockchain/put.go#L68).

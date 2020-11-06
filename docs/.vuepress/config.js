@@ -243,14 +243,12 @@ module.exports = {
                     },
                     {
                       title: "Integrate with IoTeX Blockchain",
-                      path: "/developer/hardware/pebble-blockchain-integration",
+                      path: "/developer/hardware/pebble-blockchain-tbrule",
                       sidebarDepth: 0,
                       collapsable: true,
                       children: [
-                        "/developer/hardware/pebble-blockchain-integration",
-                        "/developer/hardware/pebble-blockchain-contract",
-                        "/developer/hardware/pebble-blockchain-apiserver",
-                        "/developer/hardware/pebble-blockchain-tbrule"
+                        "/developer/hardware/pebble-blockchain-tbrule",
+                        "/developer/hardware/pebble-blockchain-apiserver"
                       ]
                     },
                     {
