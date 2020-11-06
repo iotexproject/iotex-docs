@@ -1,10 +1,10 @@
 ---
-title: Configure the backend service
+title: Deploy your own backend service
 ---
 
-# Configure the Pebble Tracker Backend
+# Deploy your own backend service
 
-You can configure your own backend for receiving data from Pebble Tracker, archive the data, visualize it, and send it to a IoTeX Smartcontract.
+You can configure your own backend service to receive the data from your Pebble Trackers. The backend service will allow you to archive, visualize, and even send the data to a IoTeX Blockchain Smart Contract.
 
 ## Hardware Requirements
 

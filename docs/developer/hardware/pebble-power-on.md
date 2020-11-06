@@ -1,8 +1,8 @@
 ---
-title: Assemble and Power on
+title: Hardware Setup
 ---
 
-# Assemble and Turn on your Pebble Tracker
+# Pebble Tracker Hardware Setup
 
 ## Unboxing
 
@@ -31,15 +31,17 @@ Relevant slots, connectors and switches on Pebble tracker include the following:
 
 - **Cellular and GPS antenna**: these two caoxial inputs allow the connection of a GPS and/or a cellular external antennas
 
+<div id="board-layout-image"></div>
+
 ![](/img/developer/pebble-layout.jpg)
 
 ## Inserting a SIM card
 
 Insert a IoT Micor-SIM into the SIM card slot and press until it's locked inside. The Pebble tracker supports both LTE and NB-IoT radio standards: check which one is supported in your country and that the SIM card is compliant with te same standard. Pebble Tracker comes with NB-IoT firmware preinstalled: if you need LTE instead, then you will be required to flash the refpective LTE firmware (see [TODO: Flashing the firmware](TODO: Flashing the firmware)).
 
-## Connecting the GPS Antenna
+## Connecting the LTE Antenna
 
-If you want to use Pebble Tracker GPS data, its preferable to connect the GPS antenna. Find the GPS Antenna connector on the board and carefully conenct the antenna. The antenna also provides an adesive strip to conveniently fix it to any surface.
+Locate the LTE Antenna connector on the board and carefully conenct the antenna you find in the Pebble Tracker package. The antenna also provides an adesive strip to conveniently fix it to any surface.
 
 ## Connecting a battery
 
@@ -52,21 +54,3 @@ Once the battery is connected you can press the reset button: you will see the R
 ## Charging the battery
 
 You can connect Pebble to a USB charger or to your PC using the micro-usb connector to recharge your battery. Once the battery is fully charged you will see the RGB led to light up in green.
-
-## Status Led
-
-Pebble Tracker includes an RGB led to show the status of the Pebble Tracker, the table below shows all the possible led states and the respective meaning:
-
-| <small>LED Color (Blink Rate)</small>          | <small>GPS Signal</small> | <small>Charging</small> | <small>NB-IoT/LTE Connection</small> | <small>Flashing the Firmware</small> |
-| :--------------------------------------------- | :-----------------------: | :---------------------: | :----------------------------------: | :----------------------------------: |
-| <small>Blue (fast)</small>                     |                           |                         |                                      |                                      |
-| <small>Blue (slow) </small>                    |                           |                         |                  ✓                   |                                      |
-| <small>Red (steady) +<br>Purple (fast)</small> |                           |            ✓            |                                      |                                      |
-| <small>Red (steady) +<br>Purple (slow)</small> |                           |            ✓            |                  ✓                   |                                      |
-| <small>Cyan (fast)</small>                     |             ✓             |                         |                                      |                                      |
-| <small>Cyan (slow) </small>                    |             ✓             |                         |                  ✓                   |                                      |
-| <small>Red (steady) +<br>White (fast)</small>  |             ✓             |            ✓            |                                      |                                      |
-| <small>Red (steady) +<br>White (slow)</small>  |             ✓             |            ✓            |                  ✓                   |                                      |
-| <small>Red (fast)</small>                      |                           |                         |                                      |                  ✓                   |
-
-Note that LED flahses ON-OFF every 500ms when in _fast_ mode, and every 5s when in _slow_ mode.
