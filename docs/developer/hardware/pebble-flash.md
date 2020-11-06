@@ -52,17 +52,21 @@ You will need to install a custom Programmer app for nrf Connect, that is includ
 
 - Locate the following archive in the pebble firmware folder: `pebble-firmware/pc-nrfconnect-programmer-1.4.2.tgz`
 
-- Extract the content in the following `nRF Connect` apps folder:
+- Extract the content of the archive in the `nRF Connect` apps folder:
 
 :::: tabs
 ::: tab Windows
+In Windows, extract in the following path:
+
 `%userprofile%/.nrfconnect-apps/node_modules/`
 :::
 
 ::: tab Linux
+In Linux, extract in the following path:
+
 `~/.nrfconnect-apps/node_modules/`
 
-For Linux only, in a terminal window, install the Pebble Tracker driver:
+then, in a terminal window, install the Pebble Tracker Linux driver:
 
 ```sh
 cd ~/pebble-firmware
@@ -78,30 +82,26 @@ Launch the **nRF Connect** tool, scroll down to the `Programmer-IoTeX` app and o
 
 ![](/img/developer/pebble-sdk/programmer_fig2.png)
 
-In the programmer app window:
+Connect Pebble Tracker to your computer using the USB cable, then in the programmer app window do the following steps:
 
-- Select the firmware hex file you want to flash **(1)**
+1. Select the firmware hex file you want to flash (typically `app_signed.hex`) **(1)**
 
-- Put the Pebble Tracker in **MCUboot mode** (see next paragraph)
+2. Select your device from the devices combo box in the programmer window **(2)**
 
-- Connect the Pebble Tracker to your computer with the USB cable and select it from the devices combo box in the programmer window **(2)**
-
-- Click the **Write** button **(3)**
+3. Put Pebble Tracker in **MCUboot mode** ([see next paragraph](#put-pebble-tracker-in-mcuboot-mode)) and click the **Write** button **(3)**
 
 ![](/img/developer/pebble-sdk/programmer_fig3.png)
 
-The flashing process will last about 60 seconds, the led on Pebble Tracker will fast-blink red all the time. When the process is complete the Pebble Tracker will reboot automatically and the new firmware will be loaded.
+The flashing process will last about 60 seconds: the red led on the boards will flash quickly during the whole process. Eventually, Pebble Tracker will reboot automatically and the new firmware will be loaded.
 
-## Put the Pebble Tracker in **MCUboot mode**
+## Put Pebble Tracker in **MCUboot mode**
 
-You can flash a new firmware to a Pebble Tracker through the USB port by putting the in _MCUboot mode_: in this mode Pebble Tracker will start the **MCUboot** secure bootloader instead of the main application, that will allow to receive and flash the new firmware through the USB cable.
+You can flash a new firmware to a Pebble Tracker through the USB port by putting the board in _MCUboot mode_: in this mode Pebble Tracker will start the **MCUboot** secure bootloader instead of the main application firmware, that will allow to receive a new firmware through the USB cable. Follow the instruction below to enable MCUboot on Pebble Tracker:
 
-To enable MCUboot mode:
-
-- disconnect the USB cable from Pebble Tracker
-- Press and keep pressed the Power Switch on Pebble Tracker
-- Press the Reset button on the Pebble Tracker
-- The RGB led will turn off
-- Release the Power and Reset buttons
+1. Press and keep pressed the Reset Button on Pebble Tracker
+2. Press the Power Button on the Pebble Tracker
+3. Release the Reset Button (keep pressing the Power Button)
+4. Wait a few seconds for the blue led to turn off
+5. Release the Power buttons
 
 the device will stay in MCUboot mode for about 10 seconds, if in this period the firmware flashing process does not start it will reboot automatically in normal operation mode.
