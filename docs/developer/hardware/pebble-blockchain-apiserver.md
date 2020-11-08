@@ -42,13 +42,13 @@ You need a IoTeX blockchain account for the Api server to sign blockchain transa
 Create a `.env` file to hold the configuration for the Api server, containing the settings below:
 
 ```yaml
-# put a IoTeX andpointhere - e.g api.iotex.one:443
+# put a IoTeX endpoint here - e.g api.iotex.one:443
 IO_ENDPOINT=""
 # The address of the smart contract to send the data to
 CONTRACT_ADDRESS=""
 # The address of the account that will be used to sign contract tx
 # i.e. the one that you just created and exported in keystore
-VAULT_ADDRESS=""
+VAULT_ADDRESS="io12nkclkys0awtax28dsj45tzr3a6u4w4ev2gccu"
 # The password of the keystore file
 VAULT_PASSWORD="strong password here"
 # Gas price for the contract transactions in [Qev] units - e.g. 1
