@@ -86,7 +86,8 @@ module.exports = {
                     "introduction/platform-overview",
                     "introduction/blockchain-layer",
                     "introduction/middleware-layer",
-                    "introduction/tools-layer"
+                    "introduction/tools-layer",
+                    "introduction/governance"
                   ]
                 },
                 {
