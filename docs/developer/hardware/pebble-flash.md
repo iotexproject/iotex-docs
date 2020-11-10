@@ -37,7 +37,7 @@ git clone https://github.com/iotexproject/pebble-firmware.git
 
 1. Install [JLINK_ARM for Linux](https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack)
 
-2. [Download nRF Connect 3.5.0 for Linux](https://www.nordicsemi.com/-/media/Software-and-other-downloads/Desktop-software/nRF-Connect-for-Desktop/3-5-0/nrfconnect350x8664.AppImage)
+2. [Download nRF Connect 3.6.0 for Linux](https://www.nordicsemi.com/-/media/Software-and-other-downloads/Desktop-software/nRF-Connect-for-Desktop/3-6-0/nrfconnect360x8664.AppImage)
 
 3. then, in a terminal window, install the Pebble Tracker Linux driver:
 
@@ -61,7 +61,7 @@ git clone https://github.com/iotexproject/pebble-firmware.git
 
 2. Install the [CP210x USB to UART Bridge Virtual COM Port (VCP) driver for macOS](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) to allow the Programmer app to read /dev/tty.SLAB_USBtoUART\* CP2105 serial port device
 
-3. Install [nRF Connect for Desktop v3.5.0 for MacOS](https://www.nordicsemi.com/-/media/Software-and-other-downloads/Desktop-software/nRF-Connect-for-Desktop/3-5-0/nrfconnect350.dmg)
+3. Install [nRF Connect for Desktop v3.6.0 for MacOS](https://www.nordicsemi.com/-/media/Software-and-other-downloads/Desktop-software/nRF-Connect-for-Desktop/3-6-0/nrfconnect360.dmg)
 
 4. Open a command prompt and clone the Pebble Firmware repository:
 
