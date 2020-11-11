@@ -52,7 +52,22 @@ Locate the LTE Antenna connector on the board and carefully conenct the antenna 
 
 ## Connecting a battery
 
-Pebble requires a DC power supply in the range of 3V - 5V, that must be provided to the power connector using a 2-poles 1.25mm pitch male connector. You can both find a battery that fits the space in the Pebble case, or reassemble the case to provide more space to fit your battery. If your battery does not provide the correct connector for Pebble Tracher, you can replace it with the extra power connector included in the package.
+Pebble requires a DC power supply in the range of 3V - 5V, that must be provided to the frmale power socket using a 2-poles 1.25mm pitch male plug. You can both find a battery that fits the space in the default Pebble case, or reassemble the case to provide more space to fit your battery. If your battery connector is not compliant with the Pebble power socket, you can replace it with the extra power connector included in the package.
+
+Depending on the shape of your battery, the maximum area sizes available for it to be entirely enclosed into the default case are:
+
+- 44.0mm x 35.0mm x 7.0mm
+- 25.7mm x 53.0mm x 7.0mm
+- 24.0mm x 25.7mm x 7.4mm
+- 21.0mm x 35.0mm x 7.4mm
+
+Possible batteries that would fit are:
+
+- SparkFun Electronics 850mAh ([DigiKey USA](https://www.digikey.com/en/products/detail/sparkfun-electronics/PRT-13854/6605201))
+- Jauch Quartz LP503040JH 630mAh ([DigiKey USA](https://www.digikey.com/en/products/detail/jauch-quartz/LP503040JH-PCM-WIRES-50MM/9560983))
+- Jauch Quartz LP443441JU 650mAh ([DigiKey USA](https://www.digikey.com/en/products/detail/jauch-quartz/LP443441JU-PCM-WIRES-50MM/9560984))
+- Jauch Quartz LP102530JU 700mAh ([DigiKey USA](https://www.digikey.com/en/products/detail/jauch-quartz/LP102530JU-PCM-WIRES-50MM/9560985))
+- BAK LP-443440-1S-3 600mAh ([Farnell UK](https://uk.farnell.com/bak/lp-443440-1s-3/battery-lithium-pol-3-7v-0-6ah/dp/2077883?ost=lp-443440-1s-3))
 
 Once the battery is connected you can press the reset button: you will see the RGB led light up and blinking every 5s.
 
