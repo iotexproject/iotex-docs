@@ -127,10 +127,9 @@ You can flash a new firmware to a Pebble Tracker through the USB port by putting
 Follow the instruction below to enable MCUboot on Pebble Tracker (please refer to the [assembling](pebble-power-on.md#board-layout) guide to locate the buttons on the board):
 
 1. Press and keep pressed the [Reset Button](pebble-power-on.md#board-layout) on Pebble Tracker
-2. Press the [Power Button](pebble-power-on.md#board-layout) on the Pebble Tracker
-3. Release the Reset Button (keep pressing the Power Button)
-4. Wait a few seconds for the blue led to turn off
-5. Release the Power buttons
+2. Press and release the [Power Button](pebble-power-on.md#board-layout) on the Pebble Tracker
+3. The blue led will turn on => Keep pressing the Reset Button until the led turns off (~5s)
+5. The MCUBoot mode is now enabled: release the Reset button
 
-the device will stay in MCUboot mode for about 10 seconds, if in this period the firmware flashing process does not start it will reboot automatically in normal operation mode.
+the device will stay in MCUboot mode for about 10 seconds, if during this period the firmware flashing process does not start Pebble will reboot automatically in normal operation mode.
 ```
