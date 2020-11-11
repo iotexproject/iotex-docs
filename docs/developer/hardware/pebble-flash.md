@@ -126,10 +126,14 @@ You can flash a new firmware to a Pebble through the USB port by putting the boa
 
 Follow the instruction below to enable MCUboot on Pebble (please refer to the [assembling](pebble-power-on.md#board-layout) guide to locate the buttons on the board):
 
-1. Press and keep pressed the [Reset Button](pebble-power-on.md#board-layout) on Pebble
-2. Press and release the [Power Button](pebble-power-on.md#board-layout) on the Pebble
-3. The blue led will turn on => Keep pressing the Reset Button until the led turns off (~5s)
-5. The MCUBoot mode is now enabled: release the Reset button
+1. On Pebble, press and **keep pressed** the [Power Button](pebble-power-on.md#board-layout)
+2. While the Power Button is pressed, **press and release** the [Reset Button](pebble-power-on.md#board-layout)
+3. The **blue led** will turn on: keep the Power Button pressed until the led turns off (~5s)
+
+The MCUBoot mode is now enabled and you can release the Power button:
+
+![](/img/developer/pebble-mcuboot.jpg)
+
 
 the device will stay in MCUboot mode for about 10 seconds, if during this period the firmware flashing process does not start Pebble will reboot automatically in normal operation mode.
 ```
