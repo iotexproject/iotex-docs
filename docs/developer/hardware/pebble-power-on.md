@@ -61,14 +61,13 @@ Depending on the shape of your battery, the maximum area sizes available for it 
 - 24.0mm x 25.7mm x 7.4mm
 - 21.0mm x 35.0mm x 7.4mm
 
-Possible batteries that would fit are:
-
-- SparkFun Electronics 850mAh ([DigiKey USA](https://www.digikey.com/en/products/detail/sparkfun-electronics/PRT-13854/6605201))
-- Jauch Quartz LP503040JH 630mAh ([DigiKey USA](https://www.digikey.com/en/products/detail/jauch-quartz/LP503040JH-PCM-WIRES-50MM/9560983))
-- Jauch Quartz LP443441JU 650mAh ([DigiKey USA](https://www.digikey.com/en/products/detail/jauch-quartz/LP443441JU-PCM-WIRES-50MM/9560984))
-- Jauch Quartz LP102530JU 700mAh ([DigiKey USA](https://www.digikey.com/en/products/detail/jauch-quartz/LP102530JU-PCM-WIRES-50MM/9560985))
-- BAK LP-443440-1S-3 600mAh ([Farnell UK](https://uk.farnell.com/bak/lp-443440-1s-3/battery-lithium-pol-3-7v-0-6ah/dp/2077883?ost=lp-443440-1s-3))
-
+Possible batteries that would fit are (according to the datasheets, please verify with the manufacturer or the supplier):
+| Manufacturer | Model | Capacity | Link | Size [mm] |
+|----------------------|----------------|----------|----------------------------------------------------------------------------------------------------------------------|-------------------|
+| <small>SparkFun Electronics</small> | <small>PRT-13854</small> | <small>850mAh</small> | <small>[DigiKey USA](https://www.digikey.com/en/products/detail/sparkfun-electronics/PRT-13854/6605201)</small> | <small>43.3 x 34.0 x 6.2</small> |
+| </small>Jauch Quartz</small> | </small>LP443441JU</small> | <small>650mAh</small> | <small>[DigiKey USA](https://www.digikey.com/en/products/detail/jauch-quartz/LP443441JU-PCM-WIRES-50MM/9560984)</small> | <small>43.0 x 35.0 x 4.8</small> |
+| <small>Jauch Quartz</small> | <small>LP503040JH</small> | <small>630mAh</small> | <small>[DigiKey USA](https://www.digikey.com/en/products/detail/jauch-quartz/LP503040JH-PCM-WIRES-50MM/9560983)</small> | <small>42.0 x 30.5 x 5.4</small> |
+| <small>BAK </small> | <small>LP-443440-1S-3</small> | <small>600mAh</small> | <small>[Farnell UK](https://uk.farnell.com/bak/lp-443440-1s-3/battery-lithium-pol-3-7v-0-6ah/dp/2077883?ost=lp-443440-1s-3)</small> | <small>41.1 x 34.1 x 4.4</small> |
 Once the battery is connected you can press the reset button: you will see the RGB led light up and blinking every 5s.
 
 ![](/img/developer/pebble-connected.jpg)
