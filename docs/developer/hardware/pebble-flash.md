@@ -4,13 +4,13 @@ title: Flash the Firmware
 
 # Flashing the Pebble Firmware
 
-You will be required to flash a new firmware to the Pebble if you want to:
+You will be required to flash a new application firmware to the Pebble if you want to:
 
 - Replace the cryptographic certificates used by Pebble to sign the measurements data before transmission
-
 - Update the modem firmware to switch between NB-IoT and LTE cellular standard (Pebble comes preconfigured for NB-IoT)
-
 - Enable/Disable sensors, configure MQTT or other firmware settings
+
+In some cases you may be required to flash the Pebble **modem** also: in this case, you will have to flash the application firmware again after the modem is updated.
 
 ## Prerequisites
 
@@ -55,6 +55,7 @@ git clone https://github.com/iotexproject/pebble-firmware.git
 ```
 
 :::
+
 ::: tab MacOS
 
 1. Install [JLINK_ARM for macOS](https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack)
@@ -68,6 +69,8 @@ git clone https://github.com/iotexproject/pebble-firmware.git
 ```
 cd ~
 git clone https://github.com/iotexproject/pebble-firmware.git
+```
+
 :::
 
 ::::
@@ -92,7 +95,6 @@ In Linux, extract in the following path:
 
 `~/.nrfconnect-apps/node_modules/`
 
-
 :::
 
 ::: tab MacOS
@@ -108,17 +110,37 @@ Launch the **nRF Connect** tool, scroll down to the `Programmer` app and open it
 
 ![](/img/developer/pebble-sdk/programmer_fig2.png)
 
-Connect Pebble to your computer using the USB cable, then in the programmer app window do the following steps:
+Connect Pebble to your computer using the USB cable, and follow the instructions in following two sections to flash the **Pebble Application Firmware** or the **Pebble Modem Firmware** respectively.
 
-1. Select the firmware hex file you want to flash (typically `app_signed.hex`) **(1)**
+### Flash the Pebble Application Firmware<span id="pebble_flash_app">.</span>
+
+1. Select the firmware hex file you want to flash (if you built a new firmware, find the `zephyr/app_signed.hex` file in the build folder) **(1)**
 
 2. Select your device from the devices combo box in the programmer window **(2)**
 
-3. Put Pebble in **MCUboot mode** ([see next paragraph](#put-pebble-tracker-in-mcuboot-mode)) and click the **Write** button **(3)**
+3. Put Pebble in **MCUboot mode** ([see the section below](#put-pebble-tracker-in-mcuboot-mode)) and click the **Write** button **(3)**
 
 ![](/img/developer/pebble-sdk/programmer_fig3.png)
 
-The flashing process will last about 60 seconds: the red led on the boards will flash quickly during the whole process. Eventually, Pebble will reboot automatically and the new firmware will be loaded.
+The flashing process will last about 60 seconds: the red led on the boards will blink during the whole process. Eventually, Pebble will reboot automatically and the new firmware will be loaded.
+
+### Flash the Pebble Modem Firmware
+
+::: warning
+Please notice that updating the modem firmware will also **erase** the Pebble Application Firmware: you will need to [flash the application firmware again](#pebble_flash_app).
+:::
+
+1. Download the [nRF9160 modem firmware binary](https://www.nordicsemi.com/Products/Low-power-cellular-IoT/nRF9160/Download) from Nordic: please notice that the officially supported version is [v1.2.0](https://www.nordicsemi.com/-/media/Software-and-other-downloads/Dev-Kits/nRF9160-DK/nRF9160-modem-FW/mfwnrf9160120.zip])
+
+2. Select your device from the devices combo box in the programmer window ( make sure your device is connected with the IoTeX programmer properly, as indicated by the green solid dot nect to the combobox)
+
+3. Enter the **MCUboot mode** for your Pebble ([see the section below](#put-pebble-tracker-in-mcuboot-mode)) and click the **Update Modem** button
+
+4. Select the modem firmware binary file `mfw_nrf9160_1.2.0.zip` you just downloaded and click **Open** to start the modem update process.
+
+![](/img/developer/pebble-sdk/programmer_fig4.png)
+
+The flashing process will last about 2 minutes: the red led on the board will blink during the whole process.
 
 ## Put Pebble in **MCUboot mode**
 
@@ -134,6 +156,4 @@ The MCUBoot mode is now enabled and you can release the Power button:
 
 ![](/img/developer/pebble-mcuboot.jpg)
 
-
-the device will stay in MCUboot mode for about 10 seconds, if during this period the firmware flashing process does not start Pebble will reboot automatically in normal operation mode.
-```
+the device will stay in MCUboot mode for about 20 seconds, if during this period the firmware flashing process does not start Pebble will reboot automatically in normal operation mode.
