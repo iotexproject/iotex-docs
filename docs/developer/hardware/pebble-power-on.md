@@ -39,8 +39,9 @@ Relevant slots, connectors and switches on Pebble include the following:
 
 Insert a IoT Micro-SIM into the Pebble SIM card slot until it's locked inside. Pebble supports both LTE-M and NB-IoT cellular standards: **check which one is supported in your country** and that the SIM card you use is compliant with te same standard.
 
-Some supported SIM cards are:
+Here is a list of IoT-SIM cards that are known to work with Pebble:
 
+- [AT&T IoT Data Plan SIM](https://marketplace.att.com/products/att-iot-dataplans-lte-internationalloc)
 - [Hologram Global IoT & M2M SIM Card](https://www.hologram.io/products/iot-sim-card)
 - [Vodafone Smart Sim (aka V-SIM)](https://eshop.v.vodafone.com/uk/v-sim)
 
