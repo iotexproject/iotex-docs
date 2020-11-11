@@ -2,9 +2,9 @@
 title: Overview
 ---
 
-## Pebble Tracker Overview
+## Pebble Overview
 
-IoTeX's Pebble Tracker meets the demand of applications that require strong data security, integrity protection, and multiparty trust across the entire supply chain. **Existing asset tracking solutions lack critical security features**, rendering them easily hackable and exposed to data corruption.
+IoTeX's Pebble meets the demand of applications that require strong data security, integrity protection, and multiparty trust across the entire supply chain. **Existing asset tracking solutions lack critical security features**, rendering them easily hackable and exposed to data corruption.
 
 ![](/img/developer/pebble.png)
 

@@ -8,11 +8,11 @@ title: Technical Specifications
 
 ## Processor
 
-Pebble Tracker is powered by a 64 MHz Arm® Cortex®-M33, 1 MB Flash and 256 KB RAM, with automated power and clock management, Arm TrustZone, and Arm CryptoCell 310
+Pebble is powered by a 64 MHz Arm® Cortex®-M33, 1 MB Flash and 256 KB RAM, with automated power and clock management, Arm TrustZone, and Arm CryptoCell 310
 
 ## Integrated Sensors
 
-Pebble Tracker combines an **environmental sensor** (temperature, relative humidity, barometric pressure, altitude, and volatile organic compounds - VOCs), a **motion sensor** (3-axis gyroscope, 3-axis accelerometer), and an ambient **light sensor**. It's also equipped with cellular network connectivity and integrated GPS supporting precise, long range tracking of asset data using established cellular infrastructure.
+Pebble combines an **environmental sensor** (temperature, relative humidity, barometric pressure, altitude, and volatile organic compounds - VOCs), a **motion sensor** (3-axis gyroscope, 3-axis accelerometer), and an ambient **light sensor**. It's also equipped with cellular network connectivity and integrated GPS supporting precise, long range tracking of asset data using established cellular infrastructure.
 | Sensor | Details |
 |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [ Environmental Sensor BME680](https://www.bosch-sensortec.com/products/environmental-sensors/gas-sensors-bme680/) | <li>Relative humidity</li><li>Barometric pressure</li><li>Ambient temperature</li><li>Air quality (VOC) </li> |
@@ -23,11 +23,11 @@ Pebble Tracker combines an **environmental sensor** (temperature, relative humid
 
 ## Network Connectivity
 
-Pebble Tracker includes a Multimode LTE-M/NB-IoT modem for cellular communication. To have your Pebble Tracker connected to the Internet you will need an *I*oT-enabled\*\* SIM card that supports either NB-IoT or LTE standards.
+Pebble includes a Multimode LTE-M/NB-IoT modem for cellular communication. To have your Pebble connected to the Internet you will need an *I*oT-enabled\*\* SIM card that supports either NB-IoT or LTE standards.
 
 ## Data format
 
-JavaScript Object Notation (JSON) is utilized to represent the sensor data collected by a Pebble tracker as well as the corresponding ECDSA digital signature. Pebble tracker utilizes ECDSA over the elliptic curve sepc256r1 to sign the collected sensor data (i.e., the _message_ field in the Pebble data format)
+JavaScript Object Notation (JSON) is utilized to represent the sensor data collected by a Pebble as well as the corresponding ECDSA digital signature. Pebble utilizes ECDSA over the elliptic curve sepc256r1 to sign the collected sensor data (i.e., the _message_ field in the Pebble data format)
 
 Supported data types include _Number_, _String_ and _Array_ defined as follows:
 
@@ -37,7 +37,7 @@ Supported data types include _Number_, _String_ and _Array_ defined as follows:
 | Number    | 64-bit                 | -1.79E+308 ~ +1.79E+308 |
 | String    | null-terminated string |
 
-An example of a JSON object containing a data point collected by the Pebble tracker is shown below, it consists of a sensor data object named _"message"_, and a digital signature data object named _"signature"_:
+An example of a JSON object containing a data point collected by the Pebble is shown below, it consists of a sensor data object named _"message"_, and a digital signature data object named _"signature"_:
 
 ```json
 {
@@ -89,7 +89,7 @@ The _signature_ data object contains the following signature data:
 
 ## Onboard RGB Led
 
-Pebble Tracker includes an RGB led to show the status of the Pebble Tracker, the table below shows all the possible led states and the respective meaning:
+Pebble includes an RGB led to show the status of the Pebble, the table below shows all the possible led states and the respective meaning:
 
 | <small>LED Color (Blink Rate)</small>          | <small>GPS Signal</small> | <small>Charging</small> | <small>NB-IoT/LTE Connection</small> | <small>Flashing the Firmware</small> |
 | :--------------------------------------------- | :-----------------------: | :---------------------: | :----------------------------------: | :----------------------------------: |

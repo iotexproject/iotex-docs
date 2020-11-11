@@ -6,7 +6,7 @@ title: Build on Windows
 
 [[toc]]
 
-The Pebble Tracker firmware can be easily configured and built on Windows using the Pebble SDk: a customized version of the Nordic's nRF Connect SDK (v1.3.0):
+The Pebble firmware can be easily configured and built on Windows using the Pebble SDk: a customized version of the Nordic's nRF Connect SDK (v1.3.0):
 
 ## Download and Install nRF Connect for Windows
 
@@ -22,7 +22,7 @@ Launch nRF Connect, scroll down to **Toolchain Manager** and click the **Install
 
 ![](/img/developer/pebble-sdk/one_click_fig2.png)
 
-## Download and install the Pebble Tracker SDK package
+## Download and install the Pebble SDK package
 
 Download The Pebble SDK installation at:
 
@@ -38,7 +38,7 @@ In the **nRF Connect** app, scroll down to the **Toolchain Manager** and click t
 
 ![](/img/developer/pebble-sdk/one_click_fig3.png)
 
-select the file Pebble Tracker SDK package that you just downloaded (`ncs-toolchain-pebble_v1.3.0-20200618-509f057.zip`) and click `OK`
+select the file Pebble SDK package that you just downloaded (`ncs-toolchain-pebble_v1.3.0-20200618-509f057.zip`) and click `OK`
 
 ## Open and configure the Embedded Studio IDE
 
@@ -54,7 +54,7 @@ The compiler toolchain paths in Embedded Studio should be already set, just make
 
 ![](/img/developer/pebble-sdk/one_click_fig6.png)
 
-## Build Pebble Tracker Application Firmware
+## Build Pebble Application Firmware
 
 ### Build in Embedded Studio IDE
 
@@ -66,7 +66,7 @@ If required, after the project has been generated, you can configure the firmwar
 
 Choose **Build Solution** from the **Build** menu to build the firmware: check out the output panel for the compilation output and wait until the end of the compilation process.
 
-At the end of the build process you will find the new Pebble Tracker firmare file at:
+At the end of the build process you will find the new Pebble firmare file at:
 
 ```
 C:\users\<your_username>\ncs\v1.3.0\nrf\applications\asset_tracker\build_thingy91_nrf9160ns\zephyr\app_signed.hex
@@ -80,7 +80,7 @@ To do so, locate and open the `git-bash.exe` terminal in your SDK folder:
 
 `C:\john\ncs\v1.3.0\toolchain\git-bash.exe``
 
-in the git-bash terminal, move to the pebble tracker application folder and compile the application:
+in the git-bash terminal, move to the Pebble application folder and compile the application:
 
 ```sh
 cd %userprofile%/ncs/v1.3.0/nrf/applications/asset_tracker

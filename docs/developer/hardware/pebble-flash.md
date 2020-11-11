@@ -4,7 +4,7 @@ title: Flash the Firmware
 
 # Flashing the Pebble Firmware
 
-You will be required to flash a new firmware to the Pebble Tracker if you want to:
+You will be required to flash a new firmware to the Pebble if you want to:
 
 - Replace the cryptographic certificates used by Pebble to sign the measurements data before transmission
 
@@ -14,7 +14,7 @@ You will be required to flash a new firmware to the Pebble Tracker if you want t
 
 ## Prerequisites
 
-We assume you already cloned the Pebble Tracker Firmware repository, and installed the Nordic nRF Connect tool for your system. If you have not done so yet, follow the instructions for your system below:
+We assume you already cloned the Pebble Firmware repository, and installed the Nordic nRF Connect tool for your system. If you have not done so yet, follow the instructions for your system below:
 
 ### Install nRF Connect & Programmer
 
@@ -39,7 +39,7 @@ git clone https://github.com/iotexproject/pebble-firmware.git
 
 2. [Download nRF Connect 3.6.0 for Linux](https://www.nordicsemi.com/-/media/Software-and-other-downloads/Desktop-software/nRF-Connect-for-Desktop/3-6-0/nrfconnect360x8664.AppImage)
 
-3. then, in a terminal window, install the Pebble Tracker Linux driver:
+3. then, in a terminal window, install the Pebble Linux driver:
 
 ```sh
 cd ~/pebble-firmware
@@ -108,26 +108,26 @@ Launch the **nRF Connect** tool, scroll down to the `Programmer` app and open it
 
 ![](/img/developer/pebble-sdk/programmer_fig2.png)
 
-Connect Pebble Tracker to your computer using the USB cable, then in the programmer app window do the following steps:
+Connect Pebble to your computer using the USB cable, then in the programmer app window do the following steps:
 
 1. Select the firmware hex file you want to flash (typically `app_signed.hex`) **(1)**
 
 2. Select your device from the devices combo box in the programmer window **(2)**
 
-3. Put Pebble Tracker in **MCUboot mode** ([see next paragraph](#put-pebble-tracker-in-mcuboot-mode)) and click the **Write** button **(3)**
+3. Put Pebble in **MCUboot mode** ([see next paragraph](#put-pebble-tracker-in-mcuboot-mode)) and click the **Write** button **(3)**
 
 ![](/img/developer/pebble-sdk/programmer_fig3.png)
 
-The flashing process will last about 60 seconds: the red led on the boards will flash quickly during the whole process. Eventually, Pebble Tracker will reboot automatically and the new firmware will be loaded.
+The flashing process will last about 60 seconds: the red led on the boards will flash quickly during the whole process. Eventually, Pebble will reboot automatically and the new firmware will be loaded.
 
-## Put Pebble Tracker in **MCUboot mode**
+## Put Pebble in **MCUboot mode**
 
-You can flash a new firmware to a Pebble Tracker through the USB port by putting the board in _MCUboot mode_: in this mode Pebble Tracker will start the **MCUboot** secure bootloader instead of the main application firmware, that will allow to receive a new firmware through the USB cable.
+You can flash a new firmware to a Pebble through the USB port by putting the board in _MCUboot mode_: in this mode Pebble will start the **MCUboot** secure bootloader instead of the main application firmware, that will allow to receive a new firmware through the USB cable.
 
-Follow the instruction below to enable MCUboot on Pebble Tracker (please refer to the [assembling](pebble-power-on.md#board-layout) guide to locate the buttons on the board):
+Follow the instruction below to enable MCUboot on Pebble (please refer to the [assembling](pebble-power-on.md#board-layout) guide to locate the buttons on the board):
 
-1. Press and keep pressed the [Reset Button](pebble-power-on.md#board-layout) on Pebble Tracker
-2. Press and release the [Power Button](pebble-power-on.md#board-layout) on the Pebble Tracker
+1. Press and keep pressed the [Reset Button](pebble-power-on.md#board-layout) on Pebble
+2. Press and release the [Power Button](pebble-power-on.md#board-layout) on the Pebble
 3. The blue led will turn on => Keep pressing the Reset Button until the led turns off (~5s)
 5. The MCUBoot mode is now enabled: release the Reset button
 

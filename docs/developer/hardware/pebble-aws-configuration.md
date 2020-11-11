@@ -2,13 +2,13 @@
 title: Configure AWS IoT Core
 ---
 
-# Configure AWS IoT Core to receive data from Pebble Tracker
+# Configure AWS IoT Core to receive data from Pebble
 
-To integrate Pebble Tracker with AWS IoT Core we will need to setup a Policy, configure a new _Thing_, and download the cryptographic certificates required for Pebble Tracker to send data to AWS.
+To integrate Pebble with AWS IoT Core we will need to setup a Policy, configure a new _Thing_, and download the cryptographic certificates required for Pebble to send data to AWS.
 
 ## Create the AWS IoT policy
 
-We will create an AWS IoT policy that allows your Pebble Tracker to connect and send messages to AWS IoT.
+We will create an AWS IoT policy that allows your Pebble to connect and send messages to AWS IoT.
 
 1. In the AWS IoT console, if a _Get started_ button appears, choose it. Otherwise, in the navigation pane, expand **Secure**, and then choose **Policies**.
 
@@ -34,7 +34,7 @@ We will create an AWS IoT policy that allows your Pebble Tracker to connect and 
 
 ## Create the AWS IoT thing, certificate and private key
 
-We will create a _Thing_ in the AWS IoT registry to represent your Pebble Tracker.
+We will create a _Thing_ in the AWS IoT registry to represent your Pebble.
 
 1. In the [AWS IoT console](https://console.aws.amazon.com/iot/home), in the navigation pane, choose **Manage**, and then choose **Things**.
 

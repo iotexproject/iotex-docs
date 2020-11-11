@@ -212,7 +212,7 @@ module.exports = {
                   collapsable: false
                 },
                 {
-                  title: "Pebble Tracker",
+                  title: "Pebble",
                   path: "/developer/hardware/pebble",
                   sidebarDepth: 0,
                   collapsable: true,

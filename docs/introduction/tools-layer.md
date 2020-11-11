@@ -11,6 +11,6 @@ Another major focus for IoTeX in the past months and surely in the future is to 
 
 - **Decentralized Storage**: All of that IoT data … where does it all go? IoTeX offers flexible storage options via Cloud or decentralized storage, where data is “hashed” to the blockchain for verifiability and data provenance. IoTeX enforces protections for data at-rest and in-transit, and we are working closely with the IPFS team on decentralized encrypted storage for Ucam, which can be extended to other “Powered by IoTeX” devices in the future. See IoTeX’s Keynote at the IPFS Summit for more details.
 
-- **IoT Data Dashboards**: integration with ThingsBoard, a powerful open source data visualization tool to create your own IoT dashboards. Expect to see beautiful dashboards for IoTeX devices like Pebble Tracker very soon!
+- **IoT Data Dashboards**: integration with ThingsBoard, a powerful open source data visualization tool to create your own IoT dashboards. Design beautiful dashboards for IoTeX devices like Pebble very soon!
 
 - **Smart Contract Tools**: new and improved IoTeX command-line tool (ioctl) with smart contract deployment capabilities, and planned integrations with smart contract tools like Truffle.

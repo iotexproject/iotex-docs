@@ -4,7 +4,7 @@ title: Deploy your own backend service
 
 # Deploy your own backend service
 
-You can configure your own backend service to receive the data from your Pebble Trackers. The backend service will allow you to archive, visualize, and even send the data to a IoTeX Blockchain Smart Contract.
+You can configure your own backend service to receive the data from your Pebbles. The backend service will allow you to archive, visualize, and even send the data to a IoTeX Blockchain Smart Contract.
 
 ## Hardware Requirements
 
@@ -137,11 +137,11 @@ connectors:
 docker restart docker-compose_thingsboard-gateway_1
 ```
 
-7. Congrats! You just setup the pebble backend, which is ready to receive data from Pebble Trackers!
+7. Congrats! You just setup the pebble backend, which is ready to receive data from Pebbles!
 
 ## Visualize the Data on Thingsboard
 
-To visualize some data, you can use the `mock` tool to generate and send some test data compliant with the Pebble Tracker data specs.
+To visualize some data, you can use the `mock` tool to generate and send some test data compliant with the Pebble data specs.
 
 ### Inject Mock Data
 

@@ -2,22 +2,22 @@
 title: Quick Start
 ---
 
-# Pebble Tracker Quick Start Guide
+# Pebble Quick Start Guide
 
-Congratulations on receiving your Pebble Tracker!
+Congratulations on receiving your Pebble!
 
-This quick start guide will help you quickly explore a small number of features of your Pebble Tracker.
+This quick start guide will help you quickly explore a small number of features of your Pebble.
 
 ## Hardware Setup
 
-Before start using your Pebble Tracker, you need three simple steps to hook up the device with a few components (see the [Hardware Setup](pebble-power-on) guide for more details):
+Before start using your Pebble, you need three simple steps to hook up the device with a few components (see the [Hardware Setup](pebble-power-on) guide for more details):
 
 - Insert the IoT SIM card into the SIM card slot
 - Connect the NB-IoT/LTE-M antenna
 - Connect the rechargeable Lithium Polymer Ion battery pack
 - Press the [Power Button](pebble-power-on.md#board-layout-image) for 2 seconds to Power on
 
-Check out the [on-board RGB led](pebble-data-specs.md#led-status-table) to monitor the status of your Pebble Tracker.
+Check out the [on-board RGB led](pebble-data-specs.md#led-status-table) to monitor the status of your Pebble.
 
 ## Dashboard Setup
 

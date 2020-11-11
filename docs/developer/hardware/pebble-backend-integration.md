@@ -16,13 +16,13 @@ If you don't have access to a cloud server, you can still deploy the backend on 
 
 ## Configure the Firmware to connect to backend
 
-In order to have Pebble Tracker data sent to the IoTeX Pebble Backend you only need to configure the `MQTT_BROKER_HOSTNAME` setting in the firmware configuration with the ip address or the url of the pebble backend you want to use (set it to `trypebble.io` if you want to use the IoTeX Public Backend, this is the factory default).
+In order to have Pebble data sent to the IoTeX Pebble Backend you only need to configure the `MQTT_BROKER_HOSTNAME` setting in the firmware configuration with the ip address or the url of the pebble backend you want to use (set it to `trypebble.io` if you want to use the IoTeX Public Backend, this is the factory default).
 
-1. Follow the [Pebble Tracker Firmware Configuration][pebble-firmware-configure] guide to start the firmware configuration tool, find the `MQTT_BROKER_HOSTNAME` setting and configure it with your backend url. Also find the `MQTT_BROKER_PORT` setting and make sure it's configured with the correct hmq port - 1884 is the default)
+1. Follow the [Pebble Firmware Configuration][pebble-firmware-configure] guide to start the firmware configuration tool, find the `MQTT_BROKER_HOSTNAME` setting and configure it with your backend url. Also find the `MQTT_BROKER_PORT` setting and make sure it's configured with the correct hmq port - 1884 is the default)
 
 2. Save the configuration and build the firmware (see instructions for [Windows](pebble-build-windows.md#build-pebble-tracker-application-firmware) or [Linux/MacOS](pebble-build-linux.md#compile-project-with-command-line))
 
-3. [Flash the firmware](pebble-flash) in your Pebble Tracker
+3. [Flash the firmware](pebble-flash) in your Pebble
 
 ## Visualize the data
 
@@ -33,7 +33,7 @@ Access the backend Thingsboard at [trypebble.io](http://trypebble.io) (or your c
 
 ![](/img/developer/pebble-backend/thingsboard-login.png)
 
-In the navigation panle, click on **devices**: you should see your Pebble Tracker among the listed devices, with label `nrf-...` followed by the IMEI number:
+In the navigation panle, click on **devices**: you should see your Pebble among the listed devices, with label `nrf-...` followed by the IMEI number:
 
 ![](/img/developer/pebble-backend/thingsboard-device.png)
 

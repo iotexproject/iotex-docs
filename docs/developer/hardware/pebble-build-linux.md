@@ -130,7 +130,7 @@ The pebble-firmware IoTeX repository contains the firmware application source an
 git clone https://github.com/iotexproject/pebble-firmware.git
 ```
 
-Before we can build the firmware we need to replace the default board definition from the SDK with the one for Pebble Tracker:
+Before we can build the firmware we need to replace the default board definition from the SDK with the one for Pebble:
 
 ```sh
 # Delete the default board definition
