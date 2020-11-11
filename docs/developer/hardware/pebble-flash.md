@@ -87,20 +87,20 @@ You will need to install a custom Programmer app for nrf Connect, that is includ
 ::: tab Windows
 In Windows, extract in the following path:
 
-`%userprofile%/.nrfconnect-apps/node_modules/`
+`%userprofile%/.nrfconnect-apps/local/`
 :::
 
 ::: tab Linux
 In Linux, extract in the following path:
 
-`~/.nrfconnect-apps/node_modules/`
+`~/.nrfconnect-apps/local/`
 
 :::
 
 ::: tab MacOS
 In MacOS, extract in the following path:
 
-`~/.nrfconnect-apps/node_modules/`
+`~/.nrfconnect-apps/local/`
 
 :::
 
