@@ -37,7 +37,14 @@ Relevant slots, connectors and switches on Pebble include the following:
 
 ## Inserting a SIM card
 
-Insert a IoT Micor-SIM into the SIM card slot and press until it's locked inside. The Pebble supports both LTE and NB-IoT radio standards: check which one is supported in your country and that the SIM card is compliant with te same standard. Pebble comes with NB-IoT firmware preinstalled: if you need LTE instead, then you will be required to flash the refpective LTE firmware (see [TODO: Flashing the firmware](TODO: Flashing the firmware)).
+Insert a IoT Micro-SIM into the Pebble SIM card slot until it's locked inside. Pebble supports both LTE-M and NB-IoT cellular standards: **check which one is supported in your country** and that the SIM card you use is compliant with te same standard.
+
+Some supported SIM cards are:
+
+- [Hologram Global IoT & M2M SIM Card](https://www.hologram.io/products/iot-sim-card)
+- [Vodafone Smart Sim (aka V-SIM)](https://eshop.v.vodafone.com/uk/v-sim)
+
+Pebble comes preinstalled with the firmware in **NB-IoT** configuration: if you need support for LTE-M instead, then you will be required to [configure and flash the Pebble firmware](pebble-firmware-configure) to enable LTE-M.
 
 ## Connecting the LTE Antenna
 
