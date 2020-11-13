@@ -279,6 +279,7 @@ module.exports = {
                     "developer/ioctl/install",
                     "developer/ioctl/config",
                     "developer/ioctl/account",
+                    "developer/ioctl/hdwallet",
                     "developer/ioctl/alias",
                     "developer/ioctl/action",
                     "developer/ioctl/bc",
