@@ -20,7 +20,7 @@ Set password
 # Enter a password to access this account
 Enter password again
 # Repeat your password
-Mnemonic pharse: object gentle entry place cigar minimum crowd lounge collect tray describe brush
+Mnemonic phrase: object gentle entry place cigar minimum crowd lounge collect tray describe brush
 It is used to recover your wallet in case you forgot the password. Write them down and store it in a safe place.
 ```
 
@@ -72,7 +72,7 @@ Displays the mnemonic phrase for the HD wallet
 ➜ ioctl hdwallet export
 Enter password
 # Type your password here
-Mnemonic pharse: cattle success creek mean element useless lonely differ physical federal obtain knife
+Mnemonic phrase: cattle success creek mean element useless lonely differ physical federal obtain knife
 It is used to recover your wallet in case you forgot the password. Write them down and store it in a safe place.
 ```
 
@@ -89,6 +89,6 @@ Set password
 # Type your password
 Enter password again
 # Re-type your password
-Mnemonic pharse: cattle success creek mean element useless lonely differ physical federal obtain knife
+Mnemonic phrase: cattle success creek mean element useless lonely differ physical federal obtain knife
 It is used to recover your wallet in case you forgot the password. Write them down and store it in a safe place.
 ```
