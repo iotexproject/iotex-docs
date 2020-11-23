@@ -150,18 +150,34 @@ module.exports = {
                   collapsable: true,
                   children: [
                     "developer/sdk/overview",
-                    "developer/sdk/install-antenna-js",
-                    "developer/sdk/install-antenna-go",
-                    "developer/sdk/install-antenna-swift",
-                    "developer/sdk/install-antenna-java",
-                    "developer/sdk/install-antenna-c",
-                    "/developer/sdk/account-create",
-                    "/developer/sdk/transfer",
-                    "/developer/sdk/xrc20",
-                    "/developer/sdk/smart-contracts",
-                    "/developer/sdk/iopay-integrate",
-                    "/developer/sdk/did",
-                    "/developer/sdk/rpc"
+                    {
+                      title: "Installation",
+                      path: "/developer/sdk/install-antenna-js",
+                      sidebarDepth: 0,
+                      collapsable: true,
+                      children: [
+                        "developer/sdk/install-antenna-js",
+                        "developer/sdk/install-antenna-go",
+                        "developer/sdk/install-antenna-swift",
+                        "developer/sdk/install-antenna-java",
+                        "developer/sdk/install-antenna-c"
+                      ]
+                    },
+                    {
+                      title: "Reference Code",
+                      path: "/developer/sdk/account-create",
+                      sidebarDepth: 0,
+                      collapsable: true,
+                      children: [
+                        "/developer/sdk/account-create",
+                        "/developer/sdk/transfer",
+                        "/developer/sdk/xrc20",
+                        "/developer/sdk/smart-contracts",
+                        "/developer/sdk/iopay-integrate",
+                        "/developer/sdk/did",
+                        "/developer/sdk/rpc"
+                      ]
+                    }
                   ]
                 },
                 {

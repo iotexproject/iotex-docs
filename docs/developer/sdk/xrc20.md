@@ -4,7 +4,7 @@ title: XRC20 Tokens
 
 ## XRC20 Tokens
 
-The XRC20 package provides facility api for interacting with XRC20 tokens deployed on the IoTeX blockchain.
+The XRC20 package provides facility API for interacting with XRC20 tokens deployed on the IoTeX blockchain.
 
 :::: tabs
 
@@ -43,7 +43,7 @@ import { XRC20 } from "iotex-antenna/lib/token/xrc20";
     "io16acqxqlmaep6z96khs3ey2607sygnx3surn3ga"
   );
 
-  // transfer token to io16acqxqlmaep6z96khs3ey2607sygnx3surn3ga
+  // transfer tokens to io16acqxqlmaep6z96khs3ey2607sygnx3surn3ga
   const hash = await vita.transfer(
     "io16acqxqlmaep6z96khs3ey2607sygnx3surn3ga",
     new BigNumber("1000000000000000000"),

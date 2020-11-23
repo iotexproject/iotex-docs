@@ -4,7 +4,7 @@ title: Make a Token Transfer
 
 # Make a Token Transfer
 
-`antenna.iotx.accounts` create, sign, and send a transaction of transfer to IoTeX blockchain network.
+The object `antenna.iotx` contains functiopns to create, sign, and send actions to the IoTeX blockchain.
 
 :::: tabs
 

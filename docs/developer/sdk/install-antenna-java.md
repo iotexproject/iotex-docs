@@ -20,7 +20,7 @@ title: Antenna-Java SDK
 implementation 'com.github.iotexproject:iotex-antenna-java:0.5.8'
 ```
 
-:::tip
+:::tip A few useful links
 
-- See [Code Examples](/developer/examples/chain-info) section for most common SDK use case in Java.
+- [Reference Code](/developer/sdk/account-create#java): the docs section with reference implementation for most common blockchain requirements.
   :::

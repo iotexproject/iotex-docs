@@ -4,7 +4,7 @@ title: Create an account
 
 # Create an Account
 
-The `antenna.iotx.accounts` contains functions to generate Iotex accounts and sign transactions and data.
+The object `antenna.iotx.accounts` contains functions to generate IoTeX accounts, manage multiple accounts, sign transactions and data.
 
 :::: tabs
 

@@ -6,9 +6,9 @@ title: Interact with Smart Contracts
 
 ## Overview
 
-The IoTeX Blockchain implements a full featured Ethereum Virtual Machine (EVM), fully compatible with the latest version, hence you can use **solidity** programming language to create smart contracts on IoTeX or port any existing Ethereum smart contract to IoTeX.
+The IoTeX Blockchain implements a full featured **Ethereum Virtual Machine (EVM)**, allowing you to use **solidity** as a programming language to create smart contracts on IoTeX, or port any existing Ethereum smart contract to IoTeX.
 
-The `iotx.Contract` class makes it easy to interact with smart contracts on the IoTeX blockchain. When you create a new contract object, you initialize it with the JSON interface of the respective smart contract, and it will take care of converting all method calls into low-level ABI calls over RPC for you, hence you can interact with IoTeX smart contracts as with any JavaScript object.
+The `iotx.Contract` class makes it easy to interact with smart contracts on the IoTeX blockchain. When you create a new `Contract` object, you initialize it with the JSON interface of the respective smart contract, and it will take care of converting all method calls into low-level ABI calls over RPC for you, hence you can interact with IoTeX smart contracts as with any JavaScript object.
 
 ::: tip
 

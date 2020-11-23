@@ -10,8 +10,7 @@ In your JS project root, use `npm install` or `yarn add`.
 pod 'iotex-antenna-swift', '~> 0.1'
 ```
 
-:::tip
+:::tip A few useful links:
 
-- See [Code Examples](/developer/examples/chain-info) section for most common SDK use case in Javascript.
-
-:::
+- [Reference Code](/developer/sdk/account-create#swift): the docs section with reference implementation for most common blockchain requirements.
+  :::

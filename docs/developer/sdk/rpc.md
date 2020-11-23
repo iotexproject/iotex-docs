@@ -4,9 +4,9 @@ title: Call RPC Methods
 
 ## Call RPC Methods
 
-The `rpc-method`(provider) package allows you to make gRPC calls to the IoTeX blockchain.
+The `rpc-method` package allows you to make direct gRPC calls to the IoTeX blockchain. The complete gRPC API can be found in the [iotex-proto](https://github.com/iotexproject/iotex-proto/blob/master/proto/api/api.proto) GitHub repository, and all calls can be made both using the _umbrella_ `antenna.iotex` object or using `rpc-method` as a standalone package.
 
-Use the umbrella `antenna.iotex` package:
+#### Using `antenna.iotx`:
 
 :::: tabs
 
@@ -77,7 +77,7 @@ func main() {
 
 ::::
 
-or use the `rpc-method` standalone package:
+#### Using `rpc-method`as a standalone package:
 
 :::: tabs
 
