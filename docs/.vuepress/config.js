@@ -177,20 +177,21 @@ module.exports = {
                         "/developer/sdk/did",
                         "/developer/sdk/rpc"
                       ]
+                    },
+                    {
+                      title: "Examples",
+                      path: "/developer/examples/chain-info",
+                      sidebarDepth: 0,
+                      collapsable: true,
+                      children: [
+                        "/developer/examples/chain-info",
+                        "/developer/examples/open-oracle",
+                        "/developer/examples/xrc20-deploy"
+                      ]
                     }
                   ]
                 },
-                {
-                  title: "Code Examples",
-                  path: "/developer/examples/chain-info",
-                  sidebarDepth: 0,
-                  collapsable: true,
-                  children: [
-                    "/developer/examples/chain-info",
-                    "/developer/examples/open-oracle",
-                    "/developer/examples/xrc20-deploy"
-                  ]
-                },
+
                 {
                   title: "IoTeX dApp Sample",
                   path: "/developer/dapp-starter/introduction",
