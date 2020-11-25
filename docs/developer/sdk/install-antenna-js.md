@@ -2,7 +2,7 @@
 title: Antenna-JS SDK
 ---
 
-# Install Javascript SDK
+# Install Antenna-Js
 
 In your JS project root, use `npm install` or `yarn add`.
 
