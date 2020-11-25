@@ -40,3 +40,15 @@ In the navigation panle, click on **devices**: you should see your Pebble among 
 In the navigation panle, click on **dashboards** and select the Pebble Tracked dashboard to see the incoming data:
 
 ![](/img/developer/pebble-backend/thingsboard-dashboard.png)
+
+## Configure Data Collection
+
+Inside the Dashboard you can send MQTT messages to configure Pebble using the `Config Me` button: in the configuration dialog you can enable/disable each measurement, as well as change the data upload interval. Click `OK` button to send the configuration: the new settings will be enabled as soon as the message reaches the board:
+
+![](/img/developer/pebble-backend/thingsboard-config-me.png)
+
+## _"Find your Pebble"_
+
+The `Beep me`button can be used to make Pebble play a sound: click the `Beep Me` button, then click `OK`: after a few second a "beep" sound will be emitted by the onboard buzzer:
+
+![](/img/developer/pebble-backend/thingsboard-beep-me.png)
