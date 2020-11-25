@@ -41,4 +41,4 @@ This module allows to create and manage blockchain actions
 This class allows to interact with contract deployed on the IoTeX Blockchain, given the contract address and the ABI
 
 **XRC20**<br/>
-This module allows to send, receive and query walets for XRC20 tokens deployed on the IoTeX Blockchain.
+This module allows to send, receive and query wallets for XRC20 tokens deployed on the IoTeX Blockchain.
