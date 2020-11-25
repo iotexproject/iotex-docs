@@ -141,11 +141,14 @@ docker restart docker-compose_thingsboard-gateway_1
 
 ## Visualize the Data on Thingsboard
 
-To visualize some data, you can use the `mock` tool to generate and send some test data compliant with the Pebble data specs.
+### Receive Pebble MQTT data
+
+To visualize data from your Pebble, you need to change the Pebble firmware configuration to have it send messages to your backend service public endpoint instead of the default endpoint `trypebble.io:8080`, to do so you must change the `Asset Tracker > IoTeX Hosted MQTT broker hostname` firmware setting accordingly: see the ["Configure the Firmware"](http://localhost:8080/developer/hardware/pebble-firmware-configure) doc to learn ho to configure the Pebble firmware.
 
 ### Inject Mock Data
 
-Run the following on the sPebble Backend server:
+Alternatively, if you want to visualize some data when you do not have a Pebble device available, you can use the `mock` tool to generate and send some test data compliant with the Pebble data specs.
+Run the following on the Pebble Backend server:
 
 ```
 cd pebble-backend-master/scripts
