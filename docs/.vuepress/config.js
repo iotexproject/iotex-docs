@@ -73,12 +73,13 @@ module.exports = {
           "/introduction": [
             {
               collapsable: false,
-              title: "Core Concepts Home",
+              sidebarDepth: 0,
+              title: "Introduction to IoTeX",
               path: "/introduction/whatisiotex",
               children: [
                 {
                   collapsable: true,
-                  title: "The platform",
+                  title: "IoTeX Platform",
                   sidebarDepth: 0,
                   path: "/introduction/whatisiotex",
                   children: [
@@ -103,6 +104,13 @@ module.exports = {
                     "introduction/action-concept",
                     "introduction/wallet-concept"
                   ]
+                },
+                {
+                  collapsable: true,
+                  title: "Advanced Concepts",
+                  sidebarDepth: 0,
+                  path: "/introduction/chain-id-concept",
+                  children: ["introduction/chain-id-concept"]
                 }
               ]
             }
