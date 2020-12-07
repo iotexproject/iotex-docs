@@ -126,7 +126,7 @@ part4Body:
         text: "Voting Portal"
       - url: "https://medium.com/iotex/tech/home"
         text: "Tech Blog"
-      - url: "https://youtube.com"
+      - url: "https://www.youtube.com/channel/UCdj3xY3LCktuamvuFusWOZw"
         text: "Youtube"
   - title: "GRANT PROPOSALS"
     sublinks:
