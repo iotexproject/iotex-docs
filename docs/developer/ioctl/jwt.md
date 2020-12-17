@@ -1,5 +1,5 @@
 ---
-title: JWT
+title: Issue JWT
 ---
 
 # Issue JWT

@@ -312,7 +312,8 @@ module.exports = {
                     "developer/ioctl/contract",
                     "developer/ioctl/stake2",
                     "developer/ioctl/xrc20",
-                    "developer/ioctl/did"
+                    "developer/ioctl/did",
+                    "developer/ioctl/jwt"
                   ]
                 },
                 {
