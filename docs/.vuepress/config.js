@@ -285,8 +285,18 @@ module.exports = {
                       children: [
                         "/developer/hardware/pebble-build-linux",
                         "/developer/hardware/pebble-build-windows",
-                        "/developer/hardware/pebble-firmware-configure",
-                        "/developer/hardware/pebble-flash"
+                        "/developer/hardware/pebble-firmware-configure"
+                      ]
+                    },
+                    {
+                      title: "Flash the Firmware",
+                      path: "/developer/hardware/pebble-flash",
+                      sidebarDepth: 0,
+                      collapsable: true,
+                      children: [
+                        "/developer/hardware/pebble-flash",
+                        "/developer/hardware/pebble-flash-application",
+                        "/developer/hardware/pebble-flash-bootloader"
                       ]
                     }
                   ]

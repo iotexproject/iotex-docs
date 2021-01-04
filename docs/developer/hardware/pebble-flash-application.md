@@ -1,22 +1,16 @@
 ---
-title: Flashing the Firmware
+title: The Application Firmware
 ---
 
-# Flashing the Pebble Firmware
+# Flashing the Application Firmware
 
-You will be required to flash a new firmware to your Pebble device in one of the following cases:
-
-- Update the application Firmware (e.g. for bug fixes or new added features to the main software)
-- Update the modem firmware (e.g. to switch between NB-IoT and LTE-M cellular band support - Pebble comes preconfigured for NB-IoT)
-- Update the bootloader firmware (e.g. for bug fixes or new low-level features)
-
-When you flash the **modem** firmware, after the modem is updated you will have to **flash the application firmware again**.
+The application firmware is the software that manages the high level behavior of Pebble: sensors data colloction, MQTT client operations, blockchain communication, etc...
 
 ## Prerequisites
 
 We assume you already cloned the Pebble Firmware repository, and installed the Nordic nRF Connect tool for your system. If you have not done so yet, follow the instructions for your system below:
 
-### Install nRF Connect & Programmer
+##### Install nRF Connect & Programmer
 
 :::: tabs
 
