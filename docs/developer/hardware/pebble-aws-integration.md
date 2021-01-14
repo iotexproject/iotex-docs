@@ -36,7 +36,7 @@ Finally, you can [Compile the firmware](pebble-build-windows) and [flash it](peb
 
 ## Validate the connection in AWS IoT
 
-In your AWS IoT console choose **test** in left menu and specify the **Subscription topic** to be `topic/nrf-XXXXXXXXXXXXXXX/data`, where `XXXXXXXXXXXXXXX` is the unique 15-digit IMEI number of your Pebble modem (you can find this number printed on a lable included in your Pebble box, also it's reported on the device serial port log output).
+In your AWS IoT console choose **test** in left menu and specify the **Subscription topic** to be `device/nrf-XXXXXXXXXXXXXXX/data`, where `XXXXXXXXXXXXXXX` is the unique 15-digit IMEI number of your Pebble modem (you can find this number printed on a lable included in your Pebble box, also it's reported on the device serial port log output).
 
 ![](/img/developer/pebble_aws_iot_test.png)
 
