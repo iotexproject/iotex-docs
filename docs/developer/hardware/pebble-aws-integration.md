@@ -20,16 +20,15 @@ Make sure that you edited the macros correctly (see the image) adding a new line
 
 ## Configure the firmware to use the AWS certificate
 
-To instruct the firmware to actually transfer the new certificates provided in `certificate.h` into the modem, uncomment the following lines in the Pebble application file before building the new firmware (i.e., '\nrf\applications\asset_tracker\prj_thingy91_nrf9160ns.conf')
+To instruct the firmware to actually transfer the new certificates provided in `certificate.h` into the modem, in the firmware configuration locate the `Asset Tracker -> Use provisioned certificates` item and **uncheck** it, then locate the `Zephyr Kernel -> Modules -> Nordin nRF Connect -> Libraries -> nRF9160 modem key management library` and **enable it**
 
-```c
-CONFIG_USE_PROVISIONED_CERTIFICATES = n
-CONFIG_MODEM_KEY_MGMT = y
-```
+Check out [how to configure the firmware](pebble-firmware-configure) for instructions on how to start the firmware configuration. You can use the search functionality to quickly locate the setting you are loking for.
 
 ## Configure the AWS endpoint in Pebble
 
-There is one last step to make before we can finally build the new firmware: set the endpoint of our AWS _Thing_ where the Pebble should send the data to. See [how to configure the firmware](pebble-firmware-configure) for instructions on how to start the firmware configuration, locate the `config MQTT_BROKER_HOSTNAME`item and set it to your AWS _Thing_ endpoint and save the configuration.
+There is one last step to make before we can finally build the new firmware: set the endpoint of our AWS _Thing_ where the Pebble should send the data to. In the firmware configuration locate the `Asset Tracker -> MQTT_BROKER_HOSTNAME` item and set it to your AWS _Thing_ endpoint and save the configuration, then locate the `Asset Tracker -> MQTT_BROKER_PORT` and set it to `8883`.
+
+Check out [how to configure the firmware](pebble-firmware-configure) for instructions on how to start the firmware configuration
 
 ## Build and flash the modified firmware
 
