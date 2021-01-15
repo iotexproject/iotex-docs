@@ -2,6 +2,10 @@
 title: Configure Thingsboard Rulechain
 ---
 
+:::warning
+This document is not updated.
+:::
+
 # Configure Thingsboard Rulechain
 
 We use the Rule Engine of Thingsboard to send messages to the blockchain:

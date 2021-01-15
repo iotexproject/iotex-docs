@@ -4,6 +4,10 @@ title: Configure the API Server
 
 ## Configure the Api server
 
+:::warning
+This document is not updated.
+:::
+
 The Api server is a REST API proxy for converting incoming REST API requests into valid smart contract calls that are broadcast tho the IoTeX Blockchain through gRPC calls.
 
 The Api server receives requests from a Thingsboard rule chain previously [configured to send telemetry data over REST API calls](pebble-blockchain-tbrule) that look like the one below:

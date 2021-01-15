@@ -267,7 +267,7 @@ module.exports = {
                         "/developer/hardware/pebble-aws-integration"
                       ]
                     },
-                    {
+                    /* {
                       title: "Integrate with IoTeX Blockchain",
                       path: "/developer/hardware/pebble-blockchain-tbrule",
                       sidebarDepth: 0,
@@ -276,7 +276,7 @@ module.exports = {
                         "/developer/hardware/pebble-blockchain-tbrule",
                         "/developer/hardware/pebble-blockchain-apiserver"
                       ]
-                    },
+                    }, */
                     {
                       title: "Develop and Build the Firmware",
                       path: "/developer/hardware/pebble-build-linux",
