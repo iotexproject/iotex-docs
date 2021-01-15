@@ -54,7 +54,7 @@ In the **Dashboards** window, you can click `+`on the top right corner and selec
 
 ![](/img/developer/pebble-quickstart/pebble_quick_start_guide_fig4.png)
 
-Download the [IoTeX's dashboard template](https://raw.githubusercontent.com/iotexproject/pebble-backend/master/example/dashboard/pebble_1.json) and drop the file into the pop-up window.
+Download the [IoTeX's dashboard template](https://raw.githubusercontent.com/iotexproject/pebble-backend/master/example/dashboard/pebble_template.json) and drop the file into the pop-up window.
 
 ![](/img/developer/pebble-quickstart/pebble_quick_start_guide_fig5.png)
 
