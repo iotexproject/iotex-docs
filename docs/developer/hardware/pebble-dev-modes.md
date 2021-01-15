@@ -16,7 +16,7 @@ The developer mode facilitates development of Pebble applications on a single ma
 
 ![](/img/developer/pebble-dev-modes/pebble_devmod_fig1.png)
 
-See [Setup the Developer Mode]() for instructions on how to configure the backend service
+See [Setup in Developer Mode](/developer/hardware/pebble-backend-configuration) for instructions on how to configure the backend service
 
 ## Production Mode
 
@@ -28,4 +28,6 @@ In the production mode, the backend is built using the following AWS services an
 
 ![](/img/developer/pebble-dev-modes/pebble_devmod_fig2.png)
 
-The developer mode enables a developer to connect and manage a large number of Pebble devices. In such mode, MQTT communications between Pebble devices and AWS IoT Core are protected by the Transport Layer Security (TLS) protocol.
+The production mode enables a developer to connect and manage a large number of Pebble devices. In such mode, MQTT communications between Pebble devices and AWS IoT Core are protected by the Transport Layer Security (TLS) protocol.
+
+See [Setup in Production Mode](/developer/hardware/pebble-aws-configuration) for instructions on how to configure AWS IoT to connect with Pebble devices.
