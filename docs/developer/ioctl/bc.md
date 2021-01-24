@@ -146,17 +146,17 @@ unstakeStartTime: none
 `Usage: ioctl bc bucket [BUCKET_INDEX]`
 
 ```
-➜  ioctl bc bucketlist daddypig
+➜  ioctl bc bucket 56
 Blockchain Node: api.testnet.iotex.one:443
 {
-index: 56
-owner: io1gh439pm67d4cwxt882xpylj75klys6esepml60
-candidate: io1q2whygmmzphr22fh5703l04jz5kh9thj9dgs99
-stakedAmount: 232 IOTX
-stakedDuration: 7 days
-autoStake: false
-createTime: 2020-05-21T13:10:10Z
-stakeStartTime: 2020-05-21T13:28:25Z
-unstakeStartTime: none
+	index: 56
+	owner: io19n5sqmreq4tk7w7xevnwms9ux8h7kuemjrjlf7
+	candidate: io1xrcfzdmujtr9hvmrm58yxvhe5djahdzt30ljs2
+	stakedAmount: 100 IOTX
+	stakedDuration: 0 days
+	autoStake: false
+	createTime: 2020-06-01T18:32:35Z
+	stakeStartTime: 2020-06-01T18:32:35Z
+	unstakeStartTime: none
 }
 ```
