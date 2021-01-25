@@ -79,12 +79,12 @@ One can retrieve blocks that contain the target transfers by using `/APIService/
 
 One can also use ioctl commandline tool to [query a block by height or hash](https://docs.iotex.io/#query-block).
 
-## Retrieve action Log
+## Retrieve transaction Log
 
-One can retrieve action log that contain the target transfers by using `/APIService/GetactionLogByBlockHeight` and `/APIService/GetactionLogByActionHash` endpoints. Examples are given below:
+One can retrieve transaction logs that contain the target transfers by using `/APIService/GetactionLogByBlockHeight` and `/APIService/GetactionLogByActionHash` endpoints. Examples are given below:
 
-1. [Get action logs by block hash](/developer/core-api/api.md#getactionlogbyblockheight)
-2. [Get action log by action hash](/developer/core-api/api.md#getactionlogbyactionhash)
+1. [Get transaction logs by block height](/developer/core-api/api.md#gettransactionlogbyblockheight)
+2. [Get transaction logs by action hash](/developer/core-api/api.md#gettransactionlogbyactionhash)
 
 ::: warning
 If you get an "**unimplemented**" error code, with a message like "**feature not supported**" when calling an action log APIs, please resync your node from 0, or download our latest snapshot with index data. Check out the [Gateway node setup and snapshot download guides](https://github.com/iotexproject/iotex-bootstrap#mainnet) for more instructions.
