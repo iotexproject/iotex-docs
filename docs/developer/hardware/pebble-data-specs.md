@@ -58,7 +58,10 @@ An example of a JSON object containing a data point collected by the Pebble is s
 		humidity: 55.755001068115234,
 		gyroscope: [-12, 11, 14],
 		accelerometer: [-711, -231, 8260],
-		timestamp: 3443547577
+		timestamp: 3443547577,
+    random: "3767398368",
+    rsa_n: "0xa709e2f84ac0e21eb0caa018cf7f697...8f628698f0c7b420c4b7",
+    rsa_e: "0x010001"
 	},
 
 	signature:  {
