@@ -144,7 +144,7 @@ Follow the instruction below to enable MCUboot on Pebble (please refer to the [a
 
 1. On Pebble, press and **keep pressed** the [Power Button](pebble-power-on.md#board-layout)
 2. While the Power Button is pressed, **press and release** the [Reset Button](pebble-power-on.md#board-layout)
-3. The **blue led** will turn on: keep the Power Button pressed until the led turns off (~5s)
+3. The **blue led** will turn on: keep the Power Button pressed for ~5s until the blue led goes off and it turns int steady red.
 
 The MCUBoot mode is now enabled and you can release the Power button:
 
