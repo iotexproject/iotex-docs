@@ -6,32 +6,34 @@ title: Build on Windows
 
 [[toc]]
 
-The Pebble firmware can be easily configured and built on Windows using the Pebble SDk: a customized version of the Nordic's nRF Connect SDK (v1.3.0):
+The Pebble firmware can be easily configured and built on Windows using _Pebble SDK_: a customized version of the Nordic's nRF Connect SDK. Make sure you have [Git installed](https://git-scm.com/download/win) in your system before you continue.
 
 ## Download and Install nRF Connect for Windows
 
-First access the Nordic [nRF Connect download page for Desktop](https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Connect-for-desktop/Download#infotabs) and download the latest version of **nRF Connect for Windows**:
+First, access the Nordic [nRF Connect download page for Desktop](https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Connect-for-desktop/Download#infotabs) and download the latest version of **nRF Connect for Windows**:
 
 ![](/img/developer/pebble-sdk/one_click_fig1.png)
 
-Double-click the downloaded executable file (e.g., nrfconnect-setup-3.6.0-ia32.exe) and complete the installation.
+Double-click the downloaded executable file (e.g., `nrfconnect-setup-3.6.0-ia32.exe`) and complete the installation.
 
 ## Install the Nordic Toolchain Manager app
 
-Launch nRF Connect, scroll down to **Toolchain Manager** and click the **Install** button to install the app:
+Now launch the _nRF Connect_ utility that you just installed, scroll down to **Toolchain Manager** and click the **Install** button to install the app:
 
 ![](/img/developer/pebble-sdk/one_click_fig2.png)
 
 ## Download and install the Pebble SDK package
 
-Download The Pebble SDK installation at:
+Finally, download one of the following Pebble SDK installation packages (please notice that this guide is based on v1.3.0):
 
-[https://pebbles-software-release.s3-us-west-1.amazonaws.com/ncs-toolchain-pebble_v1.3.0-20200618-509f057.zip](https://pebbles-software-release.s3-us-west-1.amazonaws.com/ncs-toolchain-pebble_v1.3.0-20200618-509f057.zip)
+[Pebble SDK 1.3.0](https://pebbles-software-release.s3-us-west-1.amazonaws.com/ncs-toolchain-pebble_v1.3.0-20200618-509f057.zip)
+
+[Pebble SDK 1.4.0](https://pebbles-software-release.s3-us-west-1.amazonaws.com/ncs-toolchain-pebble_v1.4.0-20201030-2750604.zip)
 
 and save the file to a known location in your filesystem.
 
 ::: warning
-Make sure that you have a Github account and that any SSH keys or authorization token for your account (if required) has been setup properly, before you click 'OK' in this step (you should make sure you can `git clone` a GitHub repository from command line)
+Make sure you have a Github account and that you set up an SSH key for it before you click 'OK' in the next step (check out [this guide](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) on how to generate and an SSH key pair for your GitHub account). If you assigned a password to your ssh private key when you generated it, then nRF Connect will ask for this password during the installation.
 :::
 
 In the **nRF Connect** app, scroll down to the **Toolchain Manager** and click the **Open** button to open the app. In the toolchain manager window, click the _<u>Install package from other source</u>_ link at the bottom:
