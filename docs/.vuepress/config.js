@@ -294,7 +294,6 @@ module.exports = {
                       sidebarDepth: 0,
                       collapsable: true,
                       children: [
-                        "/developer/hardware/pebble-flash",
                         "/developer/hardware/pebble-flash-application",
                         "/developer/hardware/pebble-flash-bootloader"
                       ]
