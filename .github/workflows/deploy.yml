@@ -21,7 +21,7 @@ jobs:
       - name: Commit-files
         run: |
           cd docs/.vuepress/dist
-          echo 'docs.iotex.io' > CNAME
+          echo 'docs-old.iotex.io' > CNAME
           git init
           git config --global user.email "puncsky@users.noreply.github.com"
           git config --global user.name "puncsky"
