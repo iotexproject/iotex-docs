@@ -10,7 +10,7 @@ NODE_ENV=production npm run build
 cd docs/.vuepress/dist
 
 # if you are deploying to a custom domain
-echo 'docs.iotex.io' > CNAME
+echo 'docs-old.iotex.io' > CNAME
 
 git init
 git add -A
