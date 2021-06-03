@@ -1,3 +1,5 @@
+# IoTeX docs has been moved to gitbook to host. This repo has been deprecated. 
+
 ---
 home: true
 pageClass: home-page
