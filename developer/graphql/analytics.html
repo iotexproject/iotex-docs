@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Analytics | IoTeX Documentation</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+    <link rel="icon" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="Developer docs, by the community, for the community">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.5693dcaa.css" as="style"><link rel="preload" href="/assets/js/app.92319cb3.js" as="script"><link rel="preload" href="/assets/js/4.a3940bc5.js" as="script"><link rel="preload" href="/assets/js/7.ad4be137.js" as="script"><link rel="preload" href="/assets/js/2.ada527e9.js" as="script"><link rel="preload" href="/assets/js/40.830de590.js" as="script"><link rel="prefetch" href="/assets/js/10.4e707861.js"><link rel="prefetch" href="/assets/js/100.12ee3bbc.js"><link rel="prefetch" href="/assets/js/101.3ef3c9eb.js"><link rel="prefetch" href="/assets/js/102.4eb34661.js"><link rel="prefetch" href="/assets/js/103.2e562dc9.js"><link rel="prefetch" href="/assets/js/104.2ee1b6a1.js"><link rel="prefetch" href="/assets/js/105.3f1301ba.js"><link rel="prefetch" href="/assets/js/106.6996f4b3.js"><link rel="prefetch" href="/assets/js/107.bcc1fea1.js"><link rel="prefetch" href="/assets/js/108.09f82bbb.js"><link rel="prefetch" href="/assets/js/109.1bdb1b3d.js"><link rel="prefetch" href="/assets/js/11.0f12db71.js"><link rel="prefetch" href="/assets/js/110.b2fe35d2.js"><link rel="prefetch" href="/assets/js/111.21cd01b3.js"><link rel="prefetch" href="/assets/js/112.46498252.js"><link rel="prefetch" href="/assets/js/113.ef03459d.js"><link rel="prefetch" href="/assets/js/114.dcaa5556.js"><link rel="prefetch" href="/assets/js/115.64887b82.js"><link rel="prefetch" href="/assets/js/116.50c40baa.js"><link rel="prefetch" href="/assets/js/117.d6c9b440.js"><link rel="prefetch" href="/assets/js/118.895cc86c.js"><link rel="prefetch" href="/assets/js/119.b40e3fa7.js"><link rel="prefetch" href="/assets/js/12.68517ebf.js"><link rel="prefetch" href="/assets/js/120.8d20f648.js"><link rel="prefetch" href="/assets/js/121.8fd09f3d.js"><link rel="prefetch" href="/assets/js/122.5f182d23.js"><link rel="prefetch" href="/assets/js/13.fad74b27.js"><link rel="prefetch" href="/assets/js/14.16de7fa3.js"><link rel="prefetch" href="/assets/js/15.0679a4f9.js"><link rel="prefetch" href="/assets/js/16.0094fc26.js"><link rel="prefetch" href="/assets/js/17.4f4ed4e3.js"><link rel="prefetch" href="/assets/js/18.b4b56e10.js"><link rel="prefetch" href="/assets/js/19.cd653c9c.js"><link rel="prefetch" href="/assets/js/20.fec256d3.js"><link rel="prefetch" href="/assets/js/21.232b96bd.js"><link rel="prefetch" href="/assets/js/22.8f54a840.js"><link rel="prefetch" href="/assets/js/23.9e195ab9.js"><link rel="prefetch" href="/assets/js/24.5ab60904.js"><link rel="prefetch" href="/assets/js/25.e21c1fe2.js"><link rel="prefetch" href="/assets/js/26.7f47975c.js"><link rel="prefetch" href="/assets/js/27.7a460dc6.js"><link rel="prefetch" href="/assets/js/28.4f795d61.js"><link rel="prefetch" href="/assets/js/29.a2ef247f.js"><link rel="prefetch" href="/assets/js/3.c543bd12.js"><link rel="prefetch" href="/assets/js/30.6aaf57a1.js"><link rel="prefetch" href="/assets/js/31.0232a083.js"><link rel="prefetch" href="/assets/js/32.0a1f80cb.js"><link rel="prefetch" href="/assets/js/33.20c003f8.js"><link rel="prefetch" href="/assets/js/34.1734d3bc.js"><link rel="prefetch" href="/assets/js/35.4dd03a8e.js"><link rel="prefetch" href="/assets/js/36.27a932aa.js"><link rel="prefetch" href="/assets/js/37.0655711f.js"><link rel="prefetch" href="/assets/js/38.9db2343b.js"><link rel="prefetch" href="/assets/js/39.afb58f42.js"><link rel="prefetch" href="/assets/js/41.a7bae7fd.js"><link rel="prefetch" href="/assets/js/42.10486129.js"><link rel="prefetch" href="/assets/js/43.5c40d5e7.js"><link rel="prefetch" href="/assets/js/44.c0e5ec9f.js"><link rel="prefetch" href="/assets/js/45.986e350c.js"><link rel="prefetch" href="/assets/js/46.83d0e29c.js"><link rel="prefetch" href="/assets/js/47.0c8df559.js"><link rel="prefetch" href="/assets/js/48.250757c9.js"><link rel="prefetch" href="/assets/js/49.5ec75571.js"><link rel="prefetch" href="/assets/js/5.b043b126.js"><link rel="prefetch" href="/assets/js/50.773c5aeb.js"><link rel="prefetch" href="/assets/js/51.82d9e90c.js"><link rel="prefetch" href="/assets/js/52.a2c26220.js"><link rel="prefetch" href="/assets/js/53.4a5d527a.js"><link rel="prefetch" href="/assets/js/54.39af9244.js"><link rel="prefetch" href="/assets/js/55.e8f7571d.js"><link rel="prefetch" href="/assets/js/56.f7c656c0.js"><link rel="prefetch" href="/assets/js/57.36b82bf6.js"><link rel="prefetch" href="/assets/js/58.a69ee054.js"><link rel="prefetch" href="/assets/js/59.aa549778.js"><link rel="prefetch" href="/assets/js/6.195915ca.js"><link rel="prefetch" href="/assets/js/60.a585d2ad.js"><link rel="prefetch" href="/assets/js/61.15ff4f37.js"><link rel="prefetch" href="/assets/js/62.19a1e771.js"><link rel="prefetch" href="/assets/js/63.c0e8fb34.js"><link rel="prefetch" href="/assets/js/64.fc0a674a.js"><link rel="prefetch" href="/assets/js/65.2f6f33c5.js"><link rel="prefetch" href="/assets/js/66.74508d2f.js"><link rel="prefetch" href="/assets/js/67.f5241a8f.js"><link rel="prefetch" href="/assets/js/68.9e1d7c0b.js"><link rel="prefetch" href="/assets/js/69.b591f0e3.js"><link rel="prefetch" href="/assets/js/70.f614c87f.js"><link rel="prefetch" href="/assets/js/71.789abace.js"><link rel="prefetch" href="/assets/js/72.01aa764d.js"><link rel="prefetch" href="/assets/js/73.0c647eca.js"><link rel="prefetch" href="/assets/js/74.25059694.js"><link rel="prefetch" href="/assets/js/75.9e8acb55.js"><link rel="prefetch" href="/assets/js/76.ce696b71.js"><link rel="prefetch" href="/assets/js/77.603e2955.js"><link rel="prefetch" href="/assets/js/78.d5968d44.js"><link rel="prefetch" href="/assets/js/79.3ce1ff02.js"><link rel="prefetch" href="/assets/js/8.0255cfae.js"><link rel="prefetch" href="/assets/js/80.44ae755f.js"><link rel="prefetch" href="/assets/js/81.b1abeb8f.js"><link rel="prefetch" href="/assets/js/82.7eb8c54a.js"><link rel="prefetch" href="/assets/js/83.6331e906.js"><link rel="prefetch" href="/assets/js/84.5426916e.js"><link rel="prefetch" href="/assets/js/85.055cb586.js"><link rel="prefetch" href="/assets/js/86.e7fde603.js"><link rel="prefetch" href="/assets/js/87.c183f27a.js"><link rel="prefetch" href="/assets/js/88.3b5ef393.js"><link rel="prefetch" href="/assets/js/89.8923e86f.js"><link rel="prefetch" href="/assets/js/9.05a98e4c.js"><link rel="prefetch" href="/assets/js/90.e33c235f.js"><link rel="prefetch" href="/assets/js/91.719d05d2.js"><link rel="prefetch" href="/assets/js/92.cef89549.js"><link rel="prefetch" href="/assets/js/93.b25c0216.js"><link rel="prefetch" href="/assets/js/94.8bca4bcc.js"><link rel="prefetch" href="/assets/js/95.6a4dc04b.js"><link rel="prefetch" href="/assets/js/96.e5c220e2.js"><link rel="prefetch" href="/assets/js/97.d2a9c0a0.js"><link rel="prefetch" href="/assets/js/98.2a1fe857.js"><link rel="prefetch" href="/assets/js/99.8e097257.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5693dcaa.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="banner"><div class="banner-text"><a href="https://halo.iotex.io" target="_blank"><div class="subtitle can-hide">Get your next project funded »</div> <b>Halo Grants Program is now</b> <div class="neon">open</div></a></div></div> <div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">IoTeX Documentation</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/introduction/whatisiotex.html" class="nav-link">
+  Core concepts
+</a></div><div class="nav-item"><a href="/developer/" class="nav-link router-link-active">
+  Documentation
+</a></div><div class="nav-item"><a href="/contribute/" class="nav-link">
+  Get Involved
+</a></div><div class="nav-item"><a href="https://t.me/iotexdev" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Dev Chat
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/iotexproject/iotex-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/introduction/whatisiotex.html" class="nav-link">
+  Core concepts
+</a></div><div class="nav-item"><a href="/developer/" class="nav-link router-link-active">
+  Documentation
+</a></div><div class="nav-item"><a href="/contribute/" class="nav-link">
+  Get Involved
+</a></div><div class="nav-item"><a href="https://t.me/iotexdev" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Dev Chat
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/iotexproject/iotex-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/developer/" class="sidebar-heading clickable router-link-active open"><span>Developer Home</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>Software Tools</span> <!----></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/get-started/ioctl-install" class="sidebar-heading clickable"><span>Get Started</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/smart-contracts/introduction" class="sidebar-heading clickable"><span>Smart Contracts</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/sdk/overview" class="sidebar-heading clickable"><span>Antenna SDKs</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/dapp-starter/introduction" class="sidebar-heading clickable"><span>IoTeX dApp Sample</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>Middleware</span> <!----></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/did/overview" class="sidebar-heading clickable"><span>Decentralized Identity</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>Secure Hardware</span> <!----></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/hardware/pebble" class="sidebar-heading clickable"><span>Pebble</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>Reference</span> <!----></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/ioctl/install" class="sidebar-heading clickable"><span>ioctl Client</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/core-api/api" class="sidebar-heading clickable"><span>Core gRPC API</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/graphql/analytics" class="sidebar-heading clickable open active"><span>GraphQL API</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/developer/graphql/analytics.html" aria-current="page" class="active sidebar-link">Analytics</a></li><li><a href="/developer/graphql/member-portal.html" class="sidebar-link">Member Portal</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>More Resources</span> <!----></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/complete-projects/rolling-dice" class="sidebar-heading clickable"><span>Clone Finished Projects</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/integrations/rosetta" class="sidebar-heading clickable"><span>Exchanges Integration</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/more/action-injector" class="sidebar-heading clickable"><span>Misc Tools</span> <span class="arrow right"></span></a> <!----></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="analytics-graphql-api"><a href="#analytics-graphql-api" class="header-anchor">#</a> Analytics GraphQL API</h2> <p>Analytics is an application built upon IoTeX core API which extracts data from IoTeX blockchain and reindexes them for applications to use via a GraphQL web interface. You can use the playground <a href="https://analytics.iotexscan.io" target="_blank" rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <h2 id="delegate"><a href="#delegate" class="header-anchor">#</a> Delegate</h2> <h3 id="bookkeeping"><a href="#bookkeeping" class="header-anchor">#</a> Bookkeeping</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  Bookkeeping gives delegates an overview of the reward distributions to their voters within a range of epochs
+
+Request:
+  startEpoch: starting epoch number
+  epochCount: epoch count
+  delegateName: delegate name
+  percentage: percentage of reward distribution
+  includeFoundationBonus: whether include foundation bonus as part of the reward distribution
+  pagination:
+    skip: starting index of displaying reward distribution list
+    first: number of reward distributions to display
+
+Response:
+  exist: whether the delegate has bookkeeping information within the specified epoch range
+  rewardDistribution:
+    voterEthAddress: voter’s ERC20 address
+    voterIotexAddress: voter’s IoTeX address
+    amount: amount of reward distribution
+  count:  total number of reward distributions
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h3 id="productivity"><a href="#productivity" class="header-anchor">#</a> Productivity</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  Productivity gives block productivity of producers within a range of epochs
+
+Request:
+  startEpoch: starting epoch number
+  epochCount: epoch count
+  delegateName: producer name
+
+Response:
+  exist: whether the delegate has productivity information within the specified epoch range
+  production: number of block productions
+  expectedProduction: number of expected block productions
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="reward"><a href="#reward" class="header-anchor">#</a> Reward</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  Rewards provides reward detail information for candidates within a range of epochs
+
+Request:
+  startEpoch: starting epoch number
+  epochCount: epoch count
+  delegateName: candidate name
+
+Response:
+  exist: whether the delegate has reward information within the specified epoch range
+  blockReward: amount of block rewards
+  epochReward: amount of epoch rewards
+  foundationBonus: amount of foundation bonus
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="bucketinfo"><a href="#bucketinfo" class="header-anchor">#</a> BucketInfo</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  BucketInfo provides voting bucket detail information for candidates within a range of epochs
+
+Request:
+  startEpoch: starting epoch number
+  epochCount: epoch count
+  delegateName: candidate name
+
+Response:
+  exist: whether the delegate has voting bucket information within the specified epoch range
+  bucketInfoList:
+    epochNumber: epoch number
+    bucketInfo:
+      voterIotexAddress: voter's IoTeX address
+      voterEthAddress: voter’s ERC20 address
+      isNative: whether the bucket is native
+      votes: voter's votes
+      weightedVotes: voter’s weighted votes
+      startTime: bucket start time
+      remainingDuration: bucket remaining duration
+      decay: whether the vote weight decays
+      pagination:
+        skip: starting index of displaying bucket list
+        first: number of buckets to display
+    count: total number of buckets in the given epoch for the given delegate
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><h3 id="staking"><a href="#staking" class="header-anchor">#</a> Staking</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  Staking provides staking information for candidates within a range of epochs
+
+Request:
+  startEpoch: starting epoch number
+  epochCount: epoch count
+  delegateName: candidate name
+
+Response:
+  exist: whether the delegate has staking information within the specified epoch range
+  stakingInfo:
+    epochNumber: epoch number
+    selfStaking: candidate’s self-staking amount
+    totalStaking: total staking amount
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h3 id="probationhistoricalrate"><a href="#probationhistoricalrate" class="header-anchor">#</a> ProbationHistoricalRate</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  ProbationHistoricalRate provides the rate of probation for a given delegate
+
+Request:
+  startEpoch: starting epoch number
+  epochCount: epoch count
+  delegateName: candidate name
+
+Response:
+  probationHistoricalRate: probation historical rate
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>Demo:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Sample Request:
+
+query{
+  delegate(startEpoch: 1500, epochCount: 2, delegateName: &quot;blackpool&quot;){
+    bookkeeping(percentage: 90, includeFoundationBonus: true){
+      exist
+      rewardDistribution(pagination: {skip: 0, first: 2}){
+        voterEthAddress
+        amount
+      }
+      count
+    }
+    reward{
+      exist
+      blockReward
+      epochReward
+      foundationBonus
+    }
+    productivity{
+      exist
+      production
+      expectedProduction
+    }
+    bucketInfo{
+      exist
+      bucketInfoList{
+        epochNumber
+        bucketInfo{
+          voterEthAddress
+          weightedVotes
+        }
+        count
+      }
+    }
+    staking{
+      exist
+      stakingInfo{
+        epochNumber
+        selfStaking
+        totalStaking
+      }
+    }
+    probationHistoricalRate
+  }
+}
+
+Sample Response:
+
+{
+  &quot;data&quot;: {
+    &quot;delegate&quot;: {
+      &quot;bookkeeping&quot;: {
+        &quot;exist&quot;: true,
+        &quot;rewardDistribution&quot;: [
+          {
+            &quot;voterEthAddress&quot;: &quot;0x2ed3767cfcbceb42ff5f3642d4df6f851b947073&quot;,
+            &quot;amount&quot;: &quot;249296733398649281&quot;
+          },
+          {
+            &quot;voterEthAddress&quot;: &quot;0x6729cdc9172b00ac69f4ce3f98de2eb4d0686925&quot;,
+            &quot;amount&quot;: &quot;5264917870144216244&quot;
+          }
+        ],
+        &quot;count&quot;: 4
+      },
+      &quot;reward&quot;: {
+        &quot;exist&quot;: true,
+        &quot;blockReward&quot;: &quot;0&quot;,
+        &quot;epochReward&quot;: &quot;329819772195117893866&quot;,
+        &quot;foundationBonus&quot;: &quot;160000000000000000000&quot;
+      },
+      &quot;productivity&quot;: {
+        &quot;exist&quot;: false,
+        &quot;production&quot;: &quot;&quot;,
+        &quot;expectedProduction&quot;: &quot;&quot;
+      },
+      &quot;bucketInfo&quot;: {
+        &quot;exist&quot;: true,
+        &quot;bucketInfoList&quot;: [
+          {
+            &quot;epochNumber&quot;: 1500,
+            &quot;bucketInfo&quot;: [
+              {
+                &quot;voterEthAddress&quot;: &quot;2ed3767cfcbceb42ff5f3642d4df6f851b947073&quot;,
+                &quot;weightedVotes&quot;: &quot;12050042619210072913916&quot;
+              },
+              {
+                &quot;voterEthAddress&quot;: &quot;6729cdc9172b00ac69f4ce3f98de2eb4d0686925&quot;,
+                &quot;weightedVotes&quot;: &quot;254485824410815439561517&quot;
+              },
+              {
+                &quot;voterEthAddress&quot;: &quot;d8e70e5029e5353e8d360365d5273ed329cc4918&quot;,
+                &quot;weightedVotes&quot;: &quot;3203226341724952466266885&quot;
+              },
+              {
+                &quot;voterEthAddress&quot;: &quot;d8e70e5029e5353e8d360365d5273ed329cc4918&quot;,
+                &quot;weightedVotes&quot;: &quot;2838636602552620757933254&quot;
+              },
+              {
+                &quot;voterEthAddress&quot;: &quot;fe7bcb3676aabe9a6b39cb23f3a5fa41eed7ad1b&quot;,
+                &quot;weightedVotes&quot;: &quot;15000000000000000000000000&quot;
+              }
+            ],
+            &quot;count&quot;: 5
+          },
+          {
+            &quot;epochNumber&quot;: 1501,
+            &quot;bucketInfo&quot;: [
+              {
+                &quot;voterEthAddress&quot;: &quot;2ed3767cfcbceb42ff5f3642d4df6f851b947073&quot;,
+                &quot;weightedVotes&quot;: &quot;12050042619210072913916&quot;
+              },
+              {
+                &quot;voterEthAddress&quot;: &quot;6729cdc9172b00ac69f4ce3f98de2eb4d0686925&quot;,
+                &quot;weightedVotes&quot;: &quot;254485824410815439561517&quot;
+              },
+              {
+                &quot;voterEthAddress&quot;: &quot;d8e70e5029e5353e8d360365d5273ed329cc4918&quot;,
+                &quot;weightedVotes&quot;: &quot;3203226341724952466266885&quot;
+              },
+              {
+                &quot;voterEthAddress&quot;: &quot;d8e70e5029e5353e8d360365d5273ed329cc4918&quot;,
+                &quot;weightedVotes&quot;: &quot;2838636602552620757933254&quot;
+              },
+              {
+                &quot;voterEthAddress&quot;: &quot;fe7bcb3676aabe9a6b39cb23f3a5fa41eed7ad1b&quot;,
+                &quot;weightedVotes&quot;: &quot;15000000000000000000000000&quot;
+              }
+            ],
+            &quot;count&quot;: 5
+          }
+        ]
+      },
+      &quot;staking&quot;: {
+        &quot;exist&quot;: true,
+        &quot;stakingInfo&quot;: [
+          {
+            &quot;epochNumber&quot;: 1500,
+            &quot;selfStaking&quot;: &quot;5039748000000000000000000&quot;,
+            &quot;totalStaking&quot;: &quot;21308398811307598736675572&quot;
+          },
+          {
+            &quot;epochNumber&quot;: 1501,
+            &quot;selfStaking&quot;: &quot;5039748000000000000000000&quot;,
+            &quot;totalStaking&quot;: &quot;21308398811307598736675572&quot;
+          }
+        ]
+      }
+      &quot;probationHistoricalRate&quot;: &quot;0.00&quot;
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br></div></div><h2 id="chain"><a href="#chain" class="header-anchor">#</a> Chain</h2> <h3 id="mostrecentepoch"><a href="#mostrecentepoch" class="header-anchor">#</a> MostRecentEpoch</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  MostRecentEpoch gives the latest epoch number
+
+Request:
+  N/A
+
+Response:
+  mostRecentEpoch: latest epoch number
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="mostrecentblockheight"><a href="#mostrecentblockheight" class="header-anchor">#</a> MostRecentBlockHeight</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  MostRecentBlockHeight gives the latest block height
+
+Request:
+  N/A
+
+Response:
+  mostRecentBlockHeight: latest block height
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="mostrecenttps"><a href="#mostrecenttps" class="header-anchor">#</a> MostRecentTPS</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  MostRecentTPS gives the latest transactions per second
+
+Request:
+  blockWindow: number of last blocks that are backtracked to compute TPS
+
+Response:
+  mostRecentTPS: latest transactions per second
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="numberofactions"><a href="#numberofactions" class="header-anchor">#</a> NumberOfActions</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  NumberOfActions gives the number of actions
+
+Request:
+  pagination:
+    startEpoch: starting epoch number
+    epochCount: epoch count
+
+Response:
+  exist: whether the starting epoch number is less than the most recent epoch number
+  count: number of actions
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="votingresultmeta"><a href="#votingresultmeta" class="header-anchor">#</a> VotingResultMeta</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  VotingResultMeta gives the latest metadata of voting result
+
+Request:
+  N/A
+
+Response:
+  totalCandidates: total number of candidates
+  totalWeightedVotes: total weighted votes
+  votedTokens: total voted tokens
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="totaltransferredtokens"><a href="#totaltransferredtokens" class="header-anchor">#</a> TotalTransferredTokens</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  TotalTransferredTokens gives the amount of tokens transferred within a time frame
+
+Request:
+  pagination:
+    startEpoch: starting epoch number
+    epochCount: epoch count
+
+Response:
+  totalTransferredTokens: total tranferred tokens
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>Demo:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Sample Request:
+
+query{
+  chain{
+    mostRecentEpoch
+    mostRecentBlockHeight
+    mostRecentTPS(blockWindow: 10)
+    numberOfActions(pagination: {startEpoch: 1, epochCount: 10}){
+      exist
+      count
+    }
+    totalTransferredTokens(pagination:{startEpoch: 1, epochCount: 10})
+  }
+}
+
+Sample Response:
+
+{
+  &quot;data&quot;: {
+    &quot;chain&quot;: {
+      &quot;mostRecentEpoch&quot;: 1383,
+      &quot;mostRecentBlockHeight&quot;: 497772,
+      &quot;mostRecentTPS&quot;: 0,
+      &quot;numberOfActions&quot;: {
+        &quot;exist&quot;: true,
+        &quot;count&quot;: 3622
+      }
+      &quot;totalTransferredTokens&quot;: &quot;10000010000000000000000&quot;
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><h2 id="voting"><a href="#voting" class="header-anchor">#</a> Voting</h2> <h3 id="votingmeta"><a href="#votingmeta" class="header-anchor">#</a> VotingMeta</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  VotingMeta provides metadata of voting results
+
+Request:
+  startEpoch: starting epoch number
+  epochCount: epoch count
+
+Reponse:
+  exist: whether the starting epoch number is less than the most recent epoch number
+  candidateMeta:
+    epochNumber:  epoch number
+    consensusDelegates: number of consensus delegates in the epoch
+    totalCandidates: number of total delegates in the epoch
+    totalWeightedVotes: candidate total weighted votes in the epoch
+    votedTokens: total voted tokens in the epoch
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="candidateinfo"><a href="#candidateinfo" class="header-anchor">#</a> CandidateInfo</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  CandidateInfo provides candidate information
+
+Request:
+  startEpoch: starting epoch number
+  epochCount: epoch count
+
+Reponse:
+  candidateMeta:
+    epochNumber:  epoch number
+    candidates:
+      name: candidate name
+      address: canddiate address
+      totalWeightedVotes: total weighted votes
+      selfStakingTokens: candidate self-staking tokens
+      operatorAddress: candidate operator address
+      rewardAddress: candidate reward address
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3 id="rewardsources"><a href="#rewardsources" class="header-anchor">#</a> RewardSources</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  RewardSources provides reward sources for voters
+
+Request:
+  startEpoch: starting epoch number
+  epochCount: epoch count
+  voterIotxAddress: voter IoTeX address
+
+Reponse:
+  exist: whether the voter has reward information within the specified epoch range
+  delegateDistributions:
+    delegateName: delegate name
+    amount: amount of reward distribution
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>Demo:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Sample Request:
+
+query{
+  voting(startEpoch: 1, epochCount: 3){
+    exist
+    candidateMeta{
+      epochNumber
+      consensusDelegates
+      totalCandidates
+      totalWeightedVotes
+      votedTokens
+    }
+  }
+}
+
+Sample Response:
+
+{
+  &quot;data&quot;: {
+    &quot;voting&quot;: {
+      &quot;exist&quot;: true,
+      &quot;candidateMeta&quot;: [
+        {
+          &quot;epochNumber&quot;: 1,
+          &quot;consensusDelegates&quot;: 36,
+          &quot;totalCandidates&quot;: 87,
+          &quot;totalWeightedVotes&quot;: &quot;907521920724956720472322956&quot;,
+          &quot;votedTokens&quot;: &quot;776946421831717811810000000&quot;
+        },
+        {
+          &quot;epochNumber&quot;: 2,
+          &quot;consensusDelegates&quot;: 36,
+          &quot;totalCandidates&quot;: 87,
+          &quot;totalWeightedVotes&quot;: &quot;907524412616270399722024013&quot;,
+          &quot;votedTokens&quot;: &quot;776948876231717811810000000&quot;
+        },
+        {
+          &quot;epochNumber&quot;: 3,
+          &quot;consensusDelegates&quot;: 36,
+          &quot;totalCandidates&quot;: 87,
+          &quot;totalWeightedVotes&quot;: &quot;907486769208330536874270055&quot;,
+          &quot;votedTokens&quot;: &quot;776953490231717811810000000&quot;
+        }
+      ]
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div><p>Demo:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Sample Request:
+
+query{
+	voting(startEpoch: 9760, epochCount: 1){
+    votingMeta{
+      candidateMeta{
+        votedTokens
+        totalWeightedVotes
+      }
+    }
+  }
+}
+
+Sample Response:
+
+{
+  &quot;data&quot;: {
+    &quot;voting&quot;: {
+      &quot;votingMeta&quot;: {
+        &quot;candidateMeta&quot;: [
+          {
+            &quot;votedTokens&quot;: &quot;2238183641136247164314750007&quot;,
+            &quot;totalWeightedVotes&quot;: &quot;2540055496482100272999904251&quot;
+          }
+        ]
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><h2 id="account"><a href="#account" class="header-anchor">#</a> Account</h2> <h3 id="activeaccounts"><a href="#activeaccounts" class="header-anchor">#</a> ActiveAccounts</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  ActiveAccounts lists most recently active accounts
+
+Request:
+  count: number of account addresses to be queried for active accounts
+
+Response:
+  activeAccounts: list of account addresses
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="operatoraddress"><a href="#operatoraddress" class="header-anchor">#</a> OperatorAddress</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  OperatorAddress finds the delegate's operator address given the delegate's alias name
+
+Request:
+  aliasName: delegate's alias name
+
+Response:
+  exist: whether the alias name exists
+  operatorAddress:  operator address associated with the given alias name
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="alias"><a href="#alias" class="header-anchor">#</a> Alias</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  Alias finds the delegate's alias name given the delegate's operator address
+
+Request:
+  operatorAddress: delegate's operator address
+
+Response:
+  exist: whether the operator address exists
+  aliasName: alias name associated with the given operator address
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="totalnumberofholders"><a href="#totalnumberofholders" class="header-anchor">#</a> TotalNumberOfHolders</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  TotalNumberOfHolders returns total number of IOTX holders so far
+Request:
+  N/A
+Response:
+  totalNumberOfHolders: total number of IOTX holders so far
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="totalaccountsupply"><a href="#totalaccountsupply" class="header-anchor">#</a> TotalAccountSupply</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  TotalAccountSupply returns total amount of tokens held by IoTeX accounts
+Request:
+  N/A
+Response:
+  totalAccountSupply: total amount of tokens held by IoTeX accounts
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>Demo:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Sample Request:
+
+query{
+  account{
+    activeAccounts(count: 5)
+    operatorAddress(aliasName: &quot;gamefantasy#&quot;){
+      exist
+      operatorAddress
+    }
+    alias(operatorAddress: &quot;io1456knehzn9qup8unxlf4q06empz8lqxtp6v5vh&quot;){
+      exist
+      aliasName
+    }
+    totalNumberOfHolders
+    totalAccountSupply
+  }
+}
+
+Sample Response:
+
+{
+  &quot;data&quot;: {
+    &quot;account&quot;: {
+      &quot;activeAccounts&quot;: [
+        &quot;io17cmrextyfeu4gddwd89g5qncedsnc553dhz7xa&quot;,
+        &quot;io10reczcaelglh5xmkay65h9vw3e5dp82e8vw0rz&quot;,
+        &quot;io13xdhg9du56khumz3sg6a3ma5q5kjx7vdlx48x8&quot;,
+        &quot;io1tf7tu2xt6mpk8s70ahugsx20jqgu9eg6v48qlk&quot;,
+        &quot;io1xj0u5n20tsqwxh5a3xdtmzuz9wasft0pqjrq8t&quot;
+      ],
+      &quot;operatorAddress&quot;: {
+        &quot;exist&quot;: true,
+        &quot;operatorAddress&quot;: &quot;io1qnec80ark9shjc6uzk45dhm8s50dpc27sjuver&quot;
+      },
+      &quot;alias&quot;: {
+        &quot;exist&quot;: true,
+        &quot;aliasName&quot;: &quot;pubxpayments&quot;
+      },
+      &quot;totalNumberOfHolders&quot;: 9006,
+      &quot;totalAccountSupply&quot;: &quot;782833468919740605141266758&quot;
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><h2 id="action"><a href="#action" class="header-anchor">#</a> Action</h2> <h3 id="bydates"><a href="#bydates" class="header-anchor">#</a> ByDates</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  ByDates finds actions by dates
+
+Request:
+  startDate: start date in unix epoch time
+  endDate: end date in unix epoch time
+  pagination:
+    skip: starting index of displaying action list
+    first: number of actions to display
+
+Response:
+  exist: whether actions exist within the time frame
+  actions:
+    actHash: action hash
+    blkHash: block hash
+    timeStamp: timestamp
+    actType: action type
+    sender: sender address
+    recipient: recipient address
+    amount: amount transferred
+    gasFee: gas fee
+  count: total number of actions within the time frame
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><h3 id="byhash"><a href="#byhash" class="header-anchor">#</a> ByHash</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  ByHash finds the action by hash
+
+Request:
+  actHash: action hash
+
+Response:
+  actionInfo:
+    actHash: action hash
+    blkHash: block hash
+    timeStamp: timestamp
+    actType: action type
+    sender: sender address
+    recipient: recipient address
+    amount: amount transferred
+    gasFee: gas fee
+  evmTransfers:
+    from: sender address
+    to: recipient address
+    quantity: amount transferred
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h3 id="byaddress"><a href="#byaddress" class="header-anchor">#</a> ByAddress</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  ByAddress finds actions by address
+
+Request:
+  address: sender address or recipient address
+  pagination:
+    skip: starting index of displaying action list
+    first: number of actions to display
+
+Response:
+  exist: whether actions exist for the given address
+  actions:
+    actHash: action hash
+    blkHash: block hash
+    timeStamp: timestamp
+    actType: action type
+    sender: sender address
+    recipient: recipient address
+    amount: amount transferred
+    gasFee: gas fee
+  count: total number of actions for the given address
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h3 id="evmtransfersbyaddress"><a href="#evmtransfersbyaddress" class="header-anchor">#</a> EvmTransfersByAddress</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  EvmTransfersByAddress finds EVM transfers by address
+
+Request:
+  address: sender address or recipient address
+  pagination:
+    skip: starting index of displaying action list
+    first: number of actions to display
+
+Response:
+  exist: whether EVM transfers exist for the given address
+  evmTransfers:
+    from: sender address
+    to: recipient address
+    quantity: amount transferred
+    actHash: action hash
+    blkHash: block hash
+    timeStamp: timestamp
+  count: total number of EVM transfers for the given address
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h3 id="bytype"><a href="#bytype" class="header-anchor">#</a> ByType</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  ByType finds actions by action type
+
+Request:
+  type: action type
+  pagination:
+    skip: starting index of displaying action list
+    first: number of actions to display
+
+Response:
+  exist: whether actions exist for the given type
+  actions:
+    actHash: action hash
+    blkHash: block hash
+    timeStamp: timestamp
+    actType: action type
+    sender: sender address
+    recipient: recipient address
+    amount: amount transferred
+    gasFee: gas fee
+  count: total number of actions for the given type
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>Demo:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Sample Request:
+
+query{
+  action{
+    byDates(startDate: 1589485984, endDate: 1589486028) {
+      exist
+      actions(pagination: {skip: 0, first: 1}){
+        actHash
+        blkHash
+        timeStamp
+        actType
+        sender
+        recipient
+        amount
+        gasFee
+      }
+      count
+    }
+    byHash(actHash: &quot;000086e6e3034c104025896f8af9d3e313b95957c076b3a5ebe1f42f8af3a8ad&quot;){
+      actionInfo{
+        actHash
+    		blkHash
+    		timeStamp
+    		actType
+    		sender
+    		recipient
+    		amount
+    		gasFee
+      }
+      evmTransfers{
+        from
+        to
+        quantity
+      }
+    }
+    byAddress(address:&quot;io17jz7vtvllrgctkrvzmmue55feuk8cy6mtcynkk&quot;){
+      exist
+      actions(pagination: {skip: 0, first: 1}){
+        actHash
+        blkHash
+        timeStamp
+        actType
+        sender
+        recipient
+        amount
+        gasFee
+      }
+      count
+    }
+    evmTransfersByAddress(address: &quot;io1nkuv5ns3pevh7r7cwv6lwa2744utyhq7txay3a&quot;){
+      exist
+  		evmTransfers{
+        from
+        to
+        quantity
+        actHash
+        blkHash
+        timeStamp
+      }
+    	count
+    }
+    byType(type:&quot;transfer&quot;){
+      exist
+      actions(pagination: {skip: 0, first: 1}){
+        actHash
+        blkHash
+        timeStamp
+        actType
+        sender
+        recipient
+        amount
+        gasFee
+      }
+      count
+    }
+  }
+}
+
+Sample Response:
+
+{
+  &quot;data&quot;: {
+    &quot;action&quot;: {
+      &quot;byDates&quot;: {
+        &quot;exist&quot;: true,
+        &quot;actions&quot;: [
+          {
+            &quot;actHash&quot;: &quot;8c917d11bff3856d60d274c666188afc3aac0fbcddb60bd19cf9a352cb7b00a3&quot;,
+            &quot;blkHash&quot;: &quot;293845611de09b944c5def5a6b29e83cd4b8d2a00a29575e4720fc64e8adf7b4&quot;,
+            &quot;timeStamp&quot;: 1589486025,
+            &quot;actType&quot;: &quot;grantReward&quot;,
+            &quot;sender&quot;: &quot;io195mh6ftwz5vnagw984fj4hj8awty3ue2gh457f&quot;,
+            &quot;recipient&quot;: &quot;&quot;,
+            &quot;amount&quot;: &quot;0&quot;,
+            &quot;gasFee&quot;: &quot;0&quot;
+          }
+        ],
+        &quot;count&quot;: 9
+      },
+      &quot;byHash&quot;: {
+        &quot;actionInfo&quot;: {
+          &quot;actHash&quot;: &quot;000086e6e3034c104025896f8af9d3e313b95957c076b3a5ebe1f42f8af3a8ad&quot;,
+          &quot;blkHash&quot;: &quot;2f31b5b15c50dc9431cd1f655fdace2c2c7bf92111a4a01a9947ce3969352d00&quot;,
+          &quot;timeStamp&quot;: 1582409835,
+          &quot;actType&quot;: &quot;transfer&quot;,
+          &quot;sender&quot;: &quot;io1ey8s7p7kzu9lh68we7mstmyllaxc6tgwuj2whh&quot;,
+          &quot;recipient&quot;: &quot;io1nkuv5ns3pevh7r7cwv6lwa2744utyhq7txay3a&quot;,
+          &quot;amount&quot;: &quot;1528012374156719350&quot;,
+          &quot;gasFee&quot;: &quot;10000000000000000&quot;
+        },
+        &quot;evmTransfers&quot;: []
+      },
+      &quot;byAddress&quot;: {
+        &quot;exist&quot;: true,
+        &quot;actions&quot;: [
+          {
+            &quot;actHash&quot;: &quot;e1e3d46844046710d4843b2b044f8ff5da785931e808ac071ff4b4280a05aa9e&quot;,
+            &quot;blkHash&quot;: &quot;3b1dcebd95f35a682ea8f443ae817b240b447e50a23c3a60918c3318bb249ccc&quot;,
+            &quot;timeStamp&quot;: 1589442290,
+            &quot;actType&quot;: &quot;execution&quot;,
+            &quot;sender&quot;: &quot;io17jz7vtvllrgctkrvzmmue55feuk8cy6mtcynkk&quot;,
+            &quot;recipient&quot;: &quot;io1hp6y4eqr90j7tmul4w2wa8pm7wx462hq0mg4tw&quot;,
+            &quot;amount&quot;: &quot;0&quot;,
+            &quot;gasFee&quot;: &quot;60357000000000000&quot;
+          }
+        ],
+        &quot;count&quot;: 290
+      },
+      &quot;evmTransfersByAddress&quot;: {
+        &quot;exist&quot;: true,
+        &quot;evmTransfers&quot;: [
+          {
+            &quot;from&quot;: &quot;io1zn9mn4v63jg3047ylqx9nqaqz0ev659777q3xc&quot;,
+            &quot;to&quot;: &quot;io1nkuv5ns3pevh7r7cwv6lwa2744utyhq7txay3a&quot;,
+            &quot;quantity&quot;: &quot;5006000000000000000000&quot;,
+            &quot;actHash&quot;: &quot;8f4c40742081668eaab315701f5603dc83ecc455cacffb3b13710c37915cb4dc&quot;,
+            &quot;blkHash&quot;: &quot;3625674&quot;,
+            &quot;timeStamp&quot;: 1583322240
+          },
+          {
+            &quot;from&quot;: &quot;io1nkuv5ns3pevh7r7cwv6lwa2744utyhq7txay3a&quot;,
+            &quot;to&quot;: &quot;io1zn9mn4v63jg3047ylqx9nqaqz0ev659777q3xc&quot;,
+            &quot;quantity&quot;: &quot;0&quot;,
+            &quot;actHash&quot;: &quot;8f4c40742081668eaab315701f5603dc83ecc455cacffb3b13710c37915cb4dc&quot;,
+            &quot;blkHash&quot;: &quot;3625674&quot;,
+            &quot;timeStamp&quot;: 1583322240
+          },
+          {
+            &quot;from&quot;: &quot;io1nkuv5ns3pevh7r7cwv6lwa2744utyhq7txay3a&quot;,
+            &quot;to&quot;: &quot;io1hp6y4eqr90j7tmul4w2wa8pm7wx462hq0mg4tw&quot;,
+            &quot;quantity&quot;: &quot;0&quot;,
+            &quot;actHash&quot;: &quot;c4bd25240b0d8832b0dca2916d30e3c6882a5dbfa803573950ad8ae894ef8f5c&quot;,
+            &quot;blkHash&quot;: &quot;3572472&quot;,
+            &quot;timeStamp&quot;: 1583055260
+          },
+          {
+            &quot;from&quot;: &quot;io1nkuv5ns3pevh7r7cwv6lwa2744utyhq7txay3a&quot;,
+            &quot;to&quot;: &quot;io1zn9mn4v63jg3047ylqx9nqaqz0ev659777q3xc&quot;,
+            &quot;quantity&quot;: &quot;0&quot;,
+            &quot;actHash&quot;: &quot;078c9d6c2f18681d9d3747d967919a7fafb44598a39117b9a1a1abc8e18e6013&quot;,
+            &quot;blkHash&quot;: &quot;3572471&quot;,
+            &quot;timeStamp&quot;: 1583055255
+          },
+          {
+            &quot;from&quot;: &quot;io1nkuv5ns3pevh7r7cwv6lwa2744utyhq7txay3a&quot;,
+            &quot;to&quot;: &quot;io1zn9mn4v63jg3047ylqx9nqaqz0ev659777q3xc&quot;,
+            &quot;quantity&quot;: &quot;5006000000000000000000&quot;,
+            &quot;actHash&quot;: &quot;fee1360940bb6724636c0731edde984a62941df2e1785361749a50bee6f22559&quot;,
+            &quot;blkHash&quot;: &quot;3316376&quot;,
+            &quot;timeStamp&quot;: 1581770210
+          }
+        ],
+        &quot;count&quot;: 5
+      },
+      &quot;byType&quot;: {
+        &quot;exist&quot;: true,
+        &quot;actions&quot;: [
+          {
+            &quot;actHash&quot;: &quot;000086e6e3034c104025896f8af9d3e313b95957c076b3a5ebe1f42f8af3a8ad&quot;,
+            &quot;blkHash&quot;: &quot;2f31b5b15c50dc9431cd1f655fdace2c2c7bf92111a4a01a9947ce3969352d00&quot;,
+            &quot;timeStamp&quot;: 1582409835,
+            &quot;actType&quot;: &quot;transfer&quot;,
+            &quot;sender&quot;: &quot;io1ey8s7p7kzu9lh68we7mstmyllaxc6tgwuj2whh&quot;,
+            &quot;recipient&quot;: &quot;io1nkuv5ns3pevh7r7cwv6lwa2744utyhq7txay3a&quot;,
+            &quot;amount&quot;: &quot;1528012374156719350&quot;,
+            &quot;gasFee&quot;: &quot;10000000000000000&quot;
+          }
+        ],
+        &quot;count&quot;: 132221
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br></div></div><h2 id="xrc20-tokens"><a href="#xrc20-tokens" class="header-anchor">#</a> XRC20 Tokens</h2> <h3 id="bycontractaddress"><a href="#bycontractaddress" class="header-anchor">#</a> ByContractAddress</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  ByContractAddress returns Xrc20 actions given the Xrc20 contract address
+
+Request:
+  address: contract address
+  numberPerPage: number per page
+  page: page number
+
+Response:
+  exist: whether Xrc20 actions exist for the given contract address
+  xrc20:
+    contract: contract address
+    hash: action hash
+    timestamp: timestamp
+    from: sender address
+    to: recipient address
+    quantity: amount transferred
+  count: total number of Xrc20 actions
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h3 id="byaddress-2"><a href="#byaddress-2" class="header-anchor">#</a> ByAddress</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  ByAddress returns Xrc20 actions given the sender address or recipient address
+
+Request:
+  address: sender address or recipient address
+  numberPerPage: number per page
+  page: page number
+
+Response:
+  exist: whether Xrc20 actions exist for the given sender address or recipient address
+  xrc20:
+    contract: contract address
+    hash: action hash
+    timestamp: timestamp
+    from: sender address
+    to: recipient address
+    quantity: amount transferred
+  count: total number of Xrc20 actions
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h3 id="bypage"><a href="#bypage" class="header-anchor">#</a> ByPage</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  ByPage returns Xrc20 actions by pagination
+
+Request:
+  pagination:
+    skip: starting index of displaying action list
+    first: number of actions to display
+
+Response:
+  exist: whether Xrc20 actions exist
+  xrc20:
+    contract: contract address
+    hash: action hash
+    timestamp: timestamp
+    from: sender address
+    to: recipient address
+    quantity: amount transferred
+  count: total number of Xrc20 actions
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h3 id="xrc20addresses"><a href="#xrc20addresses" class="header-anchor">#</a> Xrc20Addresses</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  Xrc20Addresses returns Xrc20 contract addresses
+
+Request:
+  pagination:
+    skip: starting index of displaying contract address list
+    first: number of contract addresses to display
+
+Response:
+  exist: whether Xrc20 contract addresses exist
+  addresses: contract address list
+  count: total number of Xrc20 contract addresses
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="tokenholderaddresses"><a href="#tokenholderaddresses" class="header-anchor">#</a> TokenHolderAddresses</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  TokenHolderAddresses returns Xrc20 token holder addresses given a Xrc20 contract address
+
+Request:
+  tokenAddress: token contract address
+  pagination:
+    skip: starting index of displaying token holder address list
+    first: number of token holder addresses to display
+
+Response:
+  addresses: token holder address list
+  count: total number of token holder addresses
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>Demo:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Sample Request:
+query{
+  xrc20{
+    byContractAddress(address: &quot;io1hp6y4eqr90j7tmul4w2wa8pm7wx462hq0mg4tw&quot;, page: 1, numPerPage: 1){
+      exist
+      xrc20 {
+        contract
+        hash
+        timestamp
+        from
+        to
+        quantity
+      }
+      count
+    }
+    byAddress(address: &quot;io1l6a6gu9ks4pwu2tmrzhl6z2el73ydv6e768p5x&quot;, page: 1, numPerPage: 1){
+      exist
+      xrc20 {
+        contract
+        hash
+        timestamp
+        from
+        to
+        quantity
+      }
+      count
+    }
+    byPage(pagination: {skip: 0, first: 2}){
+      exist
+      xrc20 {
+        contract
+        hash
+        timestamp
+        from
+        to
+        quantity
+      }
+      count
+    }
+    xrc20Addresses(pagination:{skip: 0, first: 2}){
+      exist
+      addresses
+      count
+    }
+    tokenHolderAddresses(tokenAddress: &quot;io1hp6y4eqr90j7tmul4w2wa8pm7wx462hq0mg4tw&quot;){
+      addresses(pagination: {skip: 1, first: 2})
+      count
+    }
+  }
+}
+
+Sample Response:
+
+{
+  &quot;data&quot;: {
+    &quot;xrc20&quot;: {
+      &quot;byContractAddress&quot;: {
+        &quot;exist&quot;: true,
+        &quot;xrc20&quot;: [
+          {
+            &quot;contract&quot;: &quot;io1hp6y4eqr90j7tmul4w2wa8pm7wx462hq0mg4tw&quot;,
+            &quot;hash&quot;: &quot;052eebdc0bc75715ffedeb34c9322446230448747cef48762be9478fd8a7064e&quot;,
+            &quot;timestamp&quot;: &quot;1589496125&quot;,
+            &quot;from&quot;: &quot;io1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqd39ym7&quot;,
+            &quot;to&quot;: &quot;io1xrwjjy26e5dmcxd2dq6hu0zsfrd5qdgqpg57m8&quot;,
+            &quot;quantity&quot;: &quot;71735598998424445289&quot;
+          }
+        ],
+        &quot;count&quot;: 80440
+      },
+      &quot;byAddress&quot;: {
+        &quot;exist&quot;: true,
+        &quot;xrc20&quot;: [
+          {
+            &quot;contract&quot;: &quot;io1hp6y4eqr90j7tmul4w2wa8pm7wx462hq0mg4tw&quot;,
+            &quot;hash&quot;: &quot;df8c34d9bcee1ed204ba82ebcf5b29722956379ef734c1e1e32fcb6a98968b5d&quot;,
+            &quot;timestamp&quot;: &quot;1589480485&quot;,
+            &quot;from&quot;: &quot;io1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqd39ym7&quot;,
+            &quot;to&quot;: &quot;io1l6a6gu9ks4pwu2tmrzhl6z2el73ydv6e768p5x&quot;,
+            &quot;quantity&quot;: &quot;1031249148674903495207&quot;
+          }
+        ],
+        &quot;count&quot;: 235
+      },
+      &quot;byPage&quot;: {
+        &quot;exist&quot;: true,
+        &quot;xrc20&quot;: [
+          {
+            &quot;contract&quot;: &quot;io1hp6y4eqr90j7tmul4w2wa8pm7wx462hq0mg4tw&quot;,
+            &quot;hash&quot;: &quot;052eebdc0bc75715ffedeb34c9322446230448747cef48762be9478fd8a7064e&quot;,
+            &quot;timestamp&quot;: &quot;1589496125&quot;,
+            &quot;from&quot;: &quot;io1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqd39ym7&quot;,
+            &quot;to&quot;: &quot;io1xrwjjy26e5dmcxd2dq6hu0zsfrd5qdgqpg57m8&quot;,
+            &quot;quantity&quot;: &quot;71735598998424445289&quot;
+          },
+          {
+            &quot;contract&quot;: &quot;io1hp6y4eqr90j7tmul4w2wa8pm7wx462hq0mg4tw&quot;,
+            &quot;hash&quot;: &quot;f8a326ddb67c0140be0244a052976d73ca6f8fcb5278c51549df80c347c7a3b6&quot;,
+            &quot;timestamp&quot;: &quot;1589496065&quot;,
+            &quot;from&quot;: &quot;io1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqd39ym7&quot;,
+            &quot;to&quot;: &quot;io1qnwl44fpln3uvxrrhjxkp56y6n3j6cqctp76rq&quot;,
+            &quot;quantity&quot;: &quot;132716426277978885524&quot;
+          }
+        ],
+        &quot;count&quot;: 86196
+      },
+      &quot;xrc20Addresses&quot;: {
+        &quot;exist&quot;: true,
+        &quot;addresses&quot;: [
+          &quot;io1hp6y4eqr90j7tmul4w2wa8pm7wx462hq0mg4tw&quot;,
+          &quot;io1lvemm43lz6np0hzcqlpk0kpxxww623z5hs4mwu&quot;
+        ],
+        &quot;count&quot;: 3
+      },
+      &quot;tokenHolderAddresses&quot;: {
+        &quot;addresses&quot;: [
+          &quot;io1quwq28fk0z6ztyesw8r8aalpww62uf7m6xjf8x&quot;,
+          &quot;io1hn57s343wgqrvqkt0mp4fas0wfvgtwecny5lq5&quot;
+        ],
+        &quot;count&quot;: 1871
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br></div></div><h2 id="xrc721-tokens"><a href="#xrc721-tokens" class="header-anchor">#</a> XRC721 Tokens</h2> <h3 id="bycontractaddress-2"><a href="#bycontractaddress-2" class="header-anchor">#</a> ByContractAddress</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  ByContractAddress returns Xrc721 actions given the Xrc721 contract address
+
+Request:
+  address: contract address
+  numberPerPage: number per page
+  page: page number
+
+Response:
+  exist: whether Xrc721 actions exist for the given contract address
+  xrc721:
+    contract: contract address
+    hash: action hash
+    timestamp: timestamp
+    from: sender address
+    to: recipient address
+    quantity: amount transferred
+  count: total number of Xrc721 actions
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h3 id="byaddress-3"><a href="#byaddress-3" class="header-anchor">#</a> ByAddress</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  ByAddress returns Xrc721 actions given the sender address or recipient address
+
+Request:
+  address: sender address or recipient address
+  numberPerPage: number per page
+  page: page number
+
+Response:
+  exist: whether Xrc721 actions exist for the given sender address or recipient address
+  xrc721:
+    contract: contract address
+    hash: action hash
+    timestamp: timestamp
+    from: sender address
+    to: recipient address
+    quantity: amount transferred
+  count: total number of Xrc721 actions
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h3 id="bypage-2"><a href="#bypage-2" class="header-anchor">#</a> ByPage</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  ByPage returns Xrc721 actions by pagination
+
+Request:
+  pagination:
+    skip: starting index of displaying action list
+    first: number of actions to display
+
+Response:
+  exist: whether Xrc721 actions exist
+  xrc721:
+    contract: contract address
+    hash: action hash
+    timestamp: timestamp
+    from: sender address
+    to: recipient address
+    quantity: amount transferred
+  count: total number of Xrc721 actions
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h3 id="xrc721addresses"><a href="#xrc721addresses" class="header-anchor">#</a> Xrc721Addresses</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  Xrc721Addresses returns Xrc721 contract addresses
+
+Request:
+  pagination:
+    skip: starting index of displaying contract address list
+    first: number of contract addresses to display
+
+Response:
+  exist: whether Xrc721 contract addresses exist
+  addresses: contract address list
+  count: total number of Xrc721 contract addresses
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="tokenholderaddresses-2"><a href="#tokenholderaddresses-2" class="header-anchor">#</a> TokenHolderAddresses</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  TokenHolderAddresses returns Xrc721 token holder addresses given a Xrc721 contract address
+
+Request:
+  tokenAddress: token contract address
+  pagination:
+    skip: starting index of displaying token holder address list
+    first: number of token holder addresses to display
+
+Response:
+  addresses: token holder address list
+  count: total number of token holder addresses
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>TODO: When there are Xrc721 actions on the chain, add a demo here.</p> <h2 id="topholders"><a href="#topholders" class="header-anchor">#</a> TopHolders</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  TopHolders returns the top IOTX holders
+
+Request:
+  endEpochNumber: end epoch number
+  pagination:
+    skip: starting index of displaying top holder list
+    first: number of top holders to display
+
+Response:
+  address: holder address
+  balance: account balance
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>Demo:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Sample Request:
+
+query{
+  topHolders(endEpochNumber: 1000, pagination: {skip: 0, first: 5}){
+    address
+    balance
+  }
+}
+
+Sample Response:
+
+{
+  &quot;data&quot;: {
+    &quot;topHolders&quot;: [
+      {
+        &quot;address&quot;: &quot;io1uqhmnttmv0pg8prugxxn7d8ex9angrvfjfthxa&quot;,
+        &quot;balance&quot;: &quot;9782327287860000000000000000&quot;
+      },
+      {
+        &quot;address&quot;: &quot;io1v8aj79xc7zdn46rptrqe63g79tgq57s8em2yk5&quot;,
+        &quot;balance&quot;: &quot;5595872065018750000000000&quot;
+      },
+      {
+        &quot;address&quot;: &quot;io1w2zkwsda29cryeg8rtln6wl0nm2mrlfl2xj02c&quot;,
+        &quot;balance&quot;: &quot;5000000000000000000000000&quot;
+      },
+      {
+        &quot;address&quot;: &quot;io17zjv5f97j0d9fp6svqnvf2nf3k4a5pjay9kzp9&quot;,
+        &quot;balance&quot;: &quot;3457911717681240000000000&quot;
+      },
+      {
+        &quot;address&quot;: &quot;io183v7vftj3e4h76z5f5qpswhnn5737rrwjkhyds&quot;,
+        &quot;balance&quot;: &quot;1222486212327000000000000&quot;
+      }
+    ]
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><h2 id="hermes"><a href="#hermes" class="header-anchor">#</a> Hermes</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  Hermes gives delegates who register the service of automatic reward distribution an overview of the reward distributions to their voters within a range of epochs
+
+Request:
+  startEpoch: starting epoch number
+  epochCount: epoch count
+  rewardAddress: Hermes reward address
+  waiverThreshold: threshold for waiving service fee
+
+Response:
+  exist: whether Hermes has bookkeeping information within the specified epoch range
+  hermesDistribution:
+    delegateName: delegate name
+    rewardDistribution:
+      voterEthAddress: voter’s ERC20 address
+      voterIotexAddress: voter’s IoTeX address
+      amount: amount of reward distribution
+    stakingIotexAddress: delegate IoTeX staking address
+    voterCount: number of voters
+    waiveServiceFee: whether the delegate is qualified for waiving the service fee
+    refund: amount of refund
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>Demo:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Sample Request:
+
+query{
+  hermes(startEpoch: 2600, epochCount: 2, rewardAddress: &quot;io12mgttmfa2ffn9uqvn0yn37f4nz43d248l2ga85&quot;, waiverThreshold: 100) {
+    exist
+    hermesDistribution{
+      delegateName
+      rewardDistribution{
+        voterEthAddress
+        voterIotexAddress
+        amount
+      }
+      stakingIotexAddress
+      waiveServiceFee
+      refund
+    }
+  }
+}
+
+Sample Reponse:
+
+{
+  &quot;data&quot;: {
+    &quot;hermes&quot;: {
+      &quot;exist&quot;: true,
+      &quot;hermesDistribution&quot;: [
+        {
+          &quot;delegateName&quot;: &quot;coredev&quot;,
+          &quot;rewardDistribution&quot;: [
+            {
+              &quot;voterEthAddress&quot;: &quot;0x2ed3767cfcbceb42ff5f3642d4df6f851b947073&quot;,
+              &quot;voterIotexAddress&quot;: &quot;io19mfhvl8uhn459l6lxepdfhm0s5degurn9p9ws7&quot;,
+              &quot;amount&quot;: &quot;196604399213276651&quot;
+            },
+            {
+              &quot;voterEthAddress&quot;: &quot;0xd24687dc4512cd705a74cd5495745398f24278ad&quot;,
+              &quot;voterIotexAddress&quot;: &quot;io16frg0hz9ztxhqkn5e42f2aznnreyy79dmqlsn2&quot;,
+              &quot;amount&quot;: &quot;32631320141532384677&quot;
+            },
+            {
+              &quot;voterEthAddress&quot;: &quot;0xfe7bcb3676aabe9a6b39cb23f3a5fa41eed7ad1b&quot;,
+              &quot;voterIotexAddress&quot;: &quot;io1leaukdnk42lf56eeev3l8f06g8hd0tgmep8z96&quot;,
+              &quot;amount&quot;: &quot;359747231878966643458&quot;
+            }
+          ],
+          &quot;stakingIotexAddress&quot;: &quot;io16frg0hz9ztxhqkn5e42f2aznnreyy79dmqlsn2&quot;,
+          &quot;waiveServiceFee&quot;: false,
+          &quot;refund&quot;: &quot;20661850337879594993&quot;
+        }
+      ]
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br></div></div><h3 id="hermesaveragestats"><a href="#hermesaveragestats" class="header-anchor">#</a> HermesAverageStats</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  HermesAverageStats returns the Hermes average statistics
+
+Request:
+  startEpoch: starting epoch number
+  epochCount: epoch count
+  rewardAddress: Hermes reward address
+
+Response:
+  exist: whether Hermes has bookkeeping information within the specified epoch range
+  averagePerEpoch:
+    delegateName: delegate name
+    rewardDistribution: reward distribution amount on average
+    totalWeightedVotes: total weighted votes on average
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>Demo:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Sample Request:
+
+query{
+  hermesAverageStats(startEpoch: 5000, epochCount: 10, rewardAddress: &quot;io12mgttmfa2ffn9uqvn0yn37f4nz43d248l2ga85&quot;){
+    exist
+    averagePerEpoch{
+      delegateName
+      rewardDistribution
+      totalWeightedVotes
+    }
+  }
+}
+
+Sample Response:
+{
+  &quot;data&quot;: {
+    &quot;hermesAverageStats&quot;: {
+      &quot;exist&quot;: true,
+      &quot;averagePerEpoch&quot;: [
+        {
+          &quot;delegateName&quot;: &quot;coredev&quot;,
+          &quot;rewardDistribution&quot;: &quot;401032105356051868726&quot;,
+          &quot;totalWeightedVotes&quot;: &quot;38808174674986270729016008&quot;
+        },
+        {
+          &quot;delegateName&quot;: &quot;droute&quot;,
+          &quot;rewardDistribution&quot;: &quot;822447995100870198028&quot;,
+          &quot;totalWeightedVotes&quot;: &quot;118158036851736955093703620&quot;
+        },
+        {
+          &quot;delegateName&quot;: &quot;enlightiv&quot;,
+          &quot;rewardDistribution&quot;: &quot;307702229045005783993&quot;,
+          &quot;totalWeightedVotes&quot;: &quot;44203263243950087278116762&quot;
+        },
+        {
+          &quot;delegateName&quot;: &quot;gamefantasy#&quot;,
+          &quot;rewardDistribution&quot;: &quot;615239097651479380485&quot;,
+          &quot;totalWeightedVotes&quot;: &quot;57767718207147312170110160&quot;
+        },
+        {
+          &quot;delegateName&quot;: &quot;hashquark&quot;,
+          &quot;rewardDistribution&quot;: &quot;541329441223848778034&quot;,
+          &quot;totalWeightedVotes&quot;: &quot;37303750004462544031788788&quot;
+        },
+        {
+          &quot;delegateName&quot;: &quot;hotbit&quot;,
+          &quot;rewardDistribution&quot;: &quot;490966398085098750279&quot;,
+          &quot;totalWeightedVotes&quot;: &quot;41618068480725476480096115&quot;
+        },
+        {
+          &quot;delegateName&quot;: &quot;huobiwallet&quot;,
+          &quot;rewardDistribution&quot;: &quot;256863403704895657860&quot;,
+          &quot;totalWeightedVotes&quot;: &quot;36902607956443015195845625&quot;
+        },
+        {
+          &quot;delegateName&quot;: &quot;thebottoken#&quot;,
+          &quot;rewardDistribution&quot;: &quot;76273140665872145706&quot;,
+          &quot;totalWeightedVotes&quot;: &quot;10349106879165645178941803&quot;
+        }
+      ]
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br></div></div><h2 id="hermes2"><a href="#hermes2" class="header-anchor">#</a> Hermes2</h2> <h3 id="bydelegate"><a href="#bydelegate" class="header-anchor">#</a> ByDelegate</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  ByDelegate returns Hermes delegates' distribution history
+
+Request:
+  startEpoch: starting epoch number
+  epochCount: epoch count
+  delegateName: delegate name
+  pagination:
+    skip: starting index of displaying reward distribution list
+    first: number of reward distributions to display
+
+Response:
+  exist: whether the delegate uses Hermes within the specified epoch range
+  voterInfoList:
+    voterAddress: voter address
+    fromEpoch: starting epoch of bookkeeping
+    toEpoch: ending epoch of bookkeeping
+    amount: distributino amount
+    actionHash: action hash
+    timestamp: timestamp
+  count: total number of reward distributions
+  totalRewardDistributed: total reward amount distributed
+  distributionRatio:
+    epochNumber: epoch number
+    blockRewardRatio: ratio of block reward being distributed
+    epochRewardRatio: ratio of epoch reward being distributed
+    foundationBonusRatio: ratio of foundation bonus being distributed
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><h3 id="byvoter"><a href="#byvoter" class="header-anchor">#</a> ByVoter</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  ByVoter returns Hermes voters' receiving history
+
+Request:
+  startEpoch: starting epoch number
+  epochCount: epoch count
+  voterAddress: voter address
+  pagination:
+    skip: starting index of displaying reward receiving list
+    first: number of reward receivings to display
+
+Response:
+  exist: whether the voter uses Hermes within the specified epoch range
+  delegateInfoList:
+    delegateName: delegate name
+    fromEpoch: starting epoch of bookkeeping
+    toEpoch: ending epoch of bookkeeping
+    amount: receiving amount
+    actionHash: action hash
+    timestamp: timestamp
+  count: total number of reward receivings
+  totalRewardReceived: total reward amount received
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><h3 id="hermesmeta"><a href="#hermesmeta" class="header-anchor">#</a> HermesMeta</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Usage:
+  HermesMeta provides Hermes platform metadata
+
+Request:
+  startEpoch: starting epoch number
+  epochCount: epoch count
+
+Response:
+  exist: whether Hermes has bookkeeping information within the specified epoch range
+  numberOfDelegates: number of Hermes delegates within the epoch range
+  numberOfRecipients: number of voters who vote for Hermes delegates within the epoch range
+  totalRewardDistributed: total reward amount distributed within the epoch range
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>Demo:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Sample Request:
+
+query{
+  hermes2(startEpoch: 9100, epochCount: 1){
+    byDelegate(delegateName:&quot;gamefantasy#&quot;){
+      exist
+      voterInfoList(pagination: {skip: 0, first: 2}){
+        voterAddress
+        fromEpoch
+        toEpoch
+        amount
+        actionHash
+        timestamp
+      }
+      count
+      totalRewardsDistributed
+      distributionRatio{
+        epochNumber
+        blockRewardRatio
+        epochRewardRatio
+        foundationBonusRatio
+      }
+    }
+    byVoter(voterAddress: &quot;io19jgwy6gua2mxtthdgqe7r6v2z8jyvv0820nshw&quot;){
+      exist
+      delegateInfoList(pagination: {skip: 0, first: 2}){
+        delegateName
+        fromEpoch
+        toEpoch
+        amount
+        actionHash
+        timestamp
+      }
+      count
+      totalRewardsReceived
+    }
+    hermesMeta{
+      exist
+      numberOfDelegates
+      numberOfRecipients
+      totalRewardsDistributed
+    }
+  }
+}
+
+Sample Response:
+
+{
+  &quot;data&quot;: {
+    &quot;hermes2&quot;: {
+      &quot;byDelegate&quot;: {
+        &quot;exist&quot;: true,
+        &quot;voterInfoList&quot;: [
+          {
+            &quot;voterAddress&quot;: &quot;io1qhks2tct2386xgntkgg8f748ymuqnzwy4qr3ms&quot;,
+            &quot;fromEpoch&quot;: 9016,
+            &quot;toEpoch&quot;: 9037,
+            &quot;amount&quot;: &quot;898496142232422125&quot;,
+            &quot;actionHash&quot;: &quot;bff5c21cec38a994507cc133220d853710516b931a44d0ee74816fe835d68b62&quot;,
+            &quot;timestamp&quot;: &quot;2020-05-08 00:10:45 +0000 UTC&quot;
+          },
+          {
+            &quot;voterAddress&quot;: &quot;io1qk59a7q45spm8c2tnuf2j3yrkshfupaeq6fa8g&quot;,
+            &quot;fromEpoch&quot;: 9016,
+            &quot;toEpoch&quot;: 9037,
+            &quot;amount&quot;: &quot;4597907624862488628&quot;,
+            &quot;actionHash&quot;: &quot;bff5c21cec38a994507cc133220d853710516b931a44d0ee74816fe835d68b62&quot;,
+            &quot;timestamp&quot;: &quot;2020-05-08 00:10:45 +0000 UTC&quot;
+          }
+        ],
+        &quot;count&quot;: 79,
+        &quot;totalRewardsDistributed&quot;: &quot;15856874829304723790254&quot;,
+        &quot;distributionRatio&quot;: [
+          {
+            &quot;epochNumber&quot;: 9100,
+            &quot;blockRewardRatio&quot;: 80,
+            &quot;epochRewardRatio&quot;: 80,
+            &quot;foundationBonusRatio&quot;: 80
+          }
+        ]
+      },
+      &quot;byVoter&quot;: {
+        &quot;exist&quot;: true,
+        &quot;delegateInfoList&quot;: [
+          {
+            &quot;delegateName&quot;: &quot;thebottoken#&quot;,
+            &quot;fromEpoch&quot;: 9016,
+            &quot;toEpoch&quot;: 9037,
+            &quot;amount&quot;: &quot;758460957121496239828&quot;,
+            &quot;actionHash&quot;: &quot;e6a8a1a3daa35bfec01537aecc45fd5d9f58d4fd686e152e6a44c6c5e6c7cc25&quot;,
+            &quot;timestamp&quot;: &quot;2020-05-08 00:23:45 +0000 UTC&quot;
+          },
+          {
+            &quot;delegateName&quot;: &quot;consensusnet&quot;,
+            &quot;fromEpoch&quot;: 9016,
+            &quot;toEpoch&quot;: 9037,
+            &quot;amount&quot;: &quot;2281108960667527338399&quot;,
+            &quot;actionHash&quot;: &quot;ada939af05ba7bf96d4e87a2c5f7d048f48ab9b6fafc3ee1ca35dfc67664a22a&quot;,
+            &quot;timestamp&quot;: &quot;2020-05-08 00:02:40 +0000 UTC&quot;
+          }
+        ],
+        &quot;count&quot;: 3,
+        &quot;totalRewardsReceived&quot;: &quot;5315407956761306754362&quot;
+      },
+      &quot;hermesMeta&quot;: {
+        &quot;exist&quot;: true,
+        &quot;numberOfDelegates&quot;: 22,
+        &quot;numberOfRecipients&quot;: 964,
+        &quot;totalRewardsDistributed&quot;: &quot;241471851581857403438503&quot;
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/iotexproject/iotex-docs/edit/master/docs/developer/graphql/analytics.md" target="_blank" rel="noopener noreferrer">Edit this page on GitHub</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/3/2021, 5:29:47 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/developer/core-api/api.html" class="prev">
+        gRPC API
+      </a></span> <span class="next"><a href="/developer/graphql/member-portal.html">
+        Member Portal
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.92319cb3.js" defer></script><script src="/assets/js/4.a3940bc5.js" defer></script><script src="/assets/js/7.ad4be137.js" defer></script><script src="/assets/js/2.ada527e9.js" defer></script><script src="/assets/js/40.830de590.js" defer></script>
+  </body>
+</html>

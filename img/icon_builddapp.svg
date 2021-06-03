@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37">
+  <g id="icon_Build_a_DApp" data-name="icon_Build a DApp" transform="translate(-820 -339)">
+    <circle id="椭圆_1" data-name="椭圆 1" cx="18.5" cy="18.5" r="18.5" transform="translate(820 339)" fill="none"/>
+    <g id="组_4977" data-name="组 4977" transform="translate(-1 -0.828)">
+      <rect id="矩形_45" data-name="矩形 45" width="10" height="10" rx="5" transform="translate(845.485 358.556) rotate(-135)" fill="#43c9ba"/>
+      <g id="矩形_69" data-name="矩形 69" transform="translate(827 360)" fill="none" stroke="#262626" stroke-width="1">
+        <rect width="10" height="10" stroke="none"/>
+        <rect x="0.5" y="0.5" width="9" height="9" fill="none"/>
+      </g>
+      <g id="矩形_82" data-name="矩形 82" transform="translate(827 347)" fill="none" stroke="#262626" stroke-width="1">
+        <rect width="10" height="10" stroke="none"/>
+        <rect x="0.5" y="0.5" width="9" height="9" fill="none"/>
+      </g>
+      <g id="矩形_68" data-name="矩形 68" transform="translate(840 360)" fill="none" stroke="#262626" stroke-width="1">
+        <rect width="10" height="10" stroke="none"/>
+        <rect x="0.5" y="0.5" width="9" height="9" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

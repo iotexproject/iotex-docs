@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="icon_project_token" transform="translate(-491 -888)">
+    <circle id="椭圆_7" data-name="椭圆 7" cx="10" cy="10" r="10" transform="translate(491 888)" fill="none"/>
+    <g id="多边形_3" data-name="多边形 3" transform="translate(491.938 896.304) rotate(-30)" fill="none">
+      <path d="M10.5,0,14,6l-3.5,6h-7L0,6,3.5,0Z" stroke="none"/>
+      <path d="M 4.36155891418457 1.5 L 1.73655891418457 6 L 4.36155891418457 10.5 L 9.63844108581543 10.5 L 12.26344108581543 6 L 9.63844108581543 1.5 L 4.36155891418457 1.5 M 3.5 0 L 10.5 0 L 14 6 L 10.5 12 L 3.5 12 L 0 6 L 3.5 0 Z" stroke="none" fill="#999"/>
+    </g>
+    <path id="多边形_4" data-name="多边形 4" d="M3.75,0,5,2.15,3.75,4.3H1.25L0,2.15,1.25,0Z" transform="translate(497.866 897.366) rotate(-30)" fill="#999"/>
+  </g>
+</svg>

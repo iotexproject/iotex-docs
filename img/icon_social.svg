@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37">
+  <g id="icon_social" transform="translate(-820 -339)">
+    <circle id="椭圆_1" data-name="椭圆 1" cx="18.5" cy="18.5" r="18.5" transform="translate(820 339)" fill="none"/>
+    <g id="椭圆_31" data-name="椭圆 31" transform="translate(828 347)" fill="none" stroke="#262626" stroke-width="1">
+      <circle cx="11.5" cy="11.5" r="11.5" stroke="none"/>
+      <circle cx="11.5" cy="11.5" r="11" fill="none"/>
+    </g>
+    <circle id="椭圆_32" data-name="椭圆 32" cx="5.5" cy="5.5" r="5.5" transform="translate(834 353)" fill="#43c9ba"/>
+    <g id="椭圆_33" data-name="椭圆 33" transform="translate(848 359)" fill="#fff" stroke="#262626" stroke-width="1">
+      <circle cx="3.5" cy="3.5" r="3.5" stroke="none"/>
+      <circle cx="3.5" cy="3.5" r="3" fill="none"/>
+    </g>
+    <g id="椭圆_34" data-name="椭圆 34" transform="translate(830 346)" fill="#fff" stroke="#262626" stroke-width="1">
+      <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+      <circle cx="2.5" cy="2.5" r="2" fill="none"/>
+    </g>
+    <g id="椭圆_35" data-name="椭圆 35" transform="translate(824 363)" fill="#fff" stroke="#262626" stroke-width="1">
+      <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+      <circle cx="2.5" cy="2.5" r="2" fill="none"/>
+    </g>
+  </g>
+</svg>

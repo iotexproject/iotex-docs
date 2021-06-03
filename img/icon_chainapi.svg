@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37">
+  <g id="icon_Chain_API_Reference" data-name="icon_Chain API Reference" transform="translate(-820 -339)">
+    <circle id="椭圆_1" data-name="椭圆 1" cx="18.5" cy="18.5" r="18.5" transform="translate(820 339)" fill="none"/>
+    <g id="组_4986" data-name="组 4986">
+      <g id="矩形_81" data-name="矩形 81" transform="translate(838.5 348.308) rotate(45)" fill="none" stroke="#262626" stroke-width="1">
+        <rect width="13" height="13" stroke="none"/>
+        <rect x="0.5" y="0.5" width="12" height="12" fill="none"/>
+      </g>
+      <circle id="椭圆_26" data-name="椭圆 26" cx="3.5" cy="3.5" r="3.5" transform="translate(835 345)" fill="#43c9ba"/>
+      <g id="椭圆_28" data-name="椭圆 28" transform="translate(844 354)" fill="#fff" stroke="#262626" stroke-width="1">
+        <circle cx="3.5" cy="3.5" r="3.5" stroke="none"/>
+        <circle cx="3.5" cy="3.5" r="3" fill="none"/>
+      </g>
+      <g id="椭圆_27" data-name="椭圆 27" transform="translate(826 354)" fill="#fff" stroke="#262626" stroke-width="1">
+        <circle cx="3.5" cy="3.5" r="3.5" stroke="none"/>
+        <circle cx="3.5" cy="3.5" r="3" fill="none"/>
+      </g>
+      <circle id="椭圆_29" data-name="椭圆 29" cx="3.5" cy="3.5" r="3.5" transform="translate(835 363)" fill="#43c9ba"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="icon_project_dops" transform="translate(-491 -888)">
+    <circle id="椭圆_7" data-name="椭圆 7" cx="10" cy="10" r="10" transform="translate(491 888)" fill="none"/>
+    <g id="组_4967" data-name="组 4967" transform="translate(494.969 891.921)">
+      <path id="路径_7552" data-name="路径 7552" d="M186.573,397.044l-1.026-1.036,1.026-1.03-.684-.687-1.709,1.717,1.709,1.723Zm3.948.687,1.716-1.723-1.716-1.717-.684.687,1.032,1.03-1.032,1.036Zm-3.7.094,1.889-3.854.868.429-1.889,3.854-.868-.429Z" transform="translate(-182.232 -389.803)" fill="#999"/>
+    </g>
+    <g id="矩形_55" data-name="矩形 55" transform="translate(495 893)" fill="none" stroke="#999" stroke-width="1.5">
+      <rect width="12" height="10" stroke="none"/>
+      <rect x="0.75" y="0.75" width="10.5" height="8.5" fill="none"/>
+    </g>
+  </g>
+</svg>

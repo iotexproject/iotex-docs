@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37">
+  <g id="icon_Analytics_GraphQL_Reference" data-name="icon_Analytics GraphQL Reference" transform="translate(-820 -339)">
+    <circle id="椭圆_1" data-name="椭圆 1" cx="18.5" cy="18.5" r="18.5" transform="translate(820 339)" fill="none"/>
+    <g id="组_4953" data-name="组 4953" transform="translate(723 242)">
+      <g id="组_4988" data-name="组 4988">
+        <g id="组_4959" data-name="组 4959" transform="translate(-65.696 198.414) rotate(-90)">
+          <g id="矩形_62" data-name="矩形 62" transform="translate(71.414 175.696)" fill="#fff" stroke="#262626" stroke-width="1">
+            <path d="M0,0H11A12,12,0,0,1,23,12v6a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" stroke="none"/>
+            <path d="M1,.5H11A11.5,11.5,0,0,1,22.5,12v5a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,17V1A.5.5,0,0,1,1,.5Z" fill="none"/>
+          </g>
+          <path id="矩形_63" data-name="矩形 63" d="M0,0H19a0,0,0,0,1,0,0V5a8,8,0,0,1-8,8H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(71.414 168.696)" fill="#43c9ba"/>
+          <line id="直线_5" data-name="直线 5" y2="4.928" transform="translate(85.378 186.124)" fill="none" stroke="#262626" stroke-width="1"/>
+          <line id="直线_6" data-name="直线 6" y2="7.392" transform="translate(80.45 183.66)" fill="none" stroke="#262626" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

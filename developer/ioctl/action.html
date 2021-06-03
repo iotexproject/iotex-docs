@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Send Blockchain Actions | IoTeX Documentation</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+    <link rel="icon" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="Developer docs, by the community, for the community">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.5693dcaa.css" as="style"><link rel="preload" href="/assets/js/app.92319cb3.js" as="script"><link rel="preload" href="/assets/js/4.a3940bc5.js" as="script"><link rel="preload" href="/assets/js/7.ad4be137.js" as="script"><link rel="preload" href="/assets/js/2.ada527e9.js" as="script"><link rel="preload" href="/assets/js/66.74508d2f.js" as="script"><link rel="prefetch" href="/assets/js/10.4e707861.js"><link rel="prefetch" href="/assets/js/100.12ee3bbc.js"><link rel="prefetch" href="/assets/js/101.3ef3c9eb.js"><link rel="prefetch" href="/assets/js/102.4eb34661.js"><link rel="prefetch" href="/assets/js/103.2e562dc9.js"><link rel="prefetch" href="/assets/js/104.2ee1b6a1.js"><link rel="prefetch" href="/assets/js/105.3f1301ba.js"><link rel="prefetch" href="/assets/js/106.6996f4b3.js"><link rel="prefetch" href="/assets/js/107.bcc1fea1.js"><link rel="prefetch" href="/assets/js/108.09f82bbb.js"><link rel="prefetch" href="/assets/js/109.1bdb1b3d.js"><link rel="prefetch" href="/assets/js/11.0f12db71.js"><link rel="prefetch" href="/assets/js/110.b2fe35d2.js"><link rel="prefetch" href="/assets/js/111.21cd01b3.js"><link rel="prefetch" href="/assets/js/112.46498252.js"><link rel="prefetch" href="/assets/js/113.ef03459d.js"><link rel="prefetch" href="/assets/js/114.dcaa5556.js"><link rel="prefetch" href="/assets/js/115.64887b82.js"><link rel="prefetch" href="/assets/js/116.50c40baa.js"><link rel="prefetch" href="/assets/js/117.d6c9b440.js"><link rel="prefetch" href="/assets/js/118.895cc86c.js"><link rel="prefetch" href="/assets/js/119.b40e3fa7.js"><link rel="prefetch" href="/assets/js/12.68517ebf.js"><link rel="prefetch" href="/assets/js/120.8d20f648.js"><link rel="prefetch" href="/assets/js/121.8fd09f3d.js"><link rel="prefetch" href="/assets/js/122.5f182d23.js"><link rel="prefetch" href="/assets/js/13.fad74b27.js"><link rel="prefetch" href="/assets/js/14.16de7fa3.js"><link rel="prefetch" href="/assets/js/15.0679a4f9.js"><link rel="prefetch" href="/assets/js/16.0094fc26.js"><link rel="prefetch" href="/assets/js/17.4f4ed4e3.js"><link rel="prefetch" href="/assets/js/18.b4b56e10.js"><link rel="prefetch" href="/assets/js/19.cd653c9c.js"><link rel="prefetch" href="/assets/js/20.fec256d3.js"><link rel="prefetch" href="/assets/js/21.232b96bd.js"><link rel="prefetch" href="/assets/js/22.8f54a840.js"><link rel="prefetch" href="/assets/js/23.9e195ab9.js"><link rel="prefetch" href="/assets/js/24.5ab60904.js"><link rel="prefetch" href="/assets/js/25.e21c1fe2.js"><link rel="prefetch" href="/assets/js/26.7f47975c.js"><link rel="prefetch" href="/assets/js/27.7a460dc6.js"><link rel="prefetch" href="/assets/js/28.4f795d61.js"><link rel="prefetch" href="/assets/js/29.a2ef247f.js"><link rel="prefetch" href="/assets/js/3.c543bd12.js"><link rel="prefetch" href="/assets/js/30.6aaf57a1.js"><link rel="prefetch" href="/assets/js/31.0232a083.js"><link rel="prefetch" href="/assets/js/32.0a1f80cb.js"><link rel="prefetch" href="/assets/js/33.20c003f8.js"><link rel="prefetch" href="/assets/js/34.1734d3bc.js"><link rel="prefetch" href="/assets/js/35.4dd03a8e.js"><link rel="prefetch" href="/assets/js/36.27a932aa.js"><link rel="prefetch" href="/assets/js/37.0655711f.js"><link rel="prefetch" href="/assets/js/38.9db2343b.js"><link rel="prefetch" href="/assets/js/39.afb58f42.js"><link rel="prefetch" href="/assets/js/40.830de590.js"><link rel="prefetch" href="/assets/js/41.a7bae7fd.js"><link rel="prefetch" href="/assets/js/42.10486129.js"><link rel="prefetch" href="/assets/js/43.5c40d5e7.js"><link rel="prefetch" href="/assets/js/44.c0e5ec9f.js"><link rel="prefetch" href="/assets/js/45.986e350c.js"><link rel="prefetch" href="/assets/js/46.83d0e29c.js"><link rel="prefetch" href="/assets/js/47.0c8df559.js"><link rel="prefetch" href="/assets/js/48.250757c9.js"><link rel="prefetch" href="/assets/js/49.5ec75571.js"><link rel="prefetch" href="/assets/js/5.b043b126.js"><link rel="prefetch" href="/assets/js/50.773c5aeb.js"><link rel="prefetch" href="/assets/js/51.82d9e90c.js"><link rel="prefetch" href="/assets/js/52.a2c26220.js"><link rel="prefetch" href="/assets/js/53.4a5d527a.js"><link rel="prefetch" href="/assets/js/54.39af9244.js"><link rel="prefetch" href="/assets/js/55.e8f7571d.js"><link rel="prefetch" href="/assets/js/56.f7c656c0.js"><link rel="prefetch" href="/assets/js/57.36b82bf6.js"><link rel="prefetch" href="/assets/js/58.a69ee054.js"><link rel="prefetch" href="/assets/js/59.aa549778.js"><link rel="prefetch" href="/assets/js/6.195915ca.js"><link rel="prefetch" href="/assets/js/60.a585d2ad.js"><link rel="prefetch" href="/assets/js/61.15ff4f37.js"><link rel="prefetch" href="/assets/js/62.19a1e771.js"><link rel="prefetch" href="/assets/js/63.c0e8fb34.js"><link rel="prefetch" href="/assets/js/64.fc0a674a.js"><link rel="prefetch" href="/assets/js/65.2f6f33c5.js"><link rel="prefetch" href="/assets/js/67.f5241a8f.js"><link rel="prefetch" href="/assets/js/68.9e1d7c0b.js"><link rel="prefetch" href="/assets/js/69.b591f0e3.js"><link rel="prefetch" href="/assets/js/70.f614c87f.js"><link rel="prefetch" href="/assets/js/71.789abace.js"><link rel="prefetch" href="/assets/js/72.01aa764d.js"><link rel="prefetch" href="/assets/js/73.0c647eca.js"><link rel="prefetch" href="/assets/js/74.25059694.js"><link rel="prefetch" href="/assets/js/75.9e8acb55.js"><link rel="prefetch" href="/assets/js/76.ce696b71.js"><link rel="prefetch" href="/assets/js/77.603e2955.js"><link rel="prefetch" href="/assets/js/78.d5968d44.js"><link rel="prefetch" href="/assets/js/79.3ce1ff02.js"><link rel="prefetch" href="/assets/js/8.0255cfae.js"><link rel="prefetch" href="/assets/js/80.44ae755f.js"><link rel="prefetch" href="/assets/js/81.b1abeb8f.js"><link rel="prefetch" href="/assets/js/82.7eb8c54a.js"><link rel="prefetch" href="/assets/js/83.6331e906.js"><link rel="prefetch" href="/assets/js/84.5426916e.js"><link rel="prefetch" href="/assets/js/85.055cb586.js"><link rel="prefetch" href="/assets/js/86.e7fde603.js"><link rel="prefetch" href="/assets/js/87.c183f27a.js"><link rel="prefetch" href="/assets/js/88.3b5ef393.js"><link rel="prefetch" href="/assets/js/89.8923e86f.js"><link rel="prefetch" href="/assets/js/9.05a98e4c.js"><link rel="prefetch" href="/assets/js/90.e33c235f.js"><link rel="prefetch" href="/assets/js/91.719d05d2.js"><link rel="prefetch" href="/assets/js/92.cef89549.js"><link rel="prefetch" href="/assets/js/93.b25c0216.js"><link rel="prefetch" href="/assets/js/94.8bca4bcc.js"><link rel="prefetch" href="/assets/js/95.6a4dc04b.js"><link rel="prefetch" href="/assets/js/96.e5c220e2.js"><link rel="prefetch" href="/assets/js/97.d2a9c0a0.js"><link rel="prefetch" href="/assets/js/98.2a1fe857.js"><link rel="prefetch" href="/assets/js/99.8e097257.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5693dcaa.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="banner"><div class="banner-text"><a href="https://halo.iotex.io" target="_blank"><div class="subtitle can-hide">Get your next project funded »</div> <b>Halo Grants Program is now</b> <div class="neon">open</div></a></div></div> <div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">IoTeX Documentation</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/introduction/whatisiotex.html" class="nav-link">
+  Core concepts
+</a></div><div class="nav-item"><a href="/developer/" class="nav-link router-link-active">
+  Documentation
+</a></div><div class="nav-item"><a href="/contribute/" class="nav-link">
+  Get Involved
+</a></div><div class="nav-item"><a href="https://t.me/iotexdev" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Dev Chat
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/iotexproject/iotex-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/introduction/whatisiotex.html" class="nav-link">
+  Core concepts
+</a></div><div class="nav-item"><a href="/developer/" class="nav-link router-link-active">
+  Documentation
+</a></div><div class="nav-item"><a href="/contribute/" class="nav-link">
+  Get Involved
+</a></div><div class="nav-item"><a href="https://t.me/iotexdev" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Dev Chat
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/iotexproject/iotex-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/developer/" class="sidebar-heading clickable router-link-active open"><span>Developer Home</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>Software Tools</span> <!----></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/get-started/ioctl-install" class="sidebar-heading clickable"><span>Get Started</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/smart-contracts/introduction" class="sidebar-heading clickable"><span>Smart Contracts</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/sdk/overview" class="sidebar-heading clickable"><span>Antenna SDKs</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/dapp-starter/introduction" class="sidebar-heading clickable"><span>IoTeX dApp Sample</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>Middleware</span> <!----></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/did/overview" class="sidebar-heading clickable"><span>Decentralized Identity</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>Secure Hardware</span> <!----></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/hardware/pebble" class="sidebar-heading clickable"><span>Pebble</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>Reference</span> <!----></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/ioctl/install" class="sidebar-heading clickable open"><span>ioctl Client</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/developer/ioctl/install.html" class="sidebar-link">Install &amp; Update</a></li><li><a href="/developer/ioctl/config.html" class="sidebar-link">Configure ioctl</a></li><li><a href="/developer/ioctl/account.html" class="sidebar-link">Manage Accounts</a></li><li><a href="/developer/ioctl/hdwallet.html" class="sidebar-link">HD Wallet</a></li><li><a href="/developer/ioctl/alias.html" class="sidebar-link">Account Aliases</a></li><li><a href="/developer/ioctl/action.html" aria-current="page" class="active sidebar-link">Send Blockchain Actions</a></li><li><a href="/developer/ioctl/bc.html" class="sidebar-link">Query the Blockchain</a></li><li><a href="/developer/ioctl/node.html" class="sidebar-link">Query Delegates</a></li><li><a href="/developer/ioctl/contract.html" class="sidebar-link">Smart Contracts</a></li><li><a href="/developer/ioctl/stake2.html" class="sidebar-link">Staking &amp; Voting Actions</a></li><li><a href="/developer/ioctl/xrc20.html" class="sidebar-link">XRC20 Tokens</a></li><li><a href="/developer/ioctl/did.html" class="sidebar-link">Address Based DID</a></li><li><a href="/developer/ioctl/jwt.html" class="sidebar-link">Issue JWT</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/core-api/api" class="sidebar-heading clickable"><span>Core gRPC API</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/graphql/analytics" class="sidebar-heading clickable"><span>GraphQL API</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>More Resources</span> <!----></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/complete-projects/rolling-dice" class="sidebar-heading clickable"><span>Clone Finished Projects</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/integrations/rosetta" class="sidebar-heading clickable"><span>Exchanges Integration</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/developer/more/action-injector" class="sidebar-heading clickable"><span>Misc Tools</span> <span class="arrow right"></span></a> <!----></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="send-blockchain-action"><a href="#send-blockchain-action" class="header-anchor">#</a> Send Blockchain Action</h1> <p></p><div class="table-of-contents"><ul><li><a href="#transfer-tokens">Transfer Tokens</a></li><li><a href="#query-action">Query Action</a></li><li><a href="#deploy-contract">Deploy Contract</a></li><li><a href="#invoke-contract">Invoke Contract</a></li><li><a href="#read-smart-contract">Read Smart Contract</a></li><li><a href="#claim-reward">Claim Reward</a></li><li><a href="#deposit-to-rewarding-pool">Deposit To Rewarding Pool</a></li></ul></div><p></p> <h3 id="transfer-tokens"><a href="#transfer-tokens" class="header-anchor">#</a> Transfer Tokens</h3> <p><code>Usage: ioctl action transfer (ALIAS|RECIPIENT_ADDRESS) AMOUNT_IOTX [DATA] -s SIGNER [-l GAS_LIMIT] [-p GAS_PRICE]</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>➜  ioctl action transfer IOsenser 7 pad#3212 -s whale
+Enter password #whale:
+
+senderAddress: io14gnqxf9dpkn05g337rl7eyt2nxasphf5m6n0rd (whale)
+transfer: &lt;
+  recipient: io1r2r0um9dw35922tptkuphseq43hq2knk3fjrlt (IOsenser)
+  amount: 7000000000000000000
+  payload: pad#3212
+&gt;
+senderPubKey: 04f591bf3d3e233f6705c8a78823e9ea4a9a73365ca4dd1e60e5567558135778fde8b79dc883b04a98ab68a0fe9e3b7ce984fceca0466c03f93f40d32915bf1d88
+signature: 64f9dc75b3406a009692cde669d3186bc29844ba70520e16fdafc14487d8d6be184c4a43f5f7e1f688d759c985a268d1a4b73b34b9e98d1db61adcb549a37d0101
+
+Please confirm your action.
+Type 'YES' to continue, quit for anything else.
+yes
+
+Action has been sent to blockchain.
+Wait for several seconds and query this action by hash:
+iotexscan.io/action/aa56b8958d5030676876363ec054df4ac7044ea2fc09f51a1c238d22c9411c33
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h3 id="query-action"><a href="#query-action" class="header-anchor">#</a> Query Action</h3> <p><code>Usage: ioctl action hash ACTION_HASH</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>→  ioctl action hash 690fb07fbb5ba3b762a7a16edea35ff1c3b02b43a6331aef88c4daa1bc933ad4
+
+version: 1  nonce: 7  gasLimit: 122222  gasPrice: 2000000000000 Rau
+senderAddress: io1znka733xefxjjw2wqddegplwtefun0mfdmz7dw (whale)
+transfer: &lt;
+  recipient: io18jaldgzc8wlyfnzamgas62yu3kg5nw527czg37 (nani)
+  amount: 123000000000000000000 Rau
+  payload:
+&gt;
+senderPubKey: 04d0fade363080b9061844ed6b1009f35595515b31295e37e870106d3201a638856db2c3f870dbbcafc559af54574f3487dbea0d318588608d7aca8e77e4ce5ade
+signature: 2e10f265fdc5944fab11afaebd258292afe8f9076157fbaca6bfdd3ece9047483fb3aa10ce187fe55d2d9c591e5eda430833b744f825a6ae34c9b34461d3940f01
+
+#This action has been written on blockchain
+returnValue:
+status: 1 (Success)
+actHash: 690fb07fbb5ba3b762a7a16edea35ff1c3b02b43a6331aef88c4daa1bc933ad4
+gasConsumed: 10000
+contractAddress:
+logs:0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h3 id="deploy-contract"><a href="#deploy-contract" class="header-anchor">#</a> Deploy Contract</h3> <p><code>Usage: ioctl action deploy -s SIGNER -b BYTE_CODE -l GAS_LIMIT [-p GAS_PRICE]</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>➜  ioctl action deploy -b 608060405234801561001057600080fd5b5060df8061001f6000396000f3006080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806360fe47b114604e5780636d4ce63c146078575b600080fd5b348015605957600080fd5b5060766004803603810190808035906020019092919050505060a0565b005b348015608357600080fd5b50608a60aa565b6040518082815260200191505060405180910390f35b8060008190555050565b600080549050905600a165627a7a7230582009e6d7025fff5ff3ba4cf7ba6b842526416df976e012a516f37e397607c1f2360029 -l 50000 -p 1 -s whale
+Enter password #whale:
+
+senderAddress: io14gnqxf9dpkn05g337rl7eyt2nxasphf5m6n0rd (whale)
+version: 1
+nonce: 3
+gasLimit: 50000
+gasPrice: 1000000000000
+execution: &lt;
+  contract:
+  amount: 0
+  data: 608060405234801561001057600080fd5b5060df8061001f6000396000f3006080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806360fe47b114604e5780636d4ce63c146078575b600080fd5b348015605957600080fd5b5060766004803603810190808035906020019092919050505060a0565b005b348015608357600080fd5b50608a60aa565b6040518082815260200191505060405180910390f35b8060008190555050565b600080549050905600a165627a7a7230582009e6d7025fff5ff3ba4cf7ba6b842526416df976e012a516f37e397607c1f2360029
+&gt;
+senderPubKey: 04f591bf3d3e233f6705c8a78823e9ea4a9a73365ca4dd1e60e5567558135778fde8b79dc883b04a98ab68a0fe9e3b7ce984fceca0466c03f93f40d32915bf1d88
+signature: a0cbb205184c3153217bdd7e1d251a70bf8d9222b7ab9b8015254e5961f21602694477ea5bed2005fe21f47724130af173b7abe2b5f9304b09f188749c88c2f001
+
+Please confirm your action.
+Type 'YES' to continue, quit for anything else.
+yes
+
+Action has been sent to blockchain.
+Wait for several seconds and query this action by hash:
+b49e5860c5b4154fdb6bcb808a60fbf8de2ac7807d99551ec5357d83ad2612e5
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h3 id="invoke-contract"><a href="#invoke-contract" class="header-anchor">#</a> Invoke Contract</h3> <p><code>Usage: ioctl action invoke (ALIAS|CONTRACT_ADDRESS) [AMOUNT_IOTX] -s SIGNER -b BYTE_CODE -l GAS_LIMIT [-p GAS_PRICE]</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>➜  ioctl action invoke io1vqzcl56vlfspyaadyxhqy07jrmalx73vdaklzn 122 -s boss -b 60fe47b10000000000000000000000000000000000000000000000000000000000000001 -l 90000 -p 3
+Enter password #boss:
+
+senderAddress: io1ed52svvdun2qv8sf2m0xnynuxfaulv6jlww7ur
+version: 1
+nonce: 2
+gasLimit: 90000
+gasPrice: 3000000000000
+execution: &lt;
+  contract: io1vqzcl56vlfspyaadyxhqy07jrmalx73vdaklzn
+  amount: 122000000000000000000
+  data: 60fe47b10000000000000000000000000000000000000000000000000000000000000001
+&gt;
+senderPubKey: 04b3fe4456876ca4c904c52dc3203e06651924d6cbd5e9f545ce990ea1289f3b8ddaff3b7e104803187f87b1e375076285e7137052260b14f2f33229a671a39a0c
+signature: bde6509fadfe80b707ef80e24041b4cfe7bf583c7d89a0649027090c191918b217ffae5faf1dd5f2d9e6d05f8721c8ff7a6b3b5cffb64610d3bad71c9c55e47001
+
+Please confirm your action.
+Type 'YES' to continue, quit for anything else.
+yes
+
+Action has been sent to blockchain.
+Wait for several seconds and query this action by hash:
+58fc6465bd3b7e33b1508064b0342dc786247b4e18859be72fea57c993dc4950
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h3 id="read-smart-contract"><a href="#read-smart-contract" class="header-anchor">#</a> Read Smart Contract</h3> <p><code>ioctl action read (ALIAS|CONTRACT_ADDRESS) -b BYTE_CODE [-s SIGNER]</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>➜ ioctl action read io1vqzcl56vlfspyaadyxhqy07jrmalx73vdaklzn -b 60fe47b10000000000000000000000000000000000000000000000000000000000000001
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="claim-reward"><a href="#claim-reward" class="header-anchor">#</a> Claim Reward</h3> <p><code>Usage: ioctl action claim AMOUNT_IOTX [DATA] -s SIGNER [-l GAS_LIMIT] [-p GASPRICE]</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>➜  ioctl action claim 321 happy -s whale
+Enter password #whale:
+
+senderAddress: io14gnqxf9dpkn05g337rl7eyt2nxasphf5m6n0rd (whale)
+version: 1
+nonce: 6
+gasLimit: 15000
+gasPrice: &quot;1000000000000&quot;
+claimFromRewardingFund: &lt;
+  amount: &quot;321000000000000000000&quot;
+  data: &quot;happy&quot;
+&gt;
+senderPubKey: 04f591bf3d3e233f6705c8a78823e9ea4a9a73365ca4dd1e60e5567558135778fde8b79dc883b04a98ab68a0fe9e3b7ce984fceca0466c03f93f40d32915bf1d88
+signature: 6b4022afc93901b7de420f84829e9f3e2f531a83c4c0f3a935df3694dbe09e7f068733a294207e9ee39e0d83b4fc206e9f7059592e648b8d92a0bb1eed489f4000
+
+Please confirm your action.
+Type 'YES' to continue, quit for anything else.
+yes
+
+Action has been sent to blockchain.
+Wait for several seconds and query this action by hash:
+59a73e24a41385005519d1d1e7f164b36b98717f2c5649785b43c2588245502d
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><h3 id="deposit-to-rewarding-pool"><a href="#deposit-to-rewarding-pool" class="header-anchor">#</a> Deposit To Rewarding Pool</h3> <p><code>ioctl action deposit AMOUNT_IOTX [DATA] [-s SIGNER] [-n NONCE] [-l GAS_LIMIT] [-p GAS_PRICE] [-P PASSWORD] [-y]</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>➜ ioctl action deposit 10 -s tmp2
+Enter password #io120au9ra0nffdle04jx2g5gccn6gq8qd4fy03l4:
+
+
+version: 1  nonce: 419  gasLimit: 10000  gasPrice: 0.000001 IOTX
+senderAddress: io120au9ra0nffdle04jx2g5gccn6gq8qd4fy03l4 (tmp2)
+version: 1
+nonce: 419
+gasLimit: 10000
+gasPrice: &quot;1000000000000&quot;
+depositToRewardingFund: &lt;
+  amount: &quot;10000000000000000000&quot;
+&gt;
+senderPubKey: 0422346c407294b5e37487395f193faa48dabfc2225ab33fe47b335299f46505b1689f0d96fd53bd19971fe47f310669cf6260dcdc23318454814a4fe904f4d384
+signature: a3c46bae8324e5bcc498de67510b8e8dffe3d8474b7bd1f1cef7a1e01aff6722210df22a5b5c796e1820c5d091c8e49b7a7ee36d2951f90a6f8538bbcfd8f17100
+
+Please confirm your action.
+
+
+Options: yes
+Quit for anything else.
+yes
+Action has been sent to blockchain.
+Wait for several seconds and query this action by hash:23aee3e08f084d5090329d47e27afa8c08358967ca8d6f2b2dc26803b7491d4e
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/iotexproject/iotex-docs/edit/master/docs/developer/ioctl/action.md" target="_blank" rel="noopener noreferrer">Edit this page on GitHub</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/3/2021, 5:29:47 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/developer/ioctl/alias.html" class="prev">
+        Account Aliases
+      </a></span> <span class="next"><a href="/developer/ioctl/bc.html">
+        Query the Blockchain
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.92319cb3.js" defer></script><script src="/assets/js/4.a3940bc5.js" defer></script><script src="/assets/js/7.ad4be137.js" defer></script><script src="/assets/js/2.ada527e9.js" defer></script><script src="/assets/js/66.74508d2f.js" defer></script>
+  </body>
+</html>

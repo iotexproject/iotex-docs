@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="icon_project_blockchain" transform="translate(-491 -888)">
+    <circle id="椭圆_7" data-name="椭圆 7" cx="10" cy="10" r="10" transform="translate(491 888)" fill="none"/>
+    <rect id="矩形_56" data-name="矩形 56" width="7" height="7" transform="translate(497.5 894.5)" fill="none" stroke="#999" stroke-width="1.5"/>
+    <g id="椭圆_11" data-name="椭圆 11" transform="translate(502 899)" fill="#fff" stroke="#999" stroke-width="1.5">
+      <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+      <circle cx="2.5" cy="2.5" r="1.75" fill="none"/>
+    </g>
+    <g id="椭圆_12" data-name="椭圆 12" transform="translate(502 892)" fill="#fff" stroke="#999" stroke-width="1.5">
+      <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+      <circle cx="2.5" cy="2.5" r="1.75" fill="none"/>
+    </g>
+    <g id="椭圆_10" data-name="椭圆 10" transform="translate(495 899)" fill="#fff" stroke="#999" stroke-width="1.5">
+      <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+      <circle cx="2.5" cy="2.5" r="1.75" fill="none"/>
+    </g>
+    <g id="椭圆_13" data-name="椭圆 13" transform="translate(495 892)" fill="#fff" stroke="#999" stroke-width="1.5">
+      <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+      <circle cx="2.5" cy="2.5" r="1.75" fill="none"/>
+    </g>
+  </g>
+</svg>

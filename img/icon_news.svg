@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37">
+  <g id="icon_news" transform="translate(-820 -339)">
+    <circle id="椭圆_1" data-name="椭圆 1" cx="18.5" cy="18.5" r="18.5" transform="translate(820 339)" fill="none"/>
+    <g id="组_5091" data-name="组 5091" transform="translate(-5)">
+      <g id="减去_6" data-name="减去 6" transform="translate(2028.305 -12050.584) rotate(-90)" fill="none">
+        <path d="M-12419.584-1195.3h23v17h-23Z" stroke="none"/>
+        <path d="M -12418.583984375 -1194.304565429688 L -12418.583984375 -1179.304565429688 L -12397.583984375 -1179.304565429688 L -12397.583984375 -1194.304565429688 L -12418.583984375 -1194.304565429688 M -12419.583984375 -1195.304565429688 L -12396.583984375 -1195.304565429688 L -12396.583984375 -1178.304565429688 L -12419.583984375 -1178.304565429688 L -12419.583984375 -1195.304565429688 Z" stroke="none" fill="#262626"/>
+      </g>
+      <rect id="矩形_90" data-name="矩形 90" width="13" height="11" transform="translate(843 369) rotate(-90)" fill="#43c9ba"/>
+      <line id="直线_7" data-name="直线 7" y2="8.226" transform="translate(836 353.5) rotate(-90)" fill="none" stroke="#262626" stroke-width="1"/>
+      <line id="直线_8" data-name="直线 8" y2="8.226" transform="translate(836 350.5) rotate(-90)" fill="none" stroke="#262626" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
